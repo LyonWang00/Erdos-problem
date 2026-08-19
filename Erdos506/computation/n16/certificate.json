@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "theorem": "c(16)=99",
+  "proof_type": "mathematical",
+  "linear_programming_models": 0,
+  "multiplicity_vectors_enumerated": 0,
+  "K3_to_K6": {
+    "3": {
+      "local_bound": "20/3",
+      "margin_above_98": "26/3"
+    },
+    "4": {
+      "local_bound": "77/12",
+      "margin_above_98": "14/3"
+    },
+    "5": {
+      "local_bound": "94/15",
+      "margin_above_98": "34/15"
+    },
+    "6": {
+      "local_bound": "37/6",
+      "margin_above_98": "2/3"
+    }
+  },
+  "K7": {
+    "identity": "Q_x+d_x/42 >= 37/6",
+    "multipliers": {
+      "pair_identity": "7/108",
+      "Melchior": "7/36",
+      "Bojanowski": "1/54",
+      "centre_line_support": "-1/3"
+    },
+    "nonnegative_residual": {
+      "t4": "1/180",
+      "b3": "1/12",
+      "b4": "2/15",
+      "b5": "1/6",
+      "b6": "1/6"
+    },
+    "margins_above_98_for_g_0_to_3": {
+      "0": "2/3",
+      "1": "1/2",
+      "2": "1/3",
+      "3": "1/6"
+    },
+    "g4_degree_one_forced": true,
+    "g4_equality_profile": {
+      "t2": 14,
+      "t3": 12,
+      "t4": 0,
+      "t5": 4,
+      "t6": 1,
+      "b2": 7,
+      "b3": 0,
+      "b4": 0,
+      "b5": 0,
+      "b6": 0
+    },
+    "g4_rich_line_union_lower": 16,
+    "g5_g6_second_moment_contradictions": {
+      "5": {
+        "second_moment_lower": 22,
+        "second_moment_upper": 20
+      },
+      "6": {
+        "second_moment_lower": 36,
+        "second_moment_upper": 30
+      }
+    },
+    "g_at_least_7_degree_sum_contradiction": "7g<=16*3"
+  },
+  "K8": {
+    "conditioned_identity_bound": "1017/160",
+    "unconditional_bound": "145/24",
+    "multipliers": {
+      "pair_identity": "1/80",
+      "Melchior": "31/160",
+      "ordinary_lines_avoiding_centre": "1/48",
+      "centre_line_support": "-5/16",
+      "seven_point_image_line_incidence": "17/160"
+    },
+    "nonnegative_residual": {
+      "t5": "1/240",
+      "t6": "3/560",
+      "b3": "1/16",
+      "b4": "9/80",
+      "b5": "7/48",
+      "b6": "19/112",
+      "b7": "3/16"
+    },
+    "global_margin_above_98": "71/60"
+  },
+  "K9_to_K15_direct_bounds": {
+    "9": 141,
+    "10": 166,
+    "11": 201,
+    "12": 205,
+    "13": 199,
+    "14": 162,
+    "15": 99
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "theorem": "c(n)=F(n) for every n>=17",
+  "parameter_or_profile_enumeration": 0,
+  "local_coefficient_slacks": {
+    "i=2": "0",
+    "i=3": "0",
+    "i=4": "(K - 5)/(30*K)",
+    "5<=i<=K-1": "-(i - 3)*(i - 2)*(-K + i + 1)/(12*K*(i + 1))"
+  },
+  "small_maximum_block_branch": {
+    "condition": "3(K-1)<2(n-1)",
+    "n17_margin": "10/33",
+    "even_n_ge_18_positive_coefficients": [
+      16,
+      408,
+      3528,
+      11056,
+      6156
+    ],
+    "odd_n_ge_19_positive_coefficients": [
+      16,
+      440,
+      4140,
+      14472,
+      10746
+    ]
+  },
+  "large_maximum_block_branch": {
+    "condition": "3K>=n+12",
+    "largest_line_relaxation_minus_B": "(-k_real**2 + k_real*n - 2)/2",
+    "largest_circle_relaxation_minus_B": "0",
+    "derivative_at_left_endpoint": "(2*n**2 + 21*n - 360)/12",
+    "left_endpoint_margin": "5*n - 38",
+    "right_endpoint_margin": "(n - 7)*(n - 2)/2"
+  }
+}

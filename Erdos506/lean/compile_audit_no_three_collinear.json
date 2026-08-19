@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "compiled_source": "Erdos506NoThreeCollinear.lean",
+  "source_sha256": "8eddabfe5aece09470ecfc446b03459f5d9d1bd7d9db81626f2827049eb9fe2f",
+  "wsl_distribution": "Ubuntu-24.04",
+  "wsl_user": "lean",
+  "working_directory": "/home/lean/projects/formal-theorem-prover/lean_prover/Planner/RootFirst/.pantograph_smoke_env",
+  "lean_version": "4.29.1",
+  "lean_commit": "f72c35b3f637c8c6571d353742168ab66cc22c00",
+  "mathlib_commit": "5e932f97dd25535344f80f9dd8da3aab83df0fe6",
+  "command": "lake env lean -DwarningAsError=true /mnt/d/edge_downloads/erods_506/Erdos506/lean/Erdos506NoThreeCollinear.lean",
+  "exit_code": 0,
+  "theorem_declarations": 10,
+  "definition_declarations": 2,
+  "proof_placeholders": 0,
+  "new_axioms": 0,
+  "unsafe_declarations": 0,
+  "writes_inside_wsl": false,
+  "formalization_boundary": "Euclidean incidence lemmas, cited line-arrangement theorems, and exhaustive finite-classification outputs are explicit hypotheses; all arithmetic and case closure is kernel-checked."
+}

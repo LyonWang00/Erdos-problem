@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "compiled_source": "Erdos506Nge15.lean",
+  "source_sha256": "81019a7e5279fdb68621dfd2be5126564498de579a5c8631dc2846b16dfb982b",
+  "wsl_distribution": "Ubuntu-24.04",
+  "wsl_user": "lean",
+  "working_directory": "/home/lean/projects/formal-theorem-prover/lean_prover/Planner/RootFirst/.pantograph_smoke_env",
+  "lean_version": "4.29.1",
+  "lean_commit": "f72c35b3f637c8c6571d353742168ab66cc22c00",
+  "mathlib_version": "4.29.1",
+  "mathlib_commit": "5e932f97dd25535344f80f9dd8da3aab83df0fe6",
+  "command": "lake env lean -DwarningAsError=true /mnt/d/edge_downloads/erods_506/Erdos506/lean/Erdos506Nge15.lean",
+  "exit_code": 0,
+  "theorem_declarations": 47,
+  "definition_declarations": 11,
+  "proof_placeholders": 0,
+  "new_axioms": 0,
+  "opaque_declarations": 0,
+  "unsafe_declarations": 0,
+  "writes_inside_wsl": false,
+  "formalization_boundary": "Euclidean and real-projective incidence theorems cited in the paper are explicit hypotheses; all arithmetic and finite-sum consequences are kernel-checked."
+}

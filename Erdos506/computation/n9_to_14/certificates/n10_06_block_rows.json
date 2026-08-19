@@ -1,0 +1,503 @@
+{
+  "schema_version": 1,
+  "status": "DIAGNOSTIC_ONLY",
+  "n": 10,
+  "source_file": "n10_05_pair_moments.json",
+  "source_sha256": "fad5f3685c48cdf71a80116eabe7bfb1e0187e6aba5edc9e0170ef92605f4b25",
+  "point_row_capacities": true,
+  "point_row_pair_sums": true,
+  "deletion_bounds": true,
+  "subset_inheritance_bounds": true,
+  "conditioned_line_bounds": true,
+  "retained_source_statuses": [
+    "FEASIBLE",
+    "OPTIMAL",
+    "SURVIVES",
+    "UNKNOWN"
+  ],
+  "source_status_counts": {
+    "OPTIMAL": 21,
+    "INFEASIBLE": 5
+  },
+  "claim": "Every represented rich block must have a nonnegative integral intersection row satisfying the three exact triple strata and the cross-block matching inequality.",
+  "input_count": 21,
+  "status_counts": {
+    "INFEASIBLE": 9,
+    "SURVIVES": 12
+  },
+  "wall_time_seconds_sum": 1.940755299932789,
+  "records": [
+    {
+      "signature": [
+        12,
+        0,
+        0,
+        0,
+        16,
+        8,
+        6,
+        0
+      ],
+      "status": "INFEASIBLE",
+      "empty_block_categories": [
+        6
+      ],
+      "tested_row_counts": {
+        "0": 1,
+        "4": 1,
+        "5": 1,
+        "6": 0
+      },
+      "wall_time_seconds": 0.0389947000076063
+    },
+    {
+      "signature": [
+        11,
+        0,
+        0,
+        0,
+        15,
+        11,
+        5,
+        0
+      ],
+      "status": "SURVIVES",
+      "empty_block_categories": [],
+      "tested_row_counts": {
+        "0": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1
+      },
+      "wall_time_seconds": 0.05257050000363961
+    },
+    {
+      "signature": [
+        11,
+        0,
+        0,
+        0,
+        17,
+        8,
+        6,
+        0
+      ],
+      "status": "INFEASIBLE",
+      "empty_block_categories": [
+        6
+      ],
+      "tested_row_counts": {
+        "0": 1,
+        "4": 1,
+        "5": 1,
+        "6": 0
+      },
+      "wall_time_seconds": 0.05064889998175204
+    },
+    {
+      "signature": [
+        10,
+        1,
+        0,
+        0,
+        14,
+        13,
+        4,
+        0
+      ],
+      "status": "SURVIVES",
+      "empty_block_categories": [],
+      "tested_row_counts": {
+        "0": 1,
+        "1": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1
+      },
+      "wall_time_seconds": 0.06050289998529479
+    },
+    {
+      "signature": [
+        10,
+        1,
+        0,
+        0,
+        16,
+        10,
+        5,
+        0
+      ],
+      "status": "SURVIVES",
+      "empty_block_categories": [],
+      "tested_row_counts": {
+        "0": 1,
+        "1": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1
+      },
+      "wall_time_seconds": 0.0734593000379391
+    },
+    {
+      "signature": [
+        6,
+        2,
+        0,
+        0,
+        14,
+        13,
+        4,
+        0
+      ],
+      "status": "INFEASIBLE",
+      "empty_block_categories": [
+        6
+      ],
+      "tested_row_counts": {
+        "0": 1,
+        "1": 1,
+        "4": 1,
+        "5": 1,
+        "6": 0
+      },
+      "wall_time_seconds": 0.23799019999569282
+    },
+    {
+      "signature": [
+        5,
+        3,
+        0,
+        0,
+        15,
+        12,
+        4,
+        0
+      ],
+      "status": "INFEASIBLE",
+      "empty_block_categories": [
+        6
+      ],
+      "tested_row_counts": {
+        "0": 1,
+        "1": 1,
+        "4": 1,
+        "5": 1,
+        "6": 0
+      },
+      "wall_time_seconds": 0.2452828999958001
+    },
+    {
+      "signature": [
+        10,
+        0,
+        0,
+        0,
+        10,
+        20,
+        2,
+        0
+      ],
+      "status": "SURVIVES",
+      "empty_block_categories": [],
+      "tested_row_counts": {
+        "0": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1
+      },
+      "wall_time_seconds": 0.04280049999943003
+    },
+    {
+      "signature": [
+        10,
+        0,
+        0,
+        0,
+        12,
+        17,
+        3,
+        0
+      ],
+      "status": "SURVIVES",
+      "empty_block_categories": [],
+      "tested_row_counts": {
+        "0": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1
+      },
+      "wall_time_seconds": 0.07237660000100732
+    },
+    {
+      "signature": [
+        10,
+        0,
+        0,
+        0,
+        14,
+        14,
+        4,
+        0
+      ],
+      "status": "SURVIVES",
+      "empty_block_categories": [],
+      "tested_row_counts": {
+        "0": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1
+      },
+      "wall_time_seconds": 0.06322630000067875
+    },
+    {
+      "signature": [
+        10,
+        0,
+        0,
+        0,
+        16,
+        11,
+        5,
+        0
+      ],
+      "status": "SURVIVES",
+      "empty_block_categories": [],
+      "tested_row_counts": {
+        "0": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1
+      },
+      "wall_time_seconds": 0.03800429997500032
+    },
+    {
+      "signature": [
+        10,
+        0,
+        0,
+        0,
+        18,
+        8,
+        6,
+        0
+      ],
+      "status": "INFEASIBLE",
+      "empty_block_categories": [
+        6
+      ],
+      "tested_row_counts": {
+        "0": 1,
+        "4": 1,
+        "5": 1,
+        "6": 0
+      },
+      "wall_time_seconds": 0.04161409998778254
+    },
+    {
+      "signature": [
+        6,
+        1,
+        0,
+        0,
+        14,
+        14,
+        4,
+        0
+      ],
+      "status": "INFEASIBLE",
+      "empty_block_categories": [
+        6
+      ],
+      "tested_row_counts": {
+        "0": 1,
+        "1": 1,
+        "4": 1,
+        "5": 1,
+        "6": 0
+      },
+      "wall_time_seconds": 0.15073739999206737
+    },
+    {
+      "signature": [
+        9,
+        1,
+        0,
+        0,
+        13,
+        16,
+        3,
+        0
+      ],
+      "status": "SURVIVES",
+      "empty_block_categories": [],
+      "tested_row_counts": {
+        "0": 1,
+        "1": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1
+      },
+      "wall_time_seconds": 0.0642124000005424
+    },
+    {
+      "signature": [
+        9,
+        1,
+        0,
+        0,
+        15,
+        13,
+        4,
+        0
+      ],
+      "status": "SURVIVES",
+      "empty_block_categories": [],
+      "tested_row_counts": {
+        "0": 1,
+        "1": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1
+      },
+      "wall_time_seconds": 0.06183510000118986
+    },
+    {
+      "signature": [
+        9,
+        1,
+        0,
+        0,
+        17,
+        10,
+        5,
+        0
+      ],
+      "status": "SURVIVES",
+      "empty_block_categories": [],
+      "tested_row_counts": {
+        "0": 1,
+        "1": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1
+      },
+      "wall_time_seconds": 0.07295559998601675
+    },
+    {
+      "signature": [
+        9,
+        1,
+        0,
+        0,
+        19,
+        7,
+        6,
+        0
+      ],
+      "status": "INFEASIBLE",
+      "empty_block_categories": [
+        6
+      ],
+      "tested_row_counts": {
+        "0": 1,
+        "1": 1,
+        "4": 1,
+        "5": 1,
+        "6": 0
+      },
+      "wall_time_seconds": 0.05792220000876114
+    },
+    {
+      "signature": [
+        5,
+        2,
+        0,
+        0,
+        15,
+        13,
+        4,
+        0
+      ],
+      "status": "INFEASIBLE",
+      "empty_block_categories": [
+        6
+      ],
+      "tested_row_counts": {
+        "0": 1,
+        "1": 1,
+        "4": 1,
+        "5": 1,
+        "6": 0
+      },
+      "wall_time_seconds": 0.17840630002319813
+    },
+    {
+      "signature": [
+        8,
+        2,
+        0,
+        0,
+        16,
+        12,
+        4,
+        0
+      ],
+      "status": "SURVIVES",
+      "empty_block_categories": [],
+      "tested_row_counts": {
+        "0": 1,
+        "1": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1
+      },
+      "wall_time_seconds": 0.08522910001920536
+    },
+    {
+      "signature": [
+        8,
+        2,
+        0,
+        0,
+        18,
+        9,
+        5,
+        0
+      ],
+      "status": "SURVIVES",
+      "empty_block_categories": [],
+      "tested_row_counts": {
+        "0": 1,
+        "1": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1
+      },
+      "wall_time_seconds": 0.07103629998164251
+    },
+    {
+      "signature": [
+        4,
+        3,
+        0,
+        0,
+        16,
+        12,
+        4,
+        0
+      ],
+      "status": "INFEASIBLE",
+      "empty_block_categories": [
+        6
+      ],
+      "tested_row_counts": {
+        "0": 1,
+        "1": 1,
+        "4": 1,
+        "5": 1,
+        "6": 0
+      },
+      "wall_time_seconds": 0.18094969994854182
+    }
+  ]
+}

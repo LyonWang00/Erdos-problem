@@ -1,0 +1,69 @@
+{
+  "schema_version": 6,
+  "certified_statement": {
+    "large_range": "c(n)=F(n) for n>=9",
+    "small_values": {
+      "4": 3,
+      "5": 5,
+      "6": 8,
+      "7": 11,
+      "8": 17
+    },
+    "no_three_collinear": "c_nc(n)=1+C(n-1,2) for n>=4, except c_nc(8)=20"
+  },
+  "integrated_entry": "verify_all.py",
+  "proof_components": [
+    {
+      "range": "n>=17",
+      "type": "mathematical proof",
+      "entry": "n_ge_17/verify_n_ge_17.py",
+      "certificate": "n_ge_17/certificate.json"
+    },
+    {
+      "range": "n=16",
+      "type": "mathematical proof",
+      "entry": "n16/verify_n16.py",
+      "certificate": "n16/certificate.json"
+    },
+    {
+      "range": "n=15",
+      "type": "mathematical proof",
+      "entries": [
+        "n9_to_14/verify_largest_block_reduction.py",
+        "n15/verify_n15.py"
+      ],
+      "certificate": "n15/certificate.json"
+    },
+    {
+      "range": "9<=n<=14",
+      "type": "mathematical reductions plus one uniform finite verification",
+      "directory": "n9_to_14",
+      "entry": "n9_to_14/run_verification.py",
+      "certificate": "n9_to_14/certificates/manifest.json"
+    },
+    {
+      "range": "4<=n<=8",
+      "type": "mathematical reductions plus exact finite verification",
+      "directory": "n4_to_8",
+      "entries": [
+        "n4_to_8/n6/verify_construction.py",
+        "n4_to_8/n8/verify_construction.py",
+        "n4_to_8/n6/verify_lower_bound.py",
+        "n4_to_8/n6/classify_extremal_types.py",
+        "n4_to_8/n7/classify_quad_packings.py",
+        "n4_to_8/n7/classify_line_extensions.py",
+        "n4_to_8/n7/verify_circle_count_spectrum.py",
+        "n4_to_8/n7/verify_q7_exclusion.py",
+        "n4_to_8/n7/verify_extremal_configuration.py",
+        "n4_to_8/n8/classify_boundary_layers.py"
+      ],
+      "certificate": "n4_to_8/n8/boundary_layer_classification.json"
+    },
+    {
+      "range": "n>=4 with no three collinear",
+      "type": "mathematical proof plus exact finite verification",
+      "entry": "no_three_collinear/verify_no_three_collinear.py"
+    }
+  ],
+  "legacy_not_used": []
+}

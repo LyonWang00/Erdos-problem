@@ -1,0 +1,308 @@
+\section{The cases \texorpdfstring{$9\le n\le14$}{9<=n<=14}}
+\label{sec:small-uniform-en}
+
+This section separates the two larger cases, which are decided at the level of
+global integer data, from the four smaller cases that require an exact finite
+verification.  No historical search tree or saved orbit list is used.
+
+For $k\ge3$, let $\ell_k$ and $c_k$ denote the numbers of maximal $k$-point
+lines and circles, and put $m_k=\ell_k+c_k$.
+Every pair belongs to one maximal
+line, while every triple belongs either to its maximal line or to its unique
+circumcircle.  Therefore
+\begin{align}
+ \ell_2+\sum_{k\ge3}\binom{k}{2}\ell_k&=\binom n2,
+ \label{eq:small-line-pairs-en}\\
+ \sum_{k\ge3}\binom{k}{3}m_k&=\binom n3,
+ \qquad \sum_{k\ge3}c_k=c(P).
+ \label{eq:small-triple-partition-en}
+\end{align}
+We call $(\ell_3,\ldots,\ell_K;c_3,\ldots,c_K)$ the \emph{global count
+vector}; it records only the number of maximal lines and circles of each size,
+not the subsets of points on them.  Lemma~\ref{lem:largest-en} excludes maximum blocks of size at
+least $6,7,7,7,7,8$ for $n=9,10,11,12,13,14$, respectively.  Thus $K$ is at
+most $5,6,6,6,6,7$ in the branches considered below.
+
+The enumeration of these count vectors uses only necessary conditions.  Since $K<n-1$,
+every one-point deletion is admissible, and summing its circle count gives
+\begin{equation}\label{eq:small-one-delete-en}
+ n c(P)-3c_3\ge n c(n-1).
+\end{equation}
+Inversion followed by Zhang's prescribed-point ordinary-line theorem
+\cite[Theorem~4.1]{zhang-en} gives
+\begin{equation}\label{eq:small-z-circle-en}
+ 3c_3\ge n\left\lceil\frac{n-1}{6}\right\rceil.
+\end{equation}
+We also use the ordinary-line, Melchior, Hirzebruch--Bojanowski, and
+Shnurnikov inequalities for the line part of the count vector, and their sums
+over subsets that are forced to be noncollinear
+\cite[Eq.~(9)]{hirzebruch-en}
+\cite[Theorem~2.1]{pokora-en}\cite[Theorem~3]{shnurnikov-en}.
+For a subset contained in a maximal line no circle lower bound is imposed; for
+a subset contained in a maximal circle only that defining circle is imposed.
+This is the correction needed when deletion averages are used at small order.
+
+We shall also use the following elementary consequence of block intersections.
+For $N\ge1$ and $S=aN+b$, $0\le b<N$, set
+\[
+ \Phi_N(S)=N\binom a2+ab.
+\]
+This is the minimum of $\sum_i\binom{x_i}{2}$ over nonnegative integral
+$x_i$ with $\sum_i x_i=S$.  If a selected family consists of $L$ maximal
+lines and $G$ maximal circles and $I_1,I_2$ are its total point and point-pair
+incidences, then
+\begin{align}
+ \Phi_n(I_1)&\le \binom L2+2LG+2\binom G2,
+ \label{eq:small-block-point-en}\\
+ \Phi_{\binom n2}(I_2)&\le LG+\binom G2.
+ \label{eq:small-block-pair-en}
+\end{align}
+Indeed, two lines meet in at most one point and any other two distinct blocks
+meet in at most two points.  Applying these inequalities to the largest
+members of each subfamily covers every possible choice.  It does not decide
+which labelled points lie on the selected lines and circles.
+
+\subsection{The augmented-line inequality}
+
+Fix $x\in P$, invert about $x$, and dualize the remaining $n-1$ points.  Let
+$t_j(x)$ be the number of multiplicity-$j$ vertices of the resulting
+arrangement and put
+\[
+ \delta_x=t_2(x)-3-\sum_{j\ge4}(j-3)t_j(x).
+\]
+Write $d_k^L(x)$ for the number of maximal $k$-point lines of $P$ through
+$x$.
+
+\begin{lemma}\label{lem:augmented-line-en}
+For every $x\in P$,
+\begin{equation}\label{eq:augmented-line-point-en}
+ \sum_{k\ge3}k d_k^L(x)\le n-1+\delta_x.
+\end{equation}
+Consequently,
+\begin{equation}\label{eq:augmented-line-summed-en}
+ \sum_{k\ge3}k^2\ell_k\le n(n-1)+D,
+ \qquad
+ D=3m_3-3n-\sum_{k\ge5}k(k-4)m_k.
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+Let $\mathcal A_x$ be the arrangement of $n-1$ dual lines, and adjoin the
+projective line dual to the inversion centre.  A $k$-point original line
+through $x$ corresponds to an old vertex of multiplicity $k-1$ on the added
+line.  Suppose the selected old vertices have multiplicities $i_1,\ldots,i_s$.
+The added line has
+$(n-1)-\sum_j i_j$ new ordinary vertices.  Raising the multiplicity of each
+selected old vertex by one decreases the Melchior defect by one, including
+the cases of multiplicity two and three.  Hence the defect of the enlarged
+arrangement is
+\[
+ \delta_x+(n-1)-\sum_{j=1}^s(i_j+1)
+ =\delta_x+(n-1)-\sum_{k\ge3}k d_k^L(x).
+\]
+The enlarged arrangement is essential, so Melchior's inequality proves
+\eqref{eq:augmented-line-point-en}.  Summing over $x$, and using
+$\sum_xd_k^L(x)=k\ell_k$ and the local incidence identities, gives
+\eqref{eq:augmented-line-summed-en}.
+\end{proof}
+
+\subsection{Global exclusion for thirteen and fourteen points}
+
+For $n=14$, the exact integer solutions of the preceding necessary
+conditions with $c(P)<F(14)$ give 8981 count vectors.  Inequality
+\eqref{eq:augmented-line-summed-en} excludes 8980.  The remaining vector is
+\[
+ (\ell_3,\ldots,\ell_7;c_3,\ldots,c_7)
+ =(20,0,0,0,0;23,44,0,2,3).
+\]
+Its three seven-point circles have pairwise intersections of size at most two,
+so their union has at least $3\cdot7-3\cdot2=15$ points, a contradiction.
+Thus $c(14)=F(14)$.
+
+For $n=13$, the same exact enumeration gives 3962 count vectors below $F(13)$.
+The augmented-line inequality leaves 137, and
+\eqref{eq:small-block-point-en}--\eqref{eq:small-block-pair-en} leave 73.  We
+now derive two inequalities that exclude these remaining vectors.
+
+At any point $x$, the local arrangement has twelve lines and, in the present
+branch, no vertex of multiplicity greater than five.  Write its multiplicity
+vector as $(t_2,t_3,t_4,t_5)$ and its defect as $\delta$.  Then
+\begin{equation}\label{eq:n13-local-two-ineq-en}
+ -2\delta+t_4+3t_5\le6,
+ \qquad -\delta+t_5\le1.
+\end{equation}
+For the first inequality, the pair identity and Bojanowski's inequality give
+\begin{align*}
+ t_2+3t_3+6t_4+10t_5&=66,\\
+ 4t_2+3t_3&\ge48+5t_5,
+\end{align*}
+and hence
+\[
+ H:=3t_2-6t_4-15t_5+18\ge0.
+\]
+Put $E=2t_2-3t_4-7t_5$.  Since
+$H+3\delta=3(E+3)$, one has $E\ge-3$.  Moreover, the pair identity gives
+$E\equiv0\pmod3$.  Equality $E=-3$ would force $H=\delta=0$.
+Cuntz's complete list of simplicial twelve-line arrangements, after excluding
+a six-fold vertex, leaves the types $(8,10,3,1)$ and $(9,7,6,0)$; both have
+$E=0$ \cite[Theorem~1.1 and the invariant tables]{cuntz-en}.  Therefore
+$E\ge0$, which is the first inequality in \eqref{eq:n13-local-two-ineq-en}.
+
+For the second inequality, four five-fold vertices would dualize to four
+five-point lines whose union has at least $20-\binom42=14$ points; hence
+$t_5\le3$.  If $\delta\ge2$ the claim follows.  If $\delta=0$, Cuntz's two
+types above have $t_5\le1$.  The only remaining possible violation is
+$(\delta,t_5)=(1,3)$.  The pair and defect identities then force
+$(t_2,t_3,t_4,t_5)=(12,4,2,3)$.  But three five-point lines and one
+four-point line have a union of at least $5+5+5+4-\binom42=13$ points, again
+impossible on twelve points.  This proves the second inequality.
+
+Summing \eqref{eq:n13-local-two-ineq-en} over the thirteen centres yields
+\begin{equation}\label{eq:n13-global-two-ineq-en}
+ -2D+5m_5+18m_6\le78,
+ \qquad -D+6m_6\le13.
+\end{equation}
+Of the 73 count vectors, 71 violate the first inequality and the other two
+violate the second.  This is an exact substitution into
+\eqref{eq:n13-global-two-ineq-en}; no subsets of labelled points are selected.  Hence
+$c(13)=F(13)$.
+
+\subsection{Exact verification for nine through twelve points}
+
+For $9\le n\le12$, the same global constraints and
+\eqref{eq:augmented-line-summed-en} leave a small but nonempty boundary.  We
+describe the common verification so that every transition can be reproduced.
+For a marked point $x$, let $a_k(x)$ and $u_k(x)$ count maximal $k$-point
+lines and circles through $x$.  Then
+\[
+ t_{k-1}(x)=a_k(x)+u_k(x),
+ \qquad
+ \sum_{j\ge2}\binom j2t_j(x)=\binom{n-1}{2}.
+\]
+These local multiplicity vectors obey the published arrangement inequalities used above, the
+block-union inequalities, and \eqref{eq:augmented-line-point-en}.  A first
+integer model records only how many points have each vector and imposes
+\[
+ \sum_xa_k(x)=k\ell_k,\qquad
+ \sum_xu_k(x)=kc_k,\qquad
+ \sum_x\delta_x=D.
+\]
+
+The next two stages still do not assign labelled point subsets.  For a block category
+$\alpha$, let $d_\alpha(x)$ be its point degree and let
+$\lambda_\alpha(e)$ be its degree at a point pair $e$.  If $k_\alpha$ is the
+block size and $N_\alpha$ its multiplicity, then
+\begin{align}
+ \sum_xd_\alpha(x)&=k_\alpha N_\alpha,&
+ \sum_e\lambda_\alpha(e)&=\binom{k_\alpha}{2}N_\alpha,
+ \label{eq:small-category-totals-en}\\
+ \sum_\alpha(k_\alpha-2)\lambda_\alpha(e)&=n-2.
+ \label{eq:small-pair-profile2-en}
+\end{align}
+The last identity says that the portions outside $e$ of all maximal blocks
+through $e$ partition $P\setminus e$.  The point and point-pair data are linked by
+\[
+ \sum_{y\ne x}\lambda_\alpha(\{x,y\})=(k_\alpha-1)d_\alpha(x).
+\]
+The subsequent intersection count uses,
+for two block categories, the exact identities
+\[
+ N_2=M_2,\qquad N_1=M_1-2M_2,\qquad N_0=Q-M_1+M_2,
+\]
+where $M_1$ is the sum of intersection sizes, $M_2$ is the sum of their second
+binomial coefficients, and $N_s$ counts pairs of
+distinct blocks meeting in $s$ points.  It also counts triples disjoint from
+a distinguished block.  All coefficients are binomial counts, and no
+floating-point relaxation is used.
+
+Finally, inversion at $x$ determines the complete count vector on $n-1$ image
+points: blocks through $x$ become image lines with one fewer point, whereas
+blocks avoiding $x$ become image circles.  A local vector is retained only if this
+child vector survives the next level, after which the local multiplicity data
+at the $n$ points are balanced again.  The recursion stops at $n=9$.  There the model
+selects maximal line and circle subsets of the nine labelled points, requires
+every triple to lie in exactly one selected block, requires a point pair to
+lie in at most one selected line, and imposes the already proved lower bounds
+on every admissible proper subset.  Infeasibility of this more permissive
+abstract model implies geometric infeasibility.
+
+The exact counts in the final replay are:
+\begin{center}
+\small
+\begin{tabular}{c|rrrrrrr}
+\toprule
+$n$ & initial & augmented sum & local vectors & point--pair & intersections & block pairs & terminal\\
+\midrule
+9  &45   &36  &23  &-- &-- &-- &0\\
+10 &180  &150 &55  &26 &21 &12 &1\\
+11 &416  &160 &70  &39 &28 &-- &0\\
+12 &1354 &211 &169 &55 &44 &-- &0\\
+\bottomrule
+\end{tabular}
+\end{center}
+Here ``initial'' is the number left from 129, 551, 1215, and 4322 raw
+count vectors, respectively.  The terminal zeroes for $n=11,12$ come from the
+same recursion.  It visits, respectively,
+\[
+ (28,72,222)\quad\text{and}\quad(44,322,661,622)
+\]
+count vectors at orders $(11,10,9)$ and $(12,11,10,9)$.  Every excluded status
+is an exact \texttt{INFEASIBLE} status; there is no \texttt{UNKNOWN}.
+
+For $n=10$ the recursion leaves the single count vector
+\[
+ (\ell_3,\ell_4,\ell_5,\ell_6;
+   c_3,c_4,c_5,c_6;\ell_2)
+ =(10,0,0,0;10,20,2,0;15).
+\]
+The four local multiplicity vectors retained by the recursive certificate all have
+$u_5(x)=1$ and $a_3(x)\le3$.  Since the two five-point circles have ten point
+incidences, they therefore partition the ten points into sets $A$ and $B$.
+Moreover, the ten three-point lines have thirty point incidences, so
+$a_3(x)=3$ at every point; the corresponding retained vector also has
+$u_4(x)=8$.  Every four-point circle meets each of $A$ and $B$ in two points.
+
+Associate such a circle with its chord in $A$ and its chord in $B$.  The two
+chords meet on the fixed radical axis of the two five-point circles.  No three
+chords determined by five points on a circle can pass through the same point
+off that circle: three pairwise disjoint chords would require six endpoints.
+Thus each set of chords meeting at one radical-axis point has size at most two
+on either side.  The twenty four-point circles attain the resulting maximum,
+so the chord graph is five disjoint copies of $K_{2,2}$.  Up to the action of
+$S_5\times S_5$, the six perfect matchings of the Petersen graph give two
+double orbits.  One admits no compatible ten-line design; the other has two
+complementary designs forming one orbit.
+
+For a representative of that orbit, the ten line incidences give a complete
+projective parametrization with nonzero parameters $a,b,d$.  Five selected
+circle-intersection minors are
+\begin{gather*}
+ ad+b^2,\quad -ab+ad-b,\quad ab-ad-a-1,\\
+ -ad+bd-b-d,\quad b(ab+1).
+\end{gather*}
+They must all vanish.  Adding the second and third relations gives
+$a+b+1=0$, while the last relation and $b\ne0$ give $ab+1=0$.  Hence
+$b^2+b-1=0$.  The first relation gives
+$d=b^2/(b+1)$; here $b+1=-a\ne0$.  Substitution in the fourth relation then
+gives, after removal of nonzero factors,
+\[
+ (b-1)(2b+1)=0,
+\]
+which is relatively prime to $b^2+b-1$.  The discarded parameter branch makes
+two labelled points coincide, and every factor divided out in forming the
+five primitive minors is one of $a,d,b$ or $ad$, all nonzero.  Thus the last
+$n=10$ count vector is impossible.
+
+Combining these verifications with the construction in \eqref{eq:F-en} gives
+\[
+ c(n)=F(n)\qquad(9\le n\le14).
+\]
+
+\begin{remark}[Scope of the finite verification]
+The only labelled search in this section occurs in the nine-point terminal
+model.  Orders ten through twelve use count vectors and recursive consistency
+of local multiplicities, while orders thirteen and fourteen use only global inequalities.
+No condition $\sum_jt_j\ge2r-4$ is assumed for an arbitrary arrangement.
+For an arrangement of $q$ lines, Elliott's Theorem~3 is used only when its
+hypotheses $q\ge10$ and no $(q-1)$-fold vertex are explicitly satisfied.
+\end{remark}

@@ -1,0 +1,68 @@
+\subsection{九点至十四点}
+
+这六层的源码位于
+\begin{center}
+\file{computation/n9_to_14/}。
+\end{center}
+在该目录运行
+\begin{verbatim}
+python run_verification.py --jobs 8 --seconds 240
+\end{verbatim}
+即可完整重放。工作进程数可以改变而不改变模型。每个求解器使用固定随机种子；超时记为
+\texttt{UNKNOWN} 并继续保留。成功重放最终生成
+\file{certificates/manifest.json}，其中七项终止检查均为真，总状态为
+\texttt{PASS}。若重放在所有终止证书写出后被中断，可用
+\file{audit_manifest.py} 重新进行同一终止状态及 SHA-256 审计。
+当前下界表使用 $c(7)=11$；本包中的全部证书均在这一修正后重新生成。特别地，
+十二点递归现在产生 622 个九点子计数向量，而不是旧版的 617 个。
+
+各文件按数学作用分类如下。
+部分文件名保留了实现阶段的英文术语：其中 \texttt{signature} 指第
+~\ref{sec:small-uniform} 节定义的全局计数向量，\texttt{profile} 指附着于
+点对的次数数据，\texttt{support} 指实际选取的带标号点子集；它们不是额外的
+数学概念。
+\begin{longtable}{P{6.2cm}P{8.3cm}}
+\toprule 文件 & 在验证中的作用\\ \midrule
+\file{signature_filters.py} & 由
+\eqref{eq:small-line-pairs}--\eqref{eq:small-triple-partition}、最大块界、删除平均及文中引用的直线排列不等式生成全部全局计数向量\\
+\file{projected_arrangement_model.py} & 生成全部局部重数向量及其直线/圆分拆；最终源码不包含历史的单线删除障碍表\\
+\file{verify_local_type_filter.py} & 检查局部重数向量的精确无标号求和，并写出
+\file{nN_01_signature_filter.json}\\
+\file{verify_augmented_line_melchior.py} & 先检查
+\eqref{eq:augmented-line-summed}，再检查所有点处的数据总和是否满足
+\eqref{eq:augmented-line-point}；写出 02、03 号证书\\
+\file{filter_by_classified_split_endpoints.py} & 检查
+\eqref{eq:small-category-totals}--\eqref{eq:small-pair-profile2} 中连接点次数与点对次数的一致性恒等式；入口明确关闭两个可选有限目录\\
+\file{pair_profile_generator.py},
+\file{verify_pair_moment_filter.py} & 生成全部点对次数数据，并加入交集大小之和、交集大小二阶二项式系数之和及不交三点组计数；写出 05 号证书\\
+\file{block_intersection_rows.py},
+\file{block_row_existence_filter.py} & 在 $n=10$ 时，对每个出现的块加入三层精确三点组恒等式及两个块之间的匹配数上界，把 21 个计数向量降为 12 个\\
+\file{verify_recursive_inversion_rows.py} & 把每个局部重数向量映射为低一阶完整计数向量，逐层平衡各点处的数据，并在九点基例中把极大直线和圆选为带标号点的子集\\
+\file{verify_n10_final_radical_axis.py} & 重新生成两个匹配轨道、唯一剩余的直线设计轨道及排除最后十点计数向量的五个精确子式；程序先读取 07 号证书、记录其 SHA-256 摘要，并检查所保留的局部向量确实强制两个五点圆分割点集\\
+\file{verify_n13_n14_global_inequalities.py} & 独立生成 3962 与 8981 个原始计数向量，并检查全局排除及
+\eqref{eq:n13-global-two-ineq}；不选择任何带标号点子集\\
+\file{run_verification.py}, \file{audit_manifest.py} & 按顺序执行各阶段，并检查所有终止状态、唯一的十点中间计数向量、文件大小和 SHA-256 摘要\\
+\bottomrule
+\end{longtable}
+
+终止证书为
+{\raggedright
+\begin{description}[style=nextline,leftmargin=2.8em]
+\item[$n=9$] \file{certificates/n9_04_exact_support.json}。
+\item[$n=10$] \file{certificates/n10_07_recursive.json} 与
+  \file{certificates/n10_08_final_geometry.json}。
+\item[$n=11$] \file{certificates/n11_06_recursive.json}。
+\item[$n=12$] \file{certificates/n12_06_recursive.json}。
+\item[$n=13,14$] \file{certificates/n13_n14_global_inequalities.json}。
+\end{description}
+\par}
+中间文件名带有表中所示的数字前缀，并严格按此前缀顺序读取。凡阶段读取上游证书，均记录其路径与 SHA-256 摘要。最终清单记录四十二个源码与证书文件。因此读者可以删除
+\file{certificates} 目录，再由所列源码完整生成验证链。
+
+本次四进程审计重放的总墙钟时间为 348.52 秒。最大的带标号基例模型含 840 个
+布尔变量和 546 条约束；最慢的单个递归求解用时 6.62 秒，没有任何求解接近
+240 秒上限。这些数据只用于说明规模，不是证书所依赖的假设。
+
+复现应使用 CPython~3.13，因为经审计的二进制模块是对应的 CPython~3.13 构建。
+整数求解器固定为 OR-Tools 9.15.6755，并仅通过
+\file{computation/runtime_dependencies.py} 加载。SymPy 只用于十点末例的精确多项式运算。浮点可行性、随机搜索以及不是明确不可行的求解状态，均不用于排除任何情形。

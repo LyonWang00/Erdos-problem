@@ -1,0 +1,247 @@
+\section{\texorpdfstring{$9\le n\le14$}{9<=n<=14} 的情形}
+\label{sec:small-uniform}
+
+本节把仅需全局整数数据即可处理的两个较大情形，与仍需精确有限验证的四个较小情形分开叙述。整个证明不读取历史搜索树，也不使用预存的轨道表。
+
+对 $k\ge3$，以 $\ell_k$ 和 $c_k$ 分别表示极大 $k$ 点直线与极大
+$k$ 点圆的数目，并令 $m_k=\ell_k+c_k$。每个点对属于唯一的极大直线；每个三点组
+或者属于其极大直线，或者属于唯一的外接圆。因此
+\begin{align}
+ \ell_2+\sum_{k\ge3}\binom{k}{2}\ell_k&=\binom n2,
+ \label{eq:small-line-pairs}\\
+ \sum_{k\ge3}\binom{k}{3}m_k&=\binom n3,
+ \qquad \sum_{k\ge3}c_k=c(P).
+ \label{eq:small-triple-partition}
+\end{align}
+称 $(\ell_3,\ldots,\ell_K;c_3,\ldots,c_K)$ 为一个\emph{全局计数向量}。引理~\ref{lem:largest} 分别排除
+$n=9,10,11,12,13,14$ 时大小至少为 $6,7,7,7,7,8$ 的块，故以下各分支只需考虑
+$K\le5,6,6,6,6,7$。
+
+计数向量的生成只使用必要条件。由于 $K<n-1$，删除任意一点后所得点集仍满足本问题的条件，对所有删除求和得到
+\begin{equation}\label{eq:small-one-delete}
+ n c(P)-3c_3\ge n c(n-1).
+\end{equation}
+在每一点反演后应用 Zhang 的指定外点普通线定理
+\cite[Theorem~4.1]{zhang}，得到
+\begin{equation}\label{eq:small-z-circle}
+ 3c_3\ge n\left\lceil\frac{n-1}{6}\right\rceil.
+\end{equation}
+此外，对计数向量的直线部分使用普通线、Melchior、Hirzebruch--Bojanowski 与 Shnurnikov 不等式，并在必定非共线的子集上求和
+\cite[Eq.~(9)]{hirzebruch}\cite[Theorem~2.1]{pokora}\cite[Theorem~3]{shnurnikov}。
+若子集包含在一条极大直线中，则不对它使用圆数下界；若子集包含在一个极大圆中，则只要求保留该圆。这是小阶删除平均中必须加入的修正。
+
+还需用到块的交集所给出的下列初等不等式。对 $N\ge1$ 以及
+$S=aN+b$（$0\le b<N$），令
+\[
+ \Phi_N(S)=N\binom a2+ab.
+\]
+它是满足 $\sum_i x_i=S$ 的非负整数向量中
+$\sum_i\binom{x_i}{2}$ 的最小值。任取 $L$ 条极大直线和 $G$ 个极大圆，记它们的总点关联数和总点对关联数为 $I_1,I_2$，则
+\begin{align}
+ \Phi_n(I_1)&\le \binom L2+2LG+2\binom G2,
+ \label{eq:small-block-point}\\
+ \Phi_{\binom n2}(I_2)&\le LG+\binom G2.
+ \label{eq:small-block-pair}
+\end{align}
+这是因为两条直线至多交于一点，而其余任意两个不同块至多交于两点。把每一类的
+块按大小排列，并对每个初始段应用这两个不等式，即可覆盖所有子族；这一过程不必
+决定哪些带标号的点实际落在所选直线或圆上。
+
+\subsection{增广直线不等式}
+
+固定 $x\in P$，以 $x$ 为中心反演，再对其余 $n-1$ 个像点作射影对偶。记所得直线排列中重数为 $j$ 的顶点数为 $t_j(x)$，并令
+\[
+ \delta_x=t_2(x)-3-\sum_{j\ge4}(j-3)t_j(x).
+\]
+以 $d_k^L(x)$ 表示经过 $x$ 的极大 $k$ 点直线数。
+
+\begin{lemma}\label{lem:augmented-line}
+对每个 $x\in P$，均有
+\begin{equation}\label{eq:augmented-line-point}
+ \sum_{k\ge3}k d_k^L(x)\le n-1+\delta_x.
+\end{equation}
+因此
+\begin{equation}\label{eq:augmented-line-summed}
+ \sum_{k\ge3}k^2\ell_k\le n(n-1)+D,
+ \qquad
+ D=3m_3-3n-\sum_{k\ge5}k(k-4)m_k.
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+记上述 $n-1$ 条对偶直线的排列为 $\mathcal A_x$，再加入反演中心的对偶直线。经过 $x$ 的一条原 $k$ 点直线，对应于新增直线上的一个旧的 $(k-1)$ 重顶点。设这些旧顶点的重数为 $i_1,\ldots,i_s$。新增直线产生
+$(n-1)-\sum_j i_j$ 个新的普通顶点；每把一个旧顶点的重数提高一，Melchior 亏量减少一，这对二重和三重顶点也成立。因此增广排列的亏量为
+\[
+ \delta_x+(n-1)-\sum_{j=1}^s(i_j+1)
+ =\delta_x+(n-1)-\sum_{k\ge3}k d_k^L(x).
+\]
+增广排列是本质排列，故 Melchior 不等式给出
+\eqref{eq:augmented-line-point}。再对 $x$ 求和，并使用
+$\sum_xd_k^L(x)=k\ell_k$ 及局部关联恒等式，即得
+\eqref{eq:augmented-line-summed}。
+\end{proof}
+
+\subsection{十三点与十四点的全局排除}
+
+当 $n=14$ 时，在 $c(P)<F(14)$ 下，前述必要条件的全部整数解共有 8981 个。
+不等式~\eqref{eq:augmented-line-summed} 排除其中 8980 个；唯一剩余的计数向量为
+\[
+ (\ell_3,\ldots,\ell_7;c_3,\ldots,c_7)
+ =(20,0,0,0,0;23,44,0,2,3).
+\]
+其中三个七点圆两两至多交于两点，故其并至少含
+$3\cdot7-3\cdot2=15$ 点，矛盾。因此 $c(14)=F(14)$。
+
+当 $n=13$ 时，小于 $F(13)$ 的整数计数向量共有 3962 个。增广直线不等式后剩 137 个，再由
+\eqref{eq:small-block-point}--\eqref{eq:small-block-pair} 剩 73 个。以下两条不等式排除全部剩余向量。
+
+在任一点处，局部排列含十二条直线；在当前分支中，其顶点重数不超过五。将其重数向量记为
+$(t_2,t_3,t_4,t_5)$，亏量记为 $\delta$。则
+\begin{equation}\label{eq:n13-local-two-ineq}
+ -2\delta+t_4+3t_5\le6,
+ \qquad -\delta+t_5\le1.
+\end{equation}
+为证明第一式，由点对恒等式及 Bojanowski 不等式有
+\begin{align*}
+ t_2+3t_3+6t_4+10t_5&=66,\\
+ 4t_2+3t_3&\ge48+5t_5,
+\end{align*}
+从而
+\[
+ H:=3t_2-6t_4-15t_5+18\ge0.
+\]
+令 $E=2t_2-3t_4-7t_5$。由 $H+3\delta=3(E+3)$ 得
+$E\ge-3$；点对恒等式又给出 $E\equiv0\pmod3$。若 $E=-3$，则必有
+$H=\delta=0$。Cuntz 对单纯十二线排列的完备分类在排除六重顶点后只留下
+$(8,10,3,1)$ 和 $(9,7,6,0)$，而二者均满足 $E=0$
+\cite[Theorem~1.1 and the invariant tables]{cuntz}。故 $E\ge0$，这等价于
+\eqref{eq:n13-local-two-ineq} 的第一式。
+
+为证明第二式，四个五重顶点对偶为四条五点线，其并至少含
+$20-\binom42=14$ 点，故 $t_5\le3$。若 $\delta\ge2$，结论立即成立；若
+$\delta=0$，上述 Cuntz 类型均满足 $t_5\le1$。唯一尚可能违反不等式的是
+$(\delta,t_5)=(1,3)$。此时点对恒等式与亏量恒等式迫使
+$(t_2,t_3,t_4,t_5)=(12,4,2,3)$。但三条五点线与一条四点线的并至少含
+$5+5+5+4-\binom42=13$ 点，再次矛盾。第二式得证。
+
+对十三个中心求和，\eqref{eq:n13-local-two-ineq} 化为
+\begin{equation}\label{eq:n13-global-two-ineq}
+ -2D+5m_5+18m_6\le78,
+ \qquad -D+6m_6\le13.
+\end{equation}
+在最后 73 个计数向量中，71 个违反第一式，其余两个违反第二式。这里仅是把整数计数向量代入
+\eqref{eq:n13-global-two-ineq}，没有选择任何带标号点子集。因此 $c(13)=F(13)$。
+
+\subsection{九点至十二点的精确验证}
+
+对 $9\le n\le12$，同一组全局条件与
+\eqref{eq:augmented-line-summed} 留下少量非空边界。下面给出统一验证的每一步。固定一点 $x$，以 $a_k(x),u_k(x)$ 分别表示经过 $x$ 的极大
+$k$ 点直线和圆的数目，则
+\[
+ t_{k-1}(x)=a_k(x)+u_k(x),
+ \qquad
+ \sum_{j\ge2}\binom j2t_j(x)=\binom{n-1}{2}.
+\]
+这些局部重数向量满足前述公开的直线排列不等式、块交集不等式及
+\eqref{eq:augmented-line-point}。第一个整数模型只记录每种局部重数向量出现多少次，并要求
+\[
+ \sum_xa_k(x)=k\ell_k,\qquad
+ \sum_xu_k(x)=kc_k,\qquad
+ \sum_x\delta_x=D.
+\]
+
+后两个阶段仍不指定带标号的点子集。对块类别 $\alpha$，令 $d_\alpha(x)$ 为包含
+点 $x$ 的该类块数，令
+$\lambda_\alpha(e)$ 为点对 $e$ 上的度；若块大小为 $k_\alpha$、数目为
+$N_\alpha$，则
+\begin{align}
+ \sum_xd_\alpha(x)&=k_\alpha N_\alpha,&
+ \sum_e\lambda_\alpha(e)&=\binom{k_\alpha}{2}N_\alpha,
+ \label{eq:small-category-totals}\\
+ \sum_\alpha(k_\alpha-2)\lambda_\alpha(e)&=n-2.
+ \label{eq:small-pair-profile2}
+\end{align}
+最后一个恒等式来自：经过 $e$ 的所有极大块在 $e$ 外的部分恰好分割
+$P\setminus e$。点数据与点对数据还须满足
+\[
+\sum_{y\ne x}\lambda_\alpha(\{x,y\})
+=(k_\alpha-1)d_\alpha(x).
+\]
+随后，对任意两个块类别使用精确的交集计数恒等式
+\[
+ N_2=M_2,\qquad N_1=M_1-2M_2,\qquad N_0=Q-M_1+M_2,
+\]
+其中 $M_1$ 是所有不同块对交集大小之和，$M_2$ 是这些交集大小的二阶二项式
+系数之和，$N_s$ 是恰交于 $s$ 点的不同块对数；模型还精确计数与一个指定块不交的
+三点组。所有系数均来自二项式计数，不使用浮点松弛。
+
+最后，以 $x$ 为中心反演会确定一个完整的 $(n-1)$ 点像集计数向量：经过
+$x$ 的块变为少一个点的像直线，不经过 $x$ 的块变为像圆。只有当该子向量在下一层
+未被排除时，当前局部重数向量才被保留；随后再次平衡全部 $n$ 个点处的数据。递归在
+$n=9$ 终止。九点模型在带标号点集的所有子集中选择极大直线与圆，要求每个三点组恰属于一个块、每个点对至多属于一条所选直线，并对每个满足本问题条件的真子集使用已经证明的圆数下界。这个抽象模型比几何实现更宽松，故其不可行足以推出几何不可行。
+
+最终重放的精确数量如下：
+\begin{center}
+\small
+\begin{tabular}{c|rrrrrrr}
+\toprule
+$n$ & 初始 & 增广求和 & 局部向量 & 点--点对 & 交集计数 & 块对 & 终点\\
+\midrule
+9  &45   &36  &23  &-- &-- &-- &0\\
+10 &180  &150 &55  &26 &21 &12 &1\\
+11 &416  &160 &70  &39 &28 &-- &0\\
+12 &1354 &211 &169 &55 &44 &-- &0\\
+\bottomrule
+\end{tabular}
+\end{center}
+“初始”一列分别由 129、551、1215、4322 个原始计数向量缩减而来。
+$n=11,12$ 的终点零由同一个递归器得到；它们分别访问
+\[
+ (28,72,222)\quad\text{与}\quad(44,322,661,622)
+\]
+个 $(11,10,9)$ 阶及 $(12,11,10,9)$ 阶计数向量。每个被排除的状态均为精确的
+\texttt{INFEASIBLE}，没有 \texttt{UNKNOWN}。
+
+当 $n=10$ 时，递归只留下一个完整计数向量
+\[
+ (\ell_3,\ell_4,\ell_5,\ell_6;
+   c_3,c_4,c_5,c_6;\ell_2)
+ =(10,0,0,0;10,20,2,0;15).
+\]
+递归证书保留的四种局部重数向量均满足 $u_5(x)=1$ 与 $a_3(x)\le3$。两个五点圆共有十个
+点关联，故它们恰好把十点分割为 $A,B$。十条三点线共有三十个点关联，故每点均有
+$a_3(x)=3$；相应的唯一平衡局部向量还满足 $u_4(x)=8$。每个四点圆因而在 $A,B$ 两侧
+各取两点。
+
+把这样的四点圆对应于其在 $A$ 与 $B$ 中的两条弦。两弦的交点位于两个五点圆的
+固定根轴上。圆上五点所确定的弦中，不可能有三条在圆外同点：三条两两不共端点的
+弦需要六个端点。因此，在根轴同一点相交的两侧弦数都至多为二。二十个四点圆达到
+该上界，弦图遂恰为五个互不相交的 $K_{2,2}$。在 $S_5\times S_5$ 作用下，
+Petersen 图的六个完美匹配给出两个双陪集轨道。其中一个不存在相容的十条三点线
+设计，另一个有两个互补设计，二者属于同一轨道。
+
+对后一个轨道取代表元，十条直线关联给出含非零参数 $a,b,d$ 的完备射影参数化。选取五个圆交点矩阵的三阶子式，得到
+\begin{gather*}
+ ad+b^2,\quad -ab+ad-b,\quad ab-ad-a-1,\\
+ -ad+bd-b-d,\quad b(ab+1).
+\end{gather*}
+它们必须同时为零。第二、三式相加给出 $a+b+1=0$，而末式及 $b\ne0$ 给出
+$ab+1=0$，故 $b^2+b-1=0$。第一式给出
+$d=b^2/(b+1)$；这里 $b+1=-a\ne0$。再代入第四式并移去非零因子，得到
+\[
+ (b-1)(2b+1)=0,
+\]
+它与 $b^2+b-1$ 互素。被舍弃的参数分支会使两个带标号点重合；形成原始子式时除去的因子只可能是
+$a,d,b,ad$，它们均非零。因此最后一个十点计数向量也不可能实现。
+
+结合式~\eqref{eq:F} 的构造，得到
+\[
+ c(n)=F(n)\qquad(9\le n\le14).
+\]
+
+\begin{remark}[有限验证的范围]
+本节只有九点终止模型实际选择带标号点的子集。十点至十二点只使用计数向量及
+局部重数的递归一致性，十三点与十四点只使用全局不等式。证明不对任意直线排列假设
+$\sum_jt_j\ge2r-4$；对含 $q$ 条直线的排列，Elliott 的 Theorem~3 仅在明确满足
+$q\ge10$ 且不存在 $(q-1)$ 重顶点时使用。
+\end{remark}

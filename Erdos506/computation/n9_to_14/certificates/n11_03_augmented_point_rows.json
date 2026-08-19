@@ -1,0 +1,6976 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "claim": "The summed augmented-line Melchior inequality is checked exactly; when requested, the remaining signatures are checked by integer point-row balance only.  UNKNOWN is retained.",
+  "n": 11,
+  "source_file": "n11_02_augmented_summed.json",
+  "source_sha256": "0d29b10aa7d73df8fdb49af2fed3d0c1eb1652d92290370b1794c116a01f931b",
+  "input_signature_count": 160,
+  "summed_only": false,
+  "status_counts": {
+    "INFEASIBLE": 90,
+    "OPTIMAL": 70
+  },
+  "retained_signature_count": 70,
+  "records": [
+    {
+      "signature": [
+        12,
+        0,
+        0,
+        0,
+        9,
+        26,
+        0,
+        2
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -8,
+      "row_count": 3,
+      "wall_time_seconds": 0.0016474,
+      "variables": 3,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        13,
+        0,
+        0,
+        0,
+        8,
+        26,
+        2,
+        1
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -1,
+      "row_count": 4,
+      "wall_time_seconds": 0.0018768,
+      "variables": 4,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        13,
+        0,
+        0,
+        0,
+        10,
+        23,
+        3,
+        1
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -2,
+      "row_count": 6,
+      "wall_time_seconds": 0.00033800000000000003,
+      "variables": 6,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        13,
+        0,
+        0,
+        0,
+        12,
+        20,
+        4,
+        1
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -3,
+      "row_count": 6,
+      "wall_time_seconds": 0.00042300000000000004,
+      "variables": 6,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        11,
+        1,
+        0,
+        0,
+        10,
+        25,
+        0,
+        2
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -1,
+      "row_count": 5,
+      "wall_time_seconds": 6.74e-05,
+      "variables": 5,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        11,
+        0,
+        0,
+        0,
+        10,
+        26,
+        0,
+        2
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -17,
+      "row_count": 4,
+      "wall_time_seconds": 7.24e-05,
+      "variables": 4,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        12,
+        0,
+        0,
+        0,
+        9,
+        26,
+        2,
+        1
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -10,
+      "row_count": 6,
+      "wall_time_seconds": 8.75e-05,
+      "variables": 6,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        12,
+        0,
+        0,
+        0,
+        11,
+        23,
+        3,
+        1
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -11,
+      "row_count": 9,
+      "wall_time_seconds": 0.0001953,
+      "variables": 9,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        12,
+        0,
+        0,
+        0,
+        13,
+        20,
+        4,
+        1
+      ],
+      "status": "OPTIMAL",
+      "summed_gap": -12,
+      "row_count": 10,
+      "wall_time_seconds": 0.0031759,
+      "variables": 10,
+      "constraints": 10,
+      "point_row_multiplicities": [
+        {
+          "row": [
+            2,
+            0,
+            0,
+            0,
+            4,
+            7,
+            3,
+            0
+          ],
+          "multiplicity": 2
+        },
+        {
+          "row": [
+            3,
+            0,
+            0,
+            0,
+            3,
+            7,
+            3,
+            0
+          ],
+          "multiplicity": 3
+        },
+        {
+          "row": [
+            3,
+            0,
+            0,
+            0,
+            2,
+            10,
+            0,
+            1
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            4,
+            7,
+            1,
+            1
+          ],
+          "multiplicity": 5
+        }
+      ]
+    },
+    {
+      "signature": [
+        13,
+        0,
+        0,
+        0,
+        10,
+        23,
+        5,
+        0
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -4,
+      "row_count": 9,
+      "wall_time_seconds": 0.0047196,
+      "variables": 9,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        13,
+        0,
+        0,
+        0,
+        12,
+        20,
+        6,
+        0
+      ],
+      "status": "OPTIMAL",
+      "summed_gap": -5,
+      "row_count": 9,
+      "wall_time_seconds": 0.0019155,
+      "variables": 9,
+      "constraints": 10,
+      "point_row_multiplicities": [
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            2,
+            11,
+            1,
+            0
+          ],
+          "multiplicity": 3
+        },
+        {
+          "row": [
+            3,
+            0,
+            0,
+            0,
+            3,
+            7,
+            3,
+            0
+          ],
+          "multiplicity": 5
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            5,
+            4,
+            4,
+            0
+          ],
+          "multiplicity": 3
+        }
+      ]
+    },
+    {
+      "signature": [
+        13,
+        0,
+        0,
+        0,
+        14,
+        17,
+        7,
+        0
+      ],
+      "status": "OPTIMAL",
+      "summed_gap": -6,
+      "row_count": 9,
+      "wall_time_seconds": 0.0038311,
+      "variables": 9,
+      "constraints": 10,
+      "point_row_multiplicities": [
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            2,
+            11,
+            1,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            5,
+            6,
+            3,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            3,
+            0,
+            0,
+            0,
+            3,
+            7,
+            3,
+            0
+          ],
+          "multiplicity": 5
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            5,
+            4,
+            4,
+            0
+          ],
+          "multiplicity": 4
+        }
+      ]
+    },
+    {
+      "signature": [
+        13,
+        0,
+        0,
+        0,
+        16,
+        14,
+        8,
+        0
+      ],
+      "status": "OPTIMAL",
+      "summed_gap": -7,
+      "row_count": 9,
+      "wall_time_seconds": 0.0013317000000000001,
+      "variables": 9,
+      "constraints": 10,
+      "point_row_multiplicities": [
+        {
+          "row": [
+            2,
+            0,
+            0,
+            0,
+            4,
+            7,
+            3,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            3,
+            0,
+            0,
+            0,
+            3,
+            7,
+            3,
+            0
+          ],
+          "multiplicity": 3
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            5,
+            4,
+            4,
+            0
+          ],
+          "multiplicity": 7
+        }
+      ]
+    },
+    {
+      "signature": [
+        14,
+        0,
+        0,
+        0,
+        11,
+        25,
+        0,
+        2
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -2,
+      "row_count": 5,
+      "wall_time_seconds": 0.0004952,
+      "variables": 5,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        14,
+        0,
+        0,
+        0,
+        13,
+        22,
+        1,
+        2
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -3,
+      "row_count": 11,
+      "wall_time_seconds": 0.0030510000000000003,
+      "variables": 11,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        10,
+        1,
+        0,
+        0,
+        11,
+        25,
+        0,
+        2
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -10,
+      "row_count": 7,
+      "wall_time_seconds": 0.0011193000000000002,
+      "variables": 7,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        11,
+        1,
+        0,
+        0,
+        10,
+        25,
+        2,
+        1
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -3,
+      "row_count": 9,
+      "wall_time_seconds": 0.0001112,
+      "variables": 9,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        11,
+        1,
+        0,
+        0,
+        12,
+        22,
+        3,
+        1
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -4,
+      "row_count": 14,
+      "wall_time_seconds": 6.47e-05,
+      "variables": 14,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        11,
+        1,
+        0,
+        0,
+        14,
+        19,
+        4,
+        1
+      ],
+      "status": "OPTIMAL",
+      "summed_gap": -5,
+      "row_count": 15,
+      "wall_time_seconds": 0.0036201000000000002,
+      "variables": 15,
+      "constraints": 10,
+      "point_row_multiplicities": [
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            5,
+            4,
+            4,
+            0
+          ],
+          "multiplicity": 5
+        },
+        {
+          "row": [
+            2,
+            0,
+            0,
+            0,
+            3,
+            10,
+            0,
+            1
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            2,
+            1,
+            0,
+            0,
+            3,
+            9,
+            0,
+            1
+          ],
+          "multiplicity": 4
+        },
+        {
+          "row": [
+            3,
+            0,
+            0,
+            0,
+            2,
+            10,
+            0,
+            1
+          ],
+          "multiplicity": 1
+        }
+      ]
+    },
+    {
+      "signature": [
+        12,
+        1,
+        0,
+        0,
+        17,
+        13,
+        8,
+        0
+      ],
+      "status": "OPTIMAL",
+      "summed_gap": 0,
+      "row_count": 13,
+      "wall_time_seconds": 0.0030825,
+      "variables": 13,
+      "constraints": 10,
+      "point_row_multiplicities": [
+        {
+          "row": [
+            2,
+            1,
+            0,
+            0,
+            4,
+            6,
+            3,
+            0
+          ],
+          "multiplicity": 4
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            5,
+            4,
+            4,
+            0
+          ],
+          "multiplicity": 7
+        }
+      ]
+    },
+    {
+      "signature": [
+        9,
+        2,
+        0,
+        0,
+        12,
+        24,
+        0,
+        2
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -3,
+      "row_count": 8,
+      "wall_time_seconds": 7.16e-05,
+      "variables": 8,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        10,
+        0,
+        0,
+        0,
+        11,
+        26,
+        0,
+        2
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -26,
+      "row_count": 4,
+      "wall_time_seconds": 5.13e-05,
+      "variables": 4,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        11,
+        0,
+        0,
+        0,
+        10,
+        26,
+        2,
+        1
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -19,
+      "row_count": 7,
+      "wall_time_seconds": 0.00028720000000000004,
+      "variables": 7,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        11,
+        0,
+        0,
+        0,
+        12,
+        23,
+        3,
+        1
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -20,
+      "row_count": 11,
+      "wall_time_seconds": 6.18e-05,
+      "variables": 11,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        11,
+        0,
+        0,
+        0,
+        14,
+        20,
+        4,
+        1
+      ],
+      "status": "OPTIMAL",
+      "summed_gap": -21,
+      "row_count": 13,
+      "wall_time_seconds": 0.0018183000000000001,
+      "variables": 13,
+      "constraints": 10,
+      "point_row_multiplicities": [
+        {
+          "row": [
+            3,
+            0,
+            0,
+            0,
+            6,
+            4,
+            4,
+            0
+          ],
+          "multiplicity": 5
+        },
+        {
+          "row": [
+            3,
+            0,
+            0,
+            0,
+            2,
+            10,
+            0,
+            1
+          ],
+          "multiplicity": 6
+        }
+      ]
+    },
+    {
+      "signature": [
+        12,
+        0,
+        0,
+        0,
+        11,
+        23,
+        5,
+        0
+      ],
+      "status": "OPTIMAL",
+      "summed_gap": -13,
+      "row_count": 13,
+      "wall_time_seconds": 0.0021011000000000003,
+      "variables": 13,
+      "constraints": 10,
+      "point_row_multiplicities": [
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            2,
+            11,
+            1,
+            0
+          ],
+          "multiplicity": 4
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            5,
+            6,
+            3,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            2,
+            0,
+            0,
+            0,
+            4,
+            7,
+            3,
+            0
+          ],
+          "multiplicity": 2
+        },
+        {
+          "row": [
+            3,
+            0,
+            0,
+            0,
+            3,
+            7,
+            3,
+            0
+          ],
+          "multiplicity": 4
+        }
+      ]
+    },
+    {
+      "signature": [
+        12,
+        0,
+        0,
+        0,
+        13,
+        20,
+        6,
+        0
+      ],
+      "status": "OPTIMAL",
+      "summed_gap": -14,
+      "row_count": 13,
+      "wall_time_seconds": 0.0020044,
+      "variables": 13,
+      "constraints": 10,
+      "point_row_multiplicities": [
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            2,
+            11,
+            1,
+            0
+          ],
+          "multiplicity": 3
+        },
+        {
+          "row": [
+            1,
+            0,
+            0,
+            0,
+            5,
+            7,
+            3,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            2,
+            0,
+            0,
+            0,
+            4,
+            7,
+            3,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            3,
+            0,
+            0,
+            0,
+            3,
+            7,
+            3,
+            0
+          ],
+          "multiplicity": 3
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            5,
+            4,
+            4,
+            0
+          ],
+          "multiplicity": 3
+        }
+      ]
+    },
+    {
+      "signature": [
+        12,
+        0,
+        0,
+        0,
+        15,
+        17,
+        7,
+        0
+      ],
+      "status": "OPTIMAL",
+      "summed_gap": -15,
+      "row_count": 13,
+      "wall_time_seconds": 0.006598400000000001,
+      "variables": 13,
+      "constraints": 10,
+      "point_row_multiplicities": [
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            2,
+            11,
+            1,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            5,
+            6,
+            3,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            3,
+            0,
+            0,
+            0,
+            3,
+            7,
+            3,
+            0
+          ],
+          "multiplicity": 5
+        },
+        {
+          "row": [
+            3,
+            0,
+            0,
+            0,
+            6,
+            4,
+            4,
+            0
+          ],
+          "multiplicity": 3
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            5,
+            4,
+            4,
+            0
+          ],
+          "multiplicity": 1
+        }
+      ]
+    },
+    {
+      "signature": [
+        12,
+        0,
+        0,
+        0,
+        17,
+        14,
+        8,
+        0
+      ],
+      "status": "OPTIMAL",
+      "summed_gap": -16,
+      "row_count": 13,
+      "wall_time_seconds": 0.0018101,
+      "variables": 13,
+      "constraints": 10,
+      "point_row_multiplicities": [
+        {
+          "row": [
+            3,
+            0,
+            0,
+            0,
+            3,
+            7,
+            3,
+            0
+          ],
+          "multiplicity": 4
+        },
+        {
+          "row": [
+            3,
+            0,
+            0,
+            0,
+            6,
+            4,
+            4,
+            0
+          ],
+          "multiplicity": 4
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            5,
+            4,
+            4,
+            0
+          ],
+          "multiplicity": 3
+        }
+      ]
+    },
+    {
+      "signature": [
+        13,
+        0,
+        0,
+        0,
+        12,
+        25,
+        0,
+        2
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -11,
+      "row_count": 7,
+      "wall_time_seconds": 0.0003601,
+      "variables": 7,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        13,
+        0,
+        0,
+        0,
+        14,
+        22,
+        1,
+        2
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -12,
+      "row_count": 16,
+      "wall_time_seconds": 0.0017341000000000001,
+      "variables": 16,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        14,
+        0,
+        0,
+        0,
+        9,
+        28,
+        1,
+        1
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -3,
+      "row_count": 18,
+      "wall_time_seconds": 0.0019952,
+      "variables": 18,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        14,
+        0,
+        0,
+        0,
+        11,
+        25,
+        2,
+        1
+      ],
+      "status": "OPTIMAL",
+      "summed_gap": -4,
+      "row_count": 20,
+      "wall_time_seconds": 0.0021363000000000003,
+      "variables": 20,
+      "constraints": 10,
+      "point_row_multiplicities": [
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            2,
+            11,
+            1,
+            0
+          ],
+          "multiplicity": 4
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            5,
+            8,
+            2,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            3,
+            0,
+            0,
+            0,
+            2,
+            10,
+            0,
+            1
+          ],
+          "multiplicity": 2
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            4,
+            7,
+            1,
+            1
+          ],
+          "multiplicity": 4
+        }
+      ]
+    },
+    {
+      "signature": [
+        14,
+        0,
+        0,
+        0,
+        13,
+        22,
+        3,
+        1
+      ],
+      "status": "OPTIMAL",
+      "summed_gap": -5,
+      "row_count": 25,
+      "wall_time_seconds": 0.0047273,
+      "variables": 25,
+      "constraints": 10,
+      "point_row_multiplicities": [
+        {
+          "row": [
+            5,
+            0,
+            0,
+            0,
+            4,
+            10,
+            1,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            2,
+            11,
+            1,
+            0
+          ],
+          "multiplicity": 2
+        },
+        {
+          "row": [
+            3,
+            0,
+            0,
+            0,
+            3,
+            7,
+            3,
+            0
+          ],
+          "multiplicity": 2
+        },
+        {
+          "row": [
+            3,
+            0,
+            0,
+            0,
+            5,
+            7,
+            1,
+            1
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            4,
+            7,
+            1,
+            1
+          ],
+          "multiplicity": 5
+        }
+      ]
+    },
+    {
+      "signature": [
+        14,
+        0,
+        0,
+        0,
+        15,
+        19,
+        4,
+        1
+      ],
+      "status": "OPTIMAL",
+      "summed_gap": -6,
+      "row_count": 27,
+      "wall_time_seconds": 0.0027453,
+      "variables": 27,
+      "constraints": 10,
+      "point_row_multiplicities": [
+        {
+          "row": [
+            3,
+            0,
+            0,
+            0,
+            3,
+            7,
+            3,
+            0
+          ],
+          "multiplicity": 4
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            5,
+            4,
+            4,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            5,
+            0,
+            0,
+            0,
+            6,
+            8,
+            0,
+            1
+          ],
+          "multiplicity": 2
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            4,
+            7,
+            1,
+            1
+          ],
+          "multiplicity": 4
+        }
+      ]
+    },
+    {
+      "signature": [
+        14,
+        0,
+        0,
+        0,
+        17,
+        16,
+        5,
+        1
+      ],
+      "status": "OPTIMAL",
+      "summed_gap": -7,
+      "row_count": 27,
+      "wall_time_seconds": 0.0023912,
+      "variables": 27,
+      "constraints": 10,
+      "point_row_multiplicities": [
+        {
+          "row": [
+            1,
+            0,
+            0,
+            0,
+            5,
+            7,
+            3,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            5,
+            4,
+            4,
+            0
+          ],
+          "multiplicity": 4
+        },
+        {
+          "row": [
+            5,
+            0,
+            0,
+            0,
+            6,
+            6,
+            1,
+            1
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            4,
+            7,
+            1,
+            1
+          ],
+          "multiplicity": 5
+        }
+      ]
+    },
+    {
+      "signature": [
+        15,
+        0,
+        0,
+        0,
+        16,
+        16,
+        7,
+        0
+      ],
+      "status": "OPTIMAL",
+      "summed_gap": 0,
+      "row_count": 17,
+      "wall_time_seconds": 0.0019327,
+      "variables": 17,
+      "constraints": 10,
+      "point_row_multiplicities": [
+        {
+          "row": [
+            5,
+            0,
+            0,
+            0,
+            4,
+            10,
+            1,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            2,
+            11,
+            1,
+            0
+          ],
+          "multiplicity": 2
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            5,
+            4,
+            4,
+            0
+          ],
+          "multiplicity": 8
+        }
+      ]
+    },
+    {
+      "signature": [
+        15,
+        0,
+        0,
+        0,
+        18,
+        13,
+        8,
+        0
+      ],
+      "status": "OPTIMAL",
+      "summed_gap": -1,
+      "row_count": 17,
+      "wall_time_seconds": 0.0024251000000000003,
+      "variables": 17,
+      "constraints": 10,
+      "point_row_multiplicities": [
+        {
+          "row": [
+            5,
+            0,
+            0,
+            0,
+            4,
+            10,
+            1,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            5,
+            6,
+            3,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            5,
+            4,
+            4,
+            0
+          ],
+          "multiplicity": 9
+        }
+      ]
+    },
+    {
+      "signature": [
+        15,
+        0,
+        0,
+        0,
+        20,
+        10,
+        9,
+        0
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -2,
+      "row_count": 11,
+      "wall_time_seconds": 0.0019719,
+      "variables": 11,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        9,
+        1,
+        0,
+        0,
+        12,
+        25,
+        0,
+        2
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -19,
+      "row_count": 7,
+      "wall_time_seconds": 0.0004869,
+      "variables": 7,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        10,
+        1,
+        0,
+        0,
+        11,
+        25,
+        2,
+        1
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -12,
+      "row_count": 11,
+      "wall_time_seconds": 0.00048180000000000006,
+      "variables": 11,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        10,
+        1,
+        0,
+        0,
+        13,
+        22,
+        3,
+        1
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -13,
+      "row_count": 18,
+      "wall_time_seconds": 6.330000000000001e-05,
+      "variables": 18,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        10,
+        1,
+        0,
+        0,
+        15,
+        19,
+        4,
+        1
+      ],
+      "status": "OPTIMAL",
+      "summed_gap": -14,
+      "row_count": 20,
+      "wall_time_seconds": 0.0016526000000000002,
+      "variables": 20,
+      "constraints": 10,
+      "point_row_multiplicities": [
+        {
+          "row": [
+            2,
+            0,
+            0,
+            0,
+            4,
+            7,
+            3,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            2,
+            1,
+            0,
+            0,
+            4,
+            6,
+            3,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            3,
+            0,
+            0,
+            0,
+            3,
+            7,
+            3,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            5,
+            4,
+            4,
+            0
+          ],
+          "multiplicity": 2
+        },
+        {
+          "row": [
+            3,
+            0,
+            0,
+            0,
+            2,
+            10,
+            0,
+            1
+          ],
+          "multiplicity": 3
+        },
+        {
+          "row": [
+            2,
+            1,
+            0,
+            0,
+            6,
+            6,
+            1,
+            1
+          ],
+          "multiplicity": 3
+        }
+      ]
+    },
+    {
+      "signature": [
+        11,
+        1,
+        0,
+        0,
+        12,
+        22,
+        5,
+        0
+      ],
+      "status": "OPTIMAL",
+      "summed_gap": -6,
+      "row_count": 20,
+      "wall_time_seconds": 0.0038074000000000003,
+      "variables": 20,
+      "constraints": 10,
+      "point_row_multiplicities": [
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            2,
+            11,
+            1,
+            0
+          ],
+          "multiplicity": 4
+        },
+        {
+          "row": [
+            3,
+            1,
+            0,
+            0,
+            6,
+            5,
+            3,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            2,
+            0,
+            0,
+            0,
+            4,
+            7,
+            3,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            2,
+            1,
+            0,
+            0,
+            4,
+            6,
+            3,
+            0
+          ],
+          "multiplicity": 3
+        },
+        {
+          "row": [
+            3,
+            0,
+            0,
+            0,
+            3,
+            7,
+            3,
+            0
+          ],
+          "multiplicity": 2
+        }
+      ]
+    },
+    {
+      "signature": [
+        11,
+        1,
+        0,
+        0,
+        14,
+        19,
+        6,
+        0
+      ],
+      "status": "OPTIMAL",
+      "summed_gap": -7,
+      "row_count": 20,
+      "wall_time_seconds": 0.0020782,
+      "variables": 20,
+      "constraints": 10,
+      "point_row_multiplicities": [
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            2,
+            11,
+            1,
+            0
+          ],
+          "multiplicity": 3
+        },
+        {
+          "row": [
+            0,
+            1,
+            0,
+            0,
+            6,
+            6,
+            3,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            2,
+            1,
+            0,
+            0,
+            4,
+            6,
+            3,
+            0
+          ],
+          "multiplicity": 3
+        },
+        {
+          "row": [
+            3,
+            0,
+            0,
+            0,
+            3,
+            7,
+            3,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            5,
+            4,
+            4,
+            0
+          ],
+          "multiplicity": 3
+        }
+      ]
+    },
+    {
+      "signature": [
+        11,
+        1,
+        0,
+        0,
+        16,
+        16,
+        7,
+        0
+      ],
+      "status": "OPTIMAL",
+      "summed_gap": -8,
+      "row_count": 20,
+      "wall_time_seconds": 0.0023852,
+      "variables": 20,
+      "constraints": 10,
+      "point_row_multiplicities": [
+        {
+          "row": [
+            3,
+            1,
+            0,
+            0,
+            6,
+            5,
+            3,
+            0
+          ],
+          "multiplicity": 3
+        },
+        {
+          "row": [
+            2,
+            1,
+            0,
+            0,
+            4,
+            6,
+            3,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            3,
+            0,
+            0,
+            0,
+            3,
+            7,
+            3,
+            0
+          ],
+          "multiplicity": 5
+        },
+        {
+          "row": [
+            3,
+            0,
+            0,
+            0,
+            6,
+            4,
+            4,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            5,
+            4,
+            4,
+            0
+          ],
+          "multiplicity": 1
+        }
+      ]
+    },
+    {
+      "signature": [
+        11,
+        1,
+        0,
+        0,
+        18,
+        13,
+        8,
+        0
+      ],
+      "status": "OPTIMAL",
+      "summed_gap": -9,
+      "row_count": 20,
+      "wall_time_seconds": 0.0020473,
+      "variables": 20,
+      "constraints": 10,
+      "point_row_multiplicities": [
+        {
+          "row": [
+            2,
+            1,
+            0,
+            0,
+            4,
+            6,
+            3,
+            0
+          ],
+          "multiplicity": 4
+        },
+        {
+          "row": [
+            3,
+            0,
+            0,
+            0,
+            6,
+            4,
+            4,
+            0
+          ],
+          "multiplicity": 3
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            5,
+            4,
+            4,
+            0
+          ],
+          "multiplicity": 4
+        }
+      ]
+    },
+    {
+      "signature": [
+        12,
+        1,
+        0,
+        0,
+        13,
+        24,
+        0,
+        2
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -4,
+      "row_count": 11,
+      "wall_time_seconds": 0.0003145,
+      "variables": 11,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        12,
+        1,
+        0,
+        0,
+        15,
+        21,
+        1,
+        2
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -5,
+      "row_count": 23,
+      "wall_time_seconds": 0.0021741,
+      "variables": 23,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        13,
+        1,
+        0,
+        0,
+        18,
+        15,
+        5,
+        1
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": 0,
+      "row_count": 36,
+      "wall_time_seconds": 0.0027339,
+      "variables": 36,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        8,
+        2,
+        0,
+        0,
+        13,
+        24,
+        0,
+        2
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -12,
+      "row_count": 8,
+      "wall_time_seconds": 0.00033850000000000004,
+      "variables": 8,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        9,
+        2,
+        0,
+        0,
+        12,
+        24,
+        2,
+        1
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -5,
+      "row_count": 12,
+      "wall_time_seconds": 0.0002925,
+      "variables": 12,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        9,
+        2,
+        0,
+        0,
+        14,
+        21,
+        3,
+        1
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -6,
+      "row_count": 20,
+      "wall_time_seconds": 6.63e-05,
+      "variables": 20,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        9,
+        2,
+        0,
+        0,
+        16,
+        18,
+        4,
+        1
+      ],
+      "status": "OPTIMAL",
+      "summed_gap": -7,
+      "row_count": 22,
+      "wall_time_seconds": 0.0019983,
+      "variables": 22,
+      "constraints": 10,
+      "point_row_multiplicities": [
+        {
+          "row": [
+            2,
+            1,
+            0,
+            0,
+            4,
+            6,
+            3,
+            0
+          ],
+          "multiplicity": 5
+        },
+        {
+          "row": [
+            3,
+            0,
+            0,
+            0,
+            2,
+            10,
+            0,
+            1
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            2,
+            1,
+            0,
+            0,
+            6,
+            6,
+            1,
+            1
+          ],
+          "multiplicity": 3
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            4,
+            7,
+            1,
+            1
+          ],
+          "multiplicity": 2
+        }
+      ]
+    },
+    {
+      "signature": [
+        10,
+        2,
+        0,
+        0,
+        15,
+        18,
+        6,
+        0
+      ],
+      "status": "OPTIMAL",
+      "summed_gap": 0,
+      "row_count": 21,
+      "wall_time_seconds": 0.0022332000000000003,
+      "variables": 21,
+      "constraints": 10,
+      "point_row_multiplicities": [
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            2,
+            11,
+            1,
+            0
+          ],
+          "multiplicity": 2
+        },
+        {
+          "row": [
+            3,
+            1,
+            0,
+            0,
+            6,
+            5,
+            3,
+            0
+          ],
+          "multiplicity": 2
+        },
+        {
+          "row": [
+            2,
+            1,
+            0,
+            0,
+            4,
+            6,
+            3,
+            0
+          ],
+          "multiplicity": 6
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            5,
+            4,
+            4,
+            0
+          ],
+          "multiplicity": 1
+        }
+      ]
+    },
+    {
+      "signature": [
+        10,
+        2,
+        0,
+        0,
+        17,
+        15,
+        7,
+        0
+      ],
+      "status": "OPTIMAL",
+      "summed_gap": -1,
+      "row_count": 21,
+      "wall_time_seconds": 0.0022189,
+      "variables": 21,
+      "constraints": 10,
+      "point_row_multiplicities": [
+        {
+          "row": [
+            1,
+            2,
+            0,
+            0,
+            5,
+            9,
+            1,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            3,
+            1,
+            0,
+            0,
+            6,
+            5,
+            3,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            2,
+            1,
+            0,
+            0,
+            4,
+            6,
+            3,
+            0
+          ],
+          "multiplicity": 5
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            5,
+            4,
+            4,
+            0
+          ],
+          "multiplicity": 4
+        }
+      ]
+    },
+    {
+      "signature": [
+        10,
+        2,
+        0,
+        0,
+        19,
+        12,
+        8,
+        0
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -2,
+      "row_count": 21,
+      "wall_time_seconds": 0.0021290000000000002,
+      "variables": 21,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        7,
+        3,
+        0,
+        0,
+        14,
+        23,
+        0,
+        2
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -5,
+      "row_count": 8,
+      "wall_time_seconds": 0.00030250000000000003,
+      "variables": 8,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        8,
+        3,
+        0,
+        0,
+        17,
+        17,
+        4,
+        1
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": 0,
+      "row_count": 20,
+      "wall_time_seconds": 0.0018993,
+      "variables": 20,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        10,
+        0,
+        1,
+        0,
+        11,
+        26,
+        1,
+        1
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -3,
+      "row_count": 8,
+      "wall_time_seconds": 5.910000000000001e-05,
+      "variables": 8,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        10,
+        0,
+        1,
+        0,
+        13,
+        23,
+        2,
+        1
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -4,
+      "row_count": 10,
+      "wall_time_seconds": 5.8e-05,
+      "variables": 10,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        10,
+        0,
+        1,
+        0,
+        15,
+        20,
+        3,
+        1
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -5,
+      "row_count": 14,
+      "wall_time_seconds": 0.0017714,
+      "variables": 14,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        11,
+        0,
+        1,
+        0,
+        18,
+        14,
+        7,
+        0
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": 0,
+      "row_count": 16,
+      "wall_time_seconds": 0.0018944,
+      "variables": 16,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        9,
+        0,
+        0,
+        0,
+        12,
+        26,
+        0,
+        2
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -35,
+      "row_count": 4,
+      "wall_time_seconds": 4.4500000000000004e-05,
+      "variables": 4,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        10,
+        0,
+        0,
+        0,
+        11,
+        26,
+        2,
+        1
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -28,
+      "row_count": 8,
+      "wall_time_seconds": 0.0003501,
+      "variables": 8,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        10,
+        0,
+        0,
+        0,
+        13,
+        23,
+        3,
+        1
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -29,
+      "row_count": 12,
+      "wall_time_seconds": 6.37e-05,
+      "variables": 12,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        10,
+        0,
+        0,
+        0,
+        15,
+        20,
+        4,
+        1
+      ],
+      "status": "OPTIMAL",
+      "summed_gap": -30,
+      "row_count": 15,
+      "wall_time_seconds": 0.0015551,
+      "variables": 15,
+      "constraints": 10,
+      "point_row_multiplicities": [
+        {
+          "row": [
+            3,
+            0,
+            0,
+            0,
+            6,
+            4,
+            4,
+            0
+          ],
+          "multiplicity": 5
+        },
+        {
+          "row": [
+            0,
+            0,
+            0,
+            0,
+            5,
+            10,
+            0,
+            1
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            3,
+            0,
+            0,
+            0,
+            2,
+            10,
+            0,
+            1
+          ],
+          "multiplicity": 5
+        }
+      ]
+    },
+    {
+      "signature": [
+        11,
+        0,
+        0,
+        0,
+        12,
+        23,
+        5,
+        0
+      ],
+      "status": "OPTIMAL",
+      "summed_gap": -22,
+      "row_count": 15,
+      "wall_time_seconds": 0.0018124,
+      "variables": 15,
+      "constraints": 10,
+      "point_row_multiplicities": [
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            2,
+            11,
+            1,
+            0
+          ],
+          "multiplicity": 4
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            5,
+            6,
+            3,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            2,
+            0,
+            0,
+            0,
+            4,
+            7,
+            3,
+            0
+          ],
+          "multiplicity": 5
+        },
+        {
+          "row": [
+            3,
+            0,
+            0,
+            0,
+            3,
+            7,
+            3,
+            0
+          ],
+          "multiplicity": 1
+        }
+      ]
+    },
+    {
+      "signature": [
+        11,
+        0,
+        0,
+        0,
+        14,
+        20,
+        6,
+        0
+      ],
+      "status": "OPTIMAL",
+      "summed_gap": -23,
+      "row_count": 15,
+      "wall_time_seconds": 0.0026586,
+      "variables": 15,
+      "constraints": 10,
+      "point_row_multiplicities": [
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            2,
+            11,
+            1,
+            0
+          ],
+          "multiplicity": 3
+        },
+        {
+          "row": [
+            0,
+            0,
+            0,
+            0,
+            6,
+            7,
+            3,
+            0
+          ],
+          "multiplicity": 2
+        },
+        {
+          "row": [
+            3,
+            0,
+            0,
+            0,
+            3,
+            7,
+            3,
+            0
+          ],
+          "multiplicity": 3
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            5,
+            4,
+            4,
+            0
+          ],
+          "multiplicity": 3
+        }
+      ]
+    },
+    {
+      "signature": [
+        11,
+        0,
+        0,
+        0,
+        16,
+        17,
+        7,
+        0
+      ],
+      "status": "OPTIMAL",
+      "summed_gap": -24,
+      "row_count": 15,
+      "wall_time_seconds": 0.0030172000000000003,
+      "variables": 15,
+      "constraints": 10,
+      "point_row_multiplicities": [
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            2,
+            11,
+            1,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            3,
+            0,
+            0,
+            0,
+            6,
+            6,
+            3,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            2,
+            0,
+            0,
+            0,
+            4,
+            7,
+            3,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            3,
+            0,
+            0,
+            0,
+            3,
+            7,
+            3,
+            0
+          ],
+          "multiplicity": 4
+        },
+        {
+          "row": [
+            3,
+            0,
+            0,
+            0,
+            6,
+            4,
+            4,
+            0
+          ],
+          "multiplicity": 4
+        }
+      ]
+    },
+    {
+      "signature": [
+        11,
+        0,
+        0,
+        0,
+        18,
+        14,
+        8,
+        0
+      ],
+      "status": "OPTIMAL",
+      "summed_gap": -25,
+      "row_count": 15,
+      "wall_time_seconds": 0.0019738,
+      "variables": 15,
+      "constraints": 10,
+      "point_row_multiplicities": [
+        {
+          "row": [
+            3,
+            0,
+            0,
+            0,
+            3,
+            7,
+            3,
+            0
+          ],
+          "multiplicity": 4
+        },
+        {
+          "row": [
+            3,
+            0,
+            0,
+            0,
+            6,
+            4,
+            4,
+            0
+          ],
+          "multiplicity": 7
+        }
+      ]
+    },
+    {
+      "signature": [
+        12,
+        0,
+        0,
+        0,
+        13,
+        25,
+        0,
+        2
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -20,
+      "row_count": 8,
+      "wall_time_seconds": 0.0003859,
+      "variables": 8,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        12,
+        0,
+        0,
+        0,
+        15,
+        22,
+        1,
+        2
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -21,
+      "row_count": 19,
+      "wall_time_seconds": 0.0028983000000000004,
+      "variables": 19,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        13,
+        0,
+        0,
+        0,
+        10,
+        28,
+        1,
+        1
+      ],
+      "status": "OPTIMAL",
+      "summed_gap": -12,
+      "row_count": 25,
+      "wall_time_seconds": 0.002255,
+      "variables": 25,
+      "constraints": 10,
+      "point_row_multiplicities": [
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            2,
+            11,
+            1,
+            0
+          ],
+          "multiplicity": 5
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            7,
+            8,
+            0,
+            1
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            4,
+            9,
+            0,
+            1
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            2,
+            0,
+            0,
+            0,
+            3,
+            10,
+            0,
+            1
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            3,
+            0,
+            0,
+            0,
+            2,
+            10,
+            0,
+            1
+          ],
+          "multiplicity": 3
+        }
+      ]
+    },
+    {
+      "signature": [
+        13,
+        0,
+        0,
+        0,
+        12,
+        25,
+        2,
+        1
+      ],
+      "status": "OPTIMAL",
+      "summed_gap": -13,
+      "row_count": 29,
+      "wall_time_seconds": 0.0026226,
+      "variables": 29,
+      "constraints": 10,
+      "point_row_multiplicities": [
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            2,
+            11,
+            1,
+            0
+          ],
+          "multiplicity": 3
+        },
+        {
+          "row": [
+            3,
+            0,
+            0,
+            0,
+            6,
+            8,
+            2,
+            0
+          ],
+          "multiplicity": 2
+        },
+        {
+          "row": [
+            3,
+            0,
+            0,
+            0,
+            2,
+            10,
+            0,
+            1
+          ],
+          "multiplicity": 3
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            4,
+            7,
+            1,
+            1
+          ],
+          "multiplicity": 3
+        }
+      ]
+    },
+    {
+      "signature": [
+        13,
+        0,
+        0,
+        0,
+        14,
+        22,
+        3,
+        1
+      ],
+      "status": "OPTIMAL",
+      "summed_gap": -14,
+      "row_count": 37,
+      "wall_time_seconds": 0.0047143,
+      "variables": 37,
+      "constraints": 10,
+      "point_row_multiplicities": [
+        {
+          "row": [
+            3,
+            0,
+            0,
+            0,
+            3,
+            7,
+            3,
+            0
+          ],
+          "multiplicity": 5
+        },
+        {
+          "row": [
+            5,
+            0,
+            0,
+            0,
+            6,
+            8,
+            0,
+            1
+          ],
+          "multiplicity": 3
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            4,
+            9,
+            0,
+            1
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            2,
+            0,
+            0,
+            0,
+            3,
+            10,
+            0,
+            1
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            3,
+            0,
+            0,
+            0,
+            2,
+            10,
+            0,
+            1
+          ],
+          "multiplicity": 1
+        }
+      ]
+    },
+    {
+      "signature": [
+        13,
+        0,
+        0,
+        0,
+        16,
+        19,
+        4,
+        1
+      ],
+      "status": "OPTIMAL",
+      "summed_gap": -15,
+      "row_count": 41,
+      "wall_time_seconds": 0.0031927,
+      "variables": 41,
+      "constraints": 10,
+      "point_row_multiplicities": [
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            2,
+            11,
+            1,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            3,
+            0,
+            0,
+            0,
+            6,
+            8,
+            2,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            5,
+            4,
+            4,
+            0
+          ],
+          "multiplicity": 3
+        },
+        {
+          "row": [
+            3,
+            0,
+            0,
+            0,
+            2,
+            10,
+            0,
+            1
+          ],
+          "multiplicity": 3
+        },
+        {
+          "row": [
+            3,
+            0,
+            0,
+            0,
+            5,
+            7,
+            1,
+            1
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            7,
+            4,
+            2,
+            1
+          ],
+          "multiplicity": 2
+        }
+      ]
+    },
+    {
+      "signature": [
+        13,
+        0,
+        0,
+        0,
+        18,
+        16,
+        5,
+        1
+      ],
+      "status": "OPTIMAL",
+      "summed_gap": -16,
+      "row_count": 41,
+      "wall_time_seconds": 0.0031166,
+      "variables": 41,
+      "constraints": 10,
+      "point_row_multiplicities": [
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            5,
+            4,
+            4,
+            0
+          ],
+          "multiplicity": 5
+        },
+        {
+          "row": [
+            3,
+            0,
+            0,
+            0,
+            2,
+            10,
+            0,
+            1
+          ],
+          "multiplicity": 2
+        },
+        {
+          "row": [
+            5,
+            0,
+            0,
+            0,
+            6,
+            6,
+            1,
+            1
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            1,
+            0,
+            0,
+            0,
+            7,
+            7,
+            1,
+            1
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            3,
+            0,
+            0,
+            0,
+            5,
+            7,
+            1,
+            1
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            7,
+            4,
+            2,
+            1
+          ],
+          "multiplicity": 1
+        }
+      ]
+    },
+    {
+      "signature": [
+        14,
+        0,
+        0,
+        0,
+        9,
+        28,
+        3,
+        0
+      ],
+      "status": "OPTIMAL",
+      "summed_gap": -5,
+      "row_count": 23,
+      "wall_time_seconds": 0.0022353,
+      "variables": 23,
+      "constraints": 10,
+      "point_row_multiplicities": [
+        {
+          "row": [
+            5,
+            0,
+            0,
+            0,
+            4,
+            10,
+            1,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            2,
+            11,
+            1,
+            0
+          ],
+          "multiplicity": 8
+        },
+        {
+          "row": [
+            2,
+            0,
+            0,
+            0,
+            4,
+            7,
+            3,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            3,
+            0,
+            0,
+            0,
+            3,
+            7,
+            3,
+            0
+          ],
+          "multiplicity": 1
+        }
+      ]
+    },
+    {
+      "signature": [
+        14,
+        0,
+        0,
+        0,
+        11,
+        25,
+        4,
+        0
+      ],
+      "status": "OPTIMAL",
+      "summed_gap": -6,
+      "row_count": 27,
+      "wall_time_seconds": 0.0036935,
+      "variables": 27,
+      "constraints": 10,
+      "point_row_multiplicities": [
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            2,
+            11,
+            1,
+            0
+          ],
+          "multiplicity": 8
+        },
+        {
+          "row": [
+            3,
+            0,
+            0,
+            0,
+            6,
+            4,
+            4,
+            0
+          ],
+          "multiplicity": 2
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            5,
+            4,
+            4,
+            0
+          ],
+          "multiplicity": 1
+        }
+      ]
+    },
+    {
+      "signature": [
+        14,
+        0,
+        0,
+        0,
+        13,
+        22,
+        5,
+        0
+      ],
+      "status": "OPTIMAL",
+      "summed_gap": -7,
+      "row_count": 27,
+      "wall_time_seconds": 0.0037113000000000003,
+      "variables": 27,
+      "constraints": 10,
+      "point_row_multiplicities": [
+        {
+          "row": [
+            5,
+            0,
+            0,
+            0,
+            4,
+            12,
+            0,
+            0
+          ],
+          "multiplicity": 2
+        },
+        {
+          "row": [
+            5,
+            0,
+            0,
+            0,
+            4,
+            10,
+            1,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            2,
+            11,
+            1,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            3,
+            0,
+            0,
+            0,
+            3,
+            7,
+            3,
+            0
+          ],
+          "multiplicity": 5
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            5,
+            4,
+            4,
+            0
+          ],
+          "multiplicity": 2
+        }
+      ]
+    },
+    {
+      "signature": [
+        14,
+        0,
+        0,
+        0,
+        15,
+        19,
+        6,
+        0
+      ],
+      "status": "OPTIMAL",
+      "summed_gap": -8,
+      "row_count": 27,
+      "wall_time_seconds": 0.0038511,
+      "variables": 27,
+      "constraints": 10,
+      "point_row_multiplicities": [
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            2,
+            11,
+            1,
+            0
+          ],
+          "multiplicity": 4
+        },
+        {
+          "row": [
+            3,
+            0,
+            0,
+            0,
+            6,
+            8,
+            2,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            3,
+            0,
+            0,
+            0,
+            6,
+            4,
+            4,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            5,
+            4,
+            4,
+            0
+          ],
+          "multiplicity": 5
+        }
+      ]
+    },
+    {
+      "signature": [
+        14,
+        0,
+        0,
+        0,
+        17,
+        16,
+        7,
+        0
+      ],
+      "status": "OPTIMAL",
+      "summed_gap": -9,
+      "row_count": 27,
+      "wall_time_seconds": 0.0023274000000000003,
+      "variables": 27,
+      "constraints": 10,
+      "point_row_multiplicities": [
+        {
+          "row": [
+            5,
+            0,
+            0,
+            0,
+            4,
+            10,
+            1,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            2,
+            0,
+            0,
+            0,
+            4,
+            7,
+            3,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            3,
+            0,
+            0,
+            0,
+            3,
+            7,
+            3,
+            0
+          ],
+          "multiplicity": 5
+        },
+        {
+          "row": [
+            5,
+            0,
+            0,
+            0,
+            7,
+            3,
+            4,
+            0
+          ],
+          "multiplicity": 4
+        }
+      ]
+    },
+    {
+      "signature": [
+        14,
+        0,
+        0,
+        0,
+        19,
+        13,
+        8,
+        0
+      ],
+      "status": "OPTIMAL",
+      "summed_gap": -10,
+      "row_count": 27,
+      "wall_time_seconds": 0.0024447,
+      "variables": 27,
+      "constraints": 10,
+      "point_row_multiplicities": [
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            2,
+            11,
+            1,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            1,
+            0,
+            0,
+            0,
+            5,
+            7,
+            3,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            5,
+            0,
+            0,
+            0,
+            7,
+            3,
+            4,
+            0
+          ],
+          "multiplicity": 2
+        },
+        {
+          "row": [
+            3,
+            0,
+            0,
+            0,
+            6,
+            4,
+            4,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            5,
+            4,
+            4,
+            0
+          ],
+          "multiplicity": 6
+        }
+      ]
+    },
+    {
+      "signature": [
+        14,
+        0,
+        0,
+        0,
+        21,
+        10,
+        9,
+        0
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -11,
+      "row_count": 19,
+      "wall_time_seconds": 0.0018049000000000001,
+      "variables": 19,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        15,
+        0,
+        0,
+        0,
+        14,
+        24,
+        0,
+        2
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -5,
+      "row_count": 11,
+      "wall_time_seconds": 0.0026596000000000002,
+      "variables": 11,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        15,
+        0,
+        0,
+        0,
+        16,
+        21,
+        1,
+        2
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -6,
+      "row_count": 24,
+      "wall_time_seconds": 0.0028815000000000004,
+      "variables": 24,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        15,
+        0,
+        0,
+        0,
+        18,
+        18,
+        2,
+        2
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -7,
+      "row_count": 29,
+      "wall_time_seconds": 0.002562,
+      "variables": 29,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        16,
+        0,
+        0,
+        0,
+        17,
+        18,
+        4,
+        1
+      ],
+      "status": "OPTIMAL",
+      "summed_gap": 0,
+      "row_count": 30,
+      "wall_time_seconds": 0.004529200000000001,
+      "variables": 30,
+      "constraints": 10,
+      "point_row_multiplicities": [
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            2,
+            11,
+            1,
+            0
+          ],
+          "multiplicity": 2
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            5,
+            4,
+            4,
+            0
+          ],
+          "multiplicity": 3
+        },
+        {
+          "row": [
+            5,
+            0,
+            0,
+            0,
+            6,
+            6,
+            1,
+            1
+          ],
+          "multiplicity": 4
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            4,
+            7,
+            1,
+            1
+          ],
+          "multiplicity": 2
+        }
+      ]
+    },
+    {
+      "signature": [
+        16,
+        0,
+        0,
+        0,
+        19,
+        15,
+        5,
+        1
+      ],
+      "status": "OPTIMAL",
+      "summed_gap": -1,
+      "row_count": 30,
+      "wall_time_seconds": 0.0029662,
+      "variables": 30,
+      "constraints": 10,
+      "point_row_multiplicities": [
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            5,
+            4,
+            4,
+            0
+          ],
+          "multiplicity": 5
+        },
+        {
+          "row": [
+            5,
+            0,
+            0,
+            0,
+            6,
+            8,
+            0,
+            1
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            5,
+            0,
+            0,
+            0,
+            6,
+            6,
+            1,
+            1
+          ],
+          "multiplicity": 3
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            4,
+            7,
+            1,
+            1
+          ],
+          "multiplicity": 2
+        }
+      ]
+    },
+    {
+      "signature": [
+        16,
+        0,
+        0,
+        0,
+        21,
+        12,
+        6,
+        1
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -2,
+      "row_count": 30,
+      "wall_time_seconds": 0.0026951,
+      "variables": 30,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        8,
+        1,
+        0,
+        0,
+        13,
+        25,
+        0,
+        2
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -28,
+      "row_count": 7,
+      "wall_time_seconds": 6.120000000000001e-05,
+      "variables": 7,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        9,
+        1,
+        0,
+        0,
+        12,
+        25,
+        2,
+        1
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -21,
+      "row_count": 13,
+      "wall_time_seconds": 0.00032520000000000004,
+      "variables": 13,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        9,
+        1,
+        0,
+        0,
+        14,
+        22,
+        3,
+        1
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -22,
+      "row_count": 20,
+      "wall_time_seconds": 6.98e-05,
+      "variables": 20,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        9,
+        1,
+        0,
+        0,
+        16,
+        19,
+        4,
+        1
+      ],
+      "status": "OPTIMAL",
+      "summed_gap": -23,
+      "row_count": 24,
+      "wall_time_seconds": 0.0032601,
+      "variables": 24,
+      "constraints": 10,
+      "point_row_multiplicities": [
+        {
+          "row": [
+            3,
+            0,
+            0,
+            0,
+            3,
+            7,
+            3,
+            0
+          ],
+          "multiplicity": 2
+        },
+        {
+          "row": [
+            3,
+            0,
+            0,
+            0,
+            6,
+            4,
+            4,
+            0
+          ],
+          "multiplicity": 3
+        },
+        {
+          "row": [
+            1,
+            1,
+            0,
+            0,
+            4,
+            9,
+            0,
+            1
+          ],
+          "multiplicity": 4
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            4,
+            7,
+            1,
+            1
+          ],
+          "multiplicity": 2
+        }
+      ]
+    },
+    {
+      "signature": [
+        10,
+        1,
+        0,
+        0,
+        13,
+        22,
+        5,
+        0
+      ],
+      "status": "OPTIMAL",
+      "summed_gap": -15,
+      "row_count": 24,
+      "wall_time_seconds": 0.0024708,
+      "variables": 24,
+      "constraints": 10,
+      "point_row_multiplicities": [
+        {
+          "row": [
+            2,
+            0,
+            0,
+            0,
+            4,
+            11,
+            1,
+            0
+          ],
+          "multiplicity": 2
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            2,
+            11,
+            1,
+            0
+          ],
+          "multiplicity": 2
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            5,
+            6,
+            3,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            2,
+            1,
+            0,
+            0,
+            4,
+            6,
+            3,
+            0
+          ],
+          "multiplicity": 4
+        },
+        {
+          "row": [
+            3,
+            0,
+            0,
+            0,
+            3,
+            7,
+            3,
+            0
+          ],
+          "multiplicity": 2
+        }
+      ]
+    },
+    {
+      "signature": [
+        10,
+        1,
+        0,
+        0,
+        15,
+        19,
+        6,
+        0
+      ],
+      "status": "OPTIMAL",
+      "summed_gap": -16,
+      "row_count": 24,
+      "wall_time_seconds": 0.002413,
+      "variables": 24,
+      "constraints": 10,
+      "point_row_multiplicities": [
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            2,
+            11,
+            1,
+            0
+          ],
+          "multiplicity": 2
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            5,
+            6,
+            3,
+            0
+          ],
+          "multiplicity": 2
+        },
+        {
+          "row": [
+            1,
+            1,
+            0,
+            0,
+            5,
+            6,
+            3,
+            0
+          ],
+          "multiplicity": 3
+        },
+        {
+          "row": [
+            3,
+            0,
+            0,
+            0,
+            3,
+            7,
+            3,
+            0
+          ],
+          "multiplicity": 3
+        },
+        {
+          "row": [
+            2,
+            1,
+            0,
+            0,
+            7,
+            3,
+            4,
+            0
+          ],
+          "multiplicity": 1
+        }
+      ]
+    },
+    {
+      "signature": [
+        10,
+        1,
+        0,
+        0,
+        17,
+        16,
+        7,
+        0
+      ],
+      "status": "OPTIMAL",
+      "summed_gap": -17,
+      "row_count": 24,
+      "wall_time_seconds": 0.0026488,
+      "variables": 24,
+      "constraints": 10,
+      "point_row_multiplicities": [
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            2,
+            11,
+            1,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            5,
+            6,
+            3,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            0,
+            0,
+            0,
+            0,
+            6,
+            7,
+            3,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            2,
+            1,
+            0,
+            0,
+            4,
+            6,
+            3,
+            0
+          ],
+          "multiplicity": 4
+        },
+        {
+          "row": [
+            2,
+            0,
+            0,
+            0,
+            7,
+            4,
+            4,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            5,
+            4,
+            4,
+            0
+          ],
+          "multiplicity": 3
+        }
+      ]
+    },
+    {
+      "signature": [
+        10,
+        1,
+        0,
+        0,
+        19,
+        13,
+        8,
+        0
+      ],
+      "status": "OPTIMAL",
+      "summed_gap": -18,
+      "row_count": 24,
+      "wall_time_seconds": 0.0023275,
+      "variables": 24,
+      "constraints": 10,
+      "point_row_multiplicities": [
+        {
+          "row": [
+            2,
+            1,
+            0,
+            0,
+            4,
+            6,
+            3,
+            0
+          ],
+          "multiplicity": 4
+        },
+        {
+          "row": [
+            3,
+            0,
+            0,
+            0,
+            6,
+            4,
+            4,
+            0
+          ],
+          "multiplicity": 6
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            5,
+            4,
+            4,
+            0
+          ],
+          "multiplicity": 1
+        }
+      ]
+    },
+    {
+      "signature": [
+        11,
+        1,
+        0,
+        0,
+        14,
+        24,
+        0,
+        2
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -13,
+      "row_count": 14,
+      "wall_time_seconds": 0.00031560000000000003,
+      "variables": 14,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        11,
+        1,
+        0,
+        0,
+        16,
+        21,
+        1,
+        2
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -14,
+      "row_count": 30,
+      "wall_time_seconds": 0.0024799,
+      "variables": 30,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        12,
+        1,
+        0,
+        0,
+        11,
+        27,
+        1,
+        1
+      ],
+      "status": "OPTIMAL",
+      "summed_gap": -5,
+      "row_count": 36,
+      "wall_time_seconds": 0.0030448000000000003,
+      "variables": 36,
+      "constraints": 10,
+      "point_row_multiplicities": [
+        {
+          "row": [
+            5,
+            0,
+            0,
+            0,
+            4,
+            10,
+            1,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            2,
+            1,
+            0,
+            0,
+            4,
+            10,
+            1,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            2,
+            11,
+            1,
+            0
+          ],
+          "multiplicity": 3
+        },
+        {
+          "row": [
+            5,
+            0,
+            0,
+            0,
+            6,
+            8,
+            0,
+            1
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            2,
+            1,
+            0,
+            0,
+            3,
+            9,
+            0,
+            1
+          ],
+          "multiplicity": 3
+        },
+        {
+          "row": [
+            3,
+            0,
+            0,
+            0,
+            2,
+            10,
+            0,
+            1
+          ],
+          "multiplicity": 2
+        }
+      ]
+    },
+    {
+      "signature": [
+        12,
+        1,
+        0,
+        0,
+        13,
+        24,
+        2,
+        1
+      ],
+      "status": "OPTIMAL",
+      "summed_gap": -6,
+      "row_count": 42,
+      "wall_time_seconds": 0.0034109,
+      "variables": 42,
+      "constraints": 10,
+      "point_row_multiplicities": [
+        {
+          "row": [
+            2,
+            1,
+            0,
+            0,
+            4,
+            10,
+            1,
+            0
+          ],
+          "multiplicity": 3
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            2,
+            11,
+            1,
+            0
+          ],
+          "multiplicity": 2
+        },
+        {
+          "row": [
+            2,
+            1,
+            0,
+            0,
+            3,
+            9,
+            0,
+            1
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            4,
+            7,
+            1,
+            1
+          ],
+          "multiplicity": 5
+        }
+      ]
+    },
+    {
+      "signature": [
+        12,
+        1,
+        0,
+        0,
+        15,
+        21,
+        3,
+        1
+      ],
+      "status": "OPTIMAL",
+      "summed_gap": -7,
+      "row_count": 54,
+      "wall_time_seconds": 0.0043949,
+      "variables": 54,
+      "constraints": 10,
+      "point_row_multiplicities": [
+        {
+          "row": [
+            5,
+            0,
+            0,
+            0,
+            4,
+            10,
+            1,
+            0
+          ],
+          "multiplicity": 2
+        },
+        {
+          "row": [
+            2,
+            1,
+            0,
+            0,
+            4,
+            6,
+            3,
+            0
+          ],
+          "multiplicity": 3
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            4,
+            9,
+            0,
+            1
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            2,
+            1,
+            0,
+            0,
+            3,
+            9,
+            0,
+            1
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            3,
+            0,
+            0,
+            0,
+            5,
+            7,
+            1,
+            1
+          ],
+          "multiplicity": 2
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            4,
+            7,
+            1,
+            1
+          ],
+          "multiplicity": 2
+        }
+      ]
+    },
+    {
+      "signature": [
+        12,
+        1,
+        0,
+        0,
+        17,
+        18,
+        4,
+        1
+      ],
+      "status": "OPTIMAL",
+      "summed_gap": -8,
+      "row_count": 59,
+      "wall_time_seconds": 0.004196,
+      "variables": 59,
+      "constraints": 10,
+      "point_row_multiplicities": [
+        {
+          "row": [
+            2,
+            1,
+            0,
+            0,
+            4,
+            6,
+            3,
+            0
+          ],
+          "multiplicity": 4
+        },
+        {
+          "row": [
+            5,
+            0,
+            0,
+            0,
+            7,
+            3,
+            4,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            5,
+            0,
+            0,
+            0,
+            6,
+            8,
+            0,
+            1
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            4,
+            9,
+            0,
+            1
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            3,
+            0,
+            0,
+            0,
+            2,
+            10,
+            0,
+            1
+          ],
+          "multiplicity": 2
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            7,
+            4,
+            2,
+            1
+          ],
+          "multiplicity": 2
+        }
+      ]
+    },
+    {
+      "signature": [
+        12,
+        1,
+        0,
+        0,
+        19,
+        15,
+        5,
+        1
+      ],
+      "status": "OPTIMAL",
+      "summed_gap": -9,
+      "row_count": 59,
+      "wall_time_seconds": 0.0042014,
+      "variables": 59,
+      "constraints": 10,
+      "point_row_multiplicities": [
+        {
+          "row": [
+            2,
+            1,
+            0,
+            0,
+            4,
+            6,
+            3,
+            0
+          ],
+          "multiplicity": 4
+        },
+        {
+          "row": [
+            5,
+            0,
+            0,
+            0,
+            7,
+            3,
+            4,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            3,
+            0,
+            0,
+            0,
+            5,
+            7,
+            1,
+            1
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            4,
+            7,
+            1,
+            1
+          ],
+          "multiplicity": 2
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            7,
+            4,
+            2,
+            1
+          ],
+          "multiplicity": 3
+        }
+      ]
+    },
+    {
+      "signature": [
+        13,
+        1,
+        0,
+        0,
+        14,
+        21,
+        5,
+        0
+      ],
+      "status": "OPTIMAL",
+      "summed_gap": 0,
+      "row_count": 38,
+      "wall_time_seconds": 0.0045297,
+      "variables": 38,
+      "constraints": 10,
+      "point_row_multiplicities": [
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            2,
+            11,
+            1,
+            0
+          ],
+          "multiplicity": 5
+        },
+        {
+          "row": [
+            3,
+            1,
+            0,
+            0,
+            6,
+            5,
+            3,
+            0
+          ],
+          "multiplicity": 3
+        },
+        {
+          "row": [
+            2,
+            1,
+            0,
+            0,
+            4,
+            6,
+            3,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            5,
+            4,
+            4,
+            0
+          ],
+          "multiplicity": 2
+        }
+      ]
+    },
+    {
+      "signature": [
+        13,
+        1,
+        0,
+        0,
+        16,
+        18,
+        6,
+        0
+      ],
+      "status": "OPTIMAL",
+      "summed_gap": -1,
+      "row_count": 38,
+      "wall_time_seconds": 0.0031393000000000003,
+      "variables": 38,
+      "constraints": 10,
+      "point_row_multiplicities": [
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            2,
+            11,
+            1,
+            0
+          ],
+          "multiplicity": 3
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            5,
+            6,
+            3,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            2,
+            1,
+            0,
+            0,
+            4,
+            6,
+            3,
+            0
+          ],
+          "multiplicity": 4
+        },
+        {
+          "row": [
+            5,
+            0,
+            0,
+            0,
+            7,
+            3,
+            4,
+            0
+          ],
+          "multiplicity": 3
+        }
+      ]
+    },
+    {
+      "signature": [
+        13,
+        1,
+        0,
+        0,
+        18,
+        15,
+        7,
+        0
+      ],
+      "status": "OPTIMAL",
+      "summed_gap": -2,
+      "row_count": 38,
+      "wall_time_seconds": 0.0035124,
+      "variables": 38,
+      "constraints": 10,
+      "point_row_multiplicities": [
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            2,
+            11,
+            1,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            5,
+            8,
+            2,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            2,
+            1,
+            0,
+            0,
+            4,
+            6,
+            3,
+            0
+          ],
+          "multiplicity": 4
+        },
+        {
+          "row": [
+            5,
+            0,
+            0,
+            0,
+            7,
+            3,
+            4,
+            0
+          ],
+          "multiplicity": 3
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            5,
+            4,
+            4,
+            0
+          ],
+          "multiplicity": 2
+        }
+      ]
+    },
+    {
+      "signature": [
+        13,
+        1,
+        0,
+        0,
+        20,
+        12,
+        8,
+        0
+      ],
+      "status": "OPTIMAL",
+      "summed_gap": -3,
+      "row_count": 38,
+      "wall_time_seconds": 0.0031073000000000003,
+      "variables": 38,
+      "constraints": 10,
+      "point_row_multiplicities": [
+        {
+          "row": [
+            2,
+            1,
+            0,
+            0,
+            4,
+            6,
+            3,
+            0
+          ],
+          "multiplicity": 4
+        },
+        {
+          "row": [
+            5,
+            0,
+            0,
+            0,
+            7,
+            3,
+            4,
+            0
+          ],
+          "multiplicity": 4
+        },
+        {
+          "row": [
+            3,
+            0,
+            0,
+            0,
+            6,
+            4,
+            4,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            5,
+            4,
+            4,
+            0
+          ],
+          "multiplicity": 2
+        }
+      ]
+    },
+    {
+      "signature": [
+        13,
+        1,
+        0,
+        0,
+        22,
+        9,
+        9,
+        0
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -4,
+      "row_count": 23,
+      "wall_time_seconds": 0.0022003,
+      "variables": 23,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        14,
+        1,
+        0,
+        0,
+        19,
+        17,
+        2,
+        2
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": 0,
+      "row_count": 33,
+      "wall_time_seconds": 0.0021081000000000003,
+      "variables": 33,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        7,
+        2,
+        0,
+        0,
+        14,
+        24,
+        0,
+        2
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -21,
+      "row_count": 8,
+      "wall_time_seconds": 5.7e-05,
+      "variables": 8,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        8,
+        2,
+        0,
+        0,
+        13,
+        24,
+        2,
+        1
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -14,
+      "row_count": 15,
+      "wall_time_seconds": 0.0004425,
+      "variables": 15,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        8,
+        2,
+        0,
+        0,
+        15,
+        21,
+        3,
+        1
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -15,
+      "row_count": 23,
+      "wall_time_seconds": 7.03e-05,
+      "variables": 23,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        8,
+        2,
+        0,
+        0,
+        17,
+        18,
+        4,
+        1
+      ],
+      "status": "OPTIMAL",
+      "summed_gap": -16,
+      "row_count": 27,
+      "wall_time_seconds": 0.0023162,
+      "variables": 27,
+      "constraints": 10,
+      "point_row_multiplicities": [
+        {
+          "row": [
+            2,
+            1,
+            0,
+            0,
+            4,
+            6,
+            3,
+            0
+          ],
+          "multiplicity": 4
+        },
+        {
+          "row": [
+            3,
+            0,
+            0,
+            0,
+            6,
+            4,
+            4,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            1,
+            0,
+            0,
+            0,
+            4,
+            10,
+            0,
+            1
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            2,
+            1,
+            0,
+            0,
+            3,
+            9,
+            0,
+            1
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            1,
+            1,
+            0,
+            0,
+            7,
+            6,
+            1,
+            1
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            1,
+            2,
+            0,
+            0,
+            7,
+            5,
+            1,
+            1
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            4,
+            7,
+            1,
+            1
+          ],
+          "multiplicity": 2
+        }
+      ]
+    },
+    {
+      "signature": [
+        9,
+        2,
+        0,
+        0,
+        14,
+        21,
+        5,
+        0
+      ],
+      "status": "OPTIMAL",
+      "summed_gap": -8,
+      "row_count": 27,
+      "wall_time_seconds": 0.0025444,
+      "variables": 27,
+      "constraints": 10,
+      "point_row_multiplicities": [
+        {
+          "row": [
+            1,
+            2,
+            0,
+            0,
+            5,
+            9,
+            1,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            2,
+            11,
+            1,
+            0
+          ],
+          "multiplicity": 3
+        },
+        {
+          "row": [
+            2,
+            1,
+            0,
+            0,
+            7,
+            5,
+            3,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            2,
+            0,
+            0,
+            0,
+            4,
+            7,
+            3,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            2,
+            1,
+            0,
+            0,
+            4,
+            6,
+            3,
+            0
+          ],
+          "multiplicity": 5
+        }
+      ]
+    },
+    {
+      "signature": [
+        9,
+        2,
+        0,
+        0,
+        16,
+        18,
+        6,
+        0
+      ],
+      "status": "OPTIMAL",
+      "summed_gap": -9,
+      "row_count": 27,
+      "wall_time_seconds": 0.0037530000000000003,
+      "variables": 27,
+      "constraints": 10,
+      "point_row_multiplicities": [
+        {
+          "row": [
+            1,
+            2,
+            0,
+            0,
+            5,
+            9,
+            1,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            2,
+            11,
+            1,
+            0
+          ],
+          "multiplicity": 2
+        },
+        {
+          "row": [
+            2,
+            1,
+            0,
+            0,
+            4,
+            6,
+            3,
+            0
+          ],
+          "multiplicity": 5
+        },
+        {
+          "row": [
+            2,
+            1,
+            0,
+            0,
+            7,
+            3,
+            4,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            3,
+            0,
+            0,
+            0,
+            6,
+            4,
+            4,
+            0
+          ],
+          "multiplicity": 2
+        }
+      ]
+    },
+    {
+      "signature": [
+        9,
+        2,
+        0,
+        0,
+        18,
+        15,
+        7,
+        0
+      ],
+      "status": "OPTIMAL",
+      "summed_gap": -10,
+      "row_count": 27,
+      "wall_time_seconds": 0.0038232,
+      "variables": 27,
+      "constraints": 10,
+      "point_row_multiplicities": [
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            2,
+            11,
+            1,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            3,
+            1,
+            0,
+            0,
+            6,
+            5,
+            3,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            0,
+            2,
+            0,
+            0,
+            6,
+            5,
+            3,
+            0
+          ],
+          "multiplicity": 3
+        },
+        {
+          "row": [
+            2,
+            1,
+            0,
+            0,
+            4,
+            6,
+            3,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            3,
+            0,
+            0,
+            0,
+            3,
+            7,
+            3,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            3,
+            0,
+            0,
+            0,
+            6,
+            4,
+            4,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            5,
+            4,
+            4,
+            0
+          ],
+          "multiplicity": 3
+        }
+      ]
+    },
+    {
+      "signature": [
+        9,
+        2,
+        0,
+        0,
+        20,
+        12,
+        8,
+        0
+      ],
+      "status": "OPTIMAL",
+      "summed_gap": -11,
+      "row_count": 27,
+      "wall_time_seconds": 0.0023350000000000003,
+      "variables": 27,
+      "constraints": 10,
+      "point_row_multiplicities": [
+        {
+          "row": [
+            2,
+            1,
+            0,
+            0,
+            4,
+            6,
+            3,
+            0
+          ],
+          "multiplicity": 4
+        },
+        {
+          "row": [
+            2,
+            1,
+            0,
+            0,
+            7,
+            3,
+            4,
+            0
+          ],
+          "multiplicity": 4
+        },
+        {
+          "row": [
+            3,
+            0,
+            0,
+            0,
+            6,
+            4,
+            4,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            5,
+            4,
+            4,
+            0
+          ],
+          "multiplicity": 2
+        }
+      ]
+    },
+    {
+      "signature": [
+        10,
+        2,
+        0,
+        0,
+        15,
+        23,
+        0,
+        2
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -6,
+      "row_count": 15,
+      "wall_time_seconds": 0.0003241,
+      "variables": 15,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        10,
+        2,
+        0,
+        0,
+        17,
+        20,
+        1,
+        2
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -7,
+      "row_count": 33,
+      "wall_time_seconds": 0.0024908,
+      "variables": 33,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        11,
+        2,
+        0,
+        0,
+        16,
+        20,
+        3,
+        1
+      ],
+      "status": "OPTIMAL",
+      "summed_gap": 0,
+      "row_count": 54,
+      "wall_time_seconds": 0.0039142000000000005,
+      "variables": 54,
+      "constraints": 10,
+      "point_row_multiplicities": [
+        {
+          "row": [
+            5,
+            0,
+            0,
+            0,
+            4,
+            10,
+            1,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            2,
+            1,
+            0,
+            0,
+            4,
+            6,
+            3,
+            0
+          ],
+          "multiplicity": 4
+        },
+        {
+          "row": [
+            3,
+            1,
+            0,
+            0,
+            5,
+            8,
+            0,
+            1
+          ],
+          "multiplicity": 4
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            4,
+            7,
+            1,
+            1
+          ],
+          "multiplicity": 2
+        }
+      ]
+    },
+    {
+      "signature": [
+        11,
+        2,
+        0,
+        0,
+        18,
+        17,
+        4,
+        1
+      ],
+      "status": "OPTIMAL",
+      "summed_gap": -1,
+      "row_count": 59,
+      "wall_time_seconds": 0.0042652,
+      "variables": 59,
+      "constraints": 10,
+      "point_row_multiplicities": [
+        {
+          "row": [
+            2,
+            1,
+            0,
+            0,
+            4,
+            6,
+            3,
+            0
+          ],
+          "multiplicity": 5
+        },
+        {
+          "row": [
+            2,
+            1,
+            0,
+            0,
+            3,
+            9,
+            0,
+            1
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            5,
+            0,
+            0,
+            0,
+            6,
+            6,
+            1,
+            1
+          ],
+          "multiplicity": 4
+        },
+        {
+          "row": [
+            1,
+            2,
+            0,
+            0,
+            7,
+            5,
+            1,
+            1
+          ],
+          "multiplicity": 1
+        }
+      ]
+    },
+    {
+      "signature": [
+        11,
+        2,
+        0,
+        0,
+        20,
+        14,
+        5,
+        1
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -2,
+      "row_count": 59,
+      "wall_time_seconds": 0.005824800000000001,
+      "variables": 59,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        6,
+        3,
+        0,
+        0,
+        15,
+        23,
+        0,
+        2
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -14,
+      "row_count": 8,
+      "wall_time_seconds": 5.6500000000000005e-05,
+      "variables": 8,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        7,
+        3,
+        0,
+        0,
+        14,
+        23,
+        2,
+        1
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -7,
+      "row_count": 15,
+      "wall_time_seconds": 0.0002875,
+      "variables": 15,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        7,
+        3,
+        0,
+        0,
+        16,
+        20,
+        3,
+        1
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -8,
+      "row_count": 23,
+      "wall_time_seconds": 9.49e-05,
+      "variables": 23,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        7,
+        3,
+        0,
+        0,
+        18,
+        17,
+        4,
+        1
+      ],
+      "status": "OPTIMAL",
+      "summed_gap": -9,
+      "row_count": 27,
+      "wall_time_seconds": 0.0034913,
+      "variables": 27,
+      "constraints": 10,
+      "point_row_multiplicities": [
+        {
+          "row": [
+            0,
+            2,
+            0,
+            0,
+            6,
+            5,
+            3,
+            0
+          ],
+          "multiplicity": 2
+        },
+        {
+          "row": [
+            3,
+            0,
+            0,
+            0,
+            6,
+            4,
+            4,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            5,
+            4,
+            4,
+            0
+          ],
+          "multiplicity": 2
+        },
+        {
+          "row": [
+            2,
+            1,
+            0,
+            0,
+            3,
+            9,
+            0,
+            1
+          ],
+          "multiplicity": 4
+        },
+        {
+          "row": [
+            1,
+            2,
+            0,
+            0,
+            7,
+            5,
+            1,
+            1
+          ],
+          "multiplicity": 2
+        }
+      ]
+    },
+    {
+      "signature": [
+        8,
+        3,
+        0,
+        0,
+        15,
+        20,
+        5,
+        0
+      ],
+      "status": "OPTIMAL",
+      "summed_gap": -1,
+      "row_count": 26,
+      "wall_time_seconds": 0.0039608,
+      "variables": 26,
+      "constraints": 10,
+      "point_row_multiplicities": [
+        {
+          "row": [
+            0,
+            3,
+            0,
+            0,
+            6,
+            8,
+            1,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            1,
+            2,
+            0,
+            0,
+            5,
+            9,
+            1,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            2,
+            11,
+            1,
+            0
+          ],
+          "multiplicity": 2
+        },
+        {
+          "row": [
+            3,
+            1,
+            0,
+            0,
+            6,
+            5,
+            3,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            2,
+            1,
+            0,
+            0,
+            4,
+            6,
+            3,
+            0
+          ],
+          "multiplicity": 6
+        }
+      ]
+    },
+    {
+      "signature": [
+        8,
+        3,
+        0,
+        0,
+        17,
+        17,
+        6,
+        0
+      ],
+      "status": "OPTIMAL",
+      "summed_gap": -2,
+      "row_count": 26,
+      "wall_time_seconds": 0.0023512000000000003,
+      "variables": 26,
+      "constraints": 10,
+      "point_row_multiplicities": [
+        {
+          "row": [
+            0,
+            3,
+            0,
+            0,
+            6,
+            8,
+            1,
+            0
+          ],
+          "multiplicity": 2
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            5,
+            6,
+            3,
+            0
+          ],
+          "multiplicity": 2
+        },
+        {
+          "row": [
+            2,
+            1,
+            0,
+            0,
+            4,
+            6,
+            3,
+            0
+          ],
+          "multiplicity": 6
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            5,
+            4,
+            4,
+            0
+          ],
+          "multiplicity": 1
+        }
+      ]
+    },
+    {
+      "signature": [
+        8,
+        3,
+        0,
+        0,
+        19,
+        14,
+        7,
+        0
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -3,
+      "row_count": 26,
+      "wall_time_seconds": 0.0023831,
+      "variables": 26,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        8,
+        3,
+        0,
+        0,
+        21,
+        11,
+        8,
+        0
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -4,
+      "row_count": 26,
+      "wall_time_seconds": 0.0024511000000000003,
+      "variables": 26,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        9,
+        3,
+        0,
+        0,
+        18,
+        19,
+        1,
+        2
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": 0,
+      "row_count": 28,
+      "wall_time_seconds": 0.0023172,
+      "variables": 28,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        5,
+        4,
+        0,
+        0,
+        16,
+        22,
+        0,
+        2
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -7,
+      "row_count": 7,
+      "wall_time_seconds": 6e-05,
+      "variables": 7,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        6,
+        4,
+        0,
+        0,
+        15,
+        22,
+        2,
+        1
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": 0,
+      "row_count": 12,
+      "wall_time_seconds": 0.00031600000000000004,
+      "variables": 12,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        6,
+        4,
+        0,
+        0,
+        17,
+        19,
+        3,
+        1
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -1,
+      "row_count": 18,
+      "wall_time_seconds": 6.500000000000001e-05,
+      "variables": 18,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        6,
+        4,
+        0,
+        0,
+        19,
+        16,
+        4,
+        1
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -2,
+      "row_count": 22,
+      "wall_time_seconds": 0.0018925,
+      "variables": 22,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        4,
+        5,
+        0,
+        0,
+        17,
+        21,
+        0,
+        2
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": 0,
+      "row_count": 5,
+      "wall_time_seconds": 6.94e-05,
+      "variables": 5,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        9,
+        0,
+        1,
+        0,
+        12,
+        26,
+        1,
+        1
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -12,
+      "row_count": 10,
+      "wall_time_seconds": 6.55e-05,
+      "variables": 10,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        9,
+        0,
+        1,
+        0,
+        14,
+        23,
+        2,
+        1
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -13,
+      "row_count": 12,
+      "wall_time_seconds": 0.00010810000000000001,
+      "variables": 12,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        9,
+        0,
+        1,
+        0,
+        16,
+        20,
+        3,
+        1
+      ],
+      "status": "OPTIMAL",
+      "summed_gap": -14,
+      "row_count": 17,
+      "wall_time_seconds": 0.0018697000000000002,
+      "variables": 17,
+      "constraints": 10,
+      "point_row_multiplicities": [
+        {
+          "row": [
+            1,
+            0,
+            1,
+            0,
+            5,
+            7,
+            2,
+            0
+          ],
+          "multiplicity": 5
+        },
+        {
+          "row": [
+            3,
+            0,
+            0,
+            0,
+            2,
+            10,
+            0,
+            1
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            3,
+            0,
+            0,
+            0,
+            5,
+            7,
+            1,
+            1
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            4,
+            7,
+            1,
+            1
+          ],
+          "multiplicity": 4
+        }
+      ]
+    },
+    {
+      "signature": [
+        10,
+        0,
+        1,
+        0,
+        13,
+        23,
+        4,
+        0
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -6,
+      "row_count": 22,
+      "wall_time_seconds": 0.0021766000000000003,
+      "variables": 22,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        10,
+        0,
+        1,
+        0,
+        15,
+        20,
+        5,
+        0
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -7,
+      "row_count": 22,
+      "wall_time_seconds": 0.0033349,
+      "variables": 22,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        10,
+        0,
+        1,
+        0,
+        17,
+        17,
+        6,
+        0
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -8,
+      "row_count": 22,
+      "wall_time_seconds": 0.0021588,
+      "variables": 22,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        10,
+        0,
+        1,
+        0,
+        19,
+        14,
+        7,
+        0
+      ],
+      "status": "OPTIMAL",
+      "summed_gap": -9,
+      "row_count": 22,
+      "wall_time_seconds": 0.0021295000000000003,
+      "variables": 22,
+      "constraints": 10,
+      "point_row_multiplicities": [
+        {
+          "row": [
+            1,
+            0,
+            1,
+            0,
+            5,
+            7,
+            2,
+            0
+          ],
+          "multiplicity": 4
+        },
+        {
+          "row": [
+            2,
+            0,
+            1,
+            0,
+            7,
+            4,
+            3,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            4,
+            0,
+            0,
+            0,
+            5,
+            4,
+            4,
+            0
+          ],
+          "multiplicity": 6
+        }
+      ]
+    },
+    {
+      "signature": [
+        11,
+        0,
+        1,
+        0,
+        16,
+        22,
+        0,
+        2
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -5,
+      "row_count": 12,
+      "wall_time_seconds": 0.0013757,
+      "variables": 12,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        12,
+        0,
+        1,
+        0,
+        19,
+        16,
+        4,
+        1
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": 0,
+      "row_count": 44,
+      "wall_time_seconds": 0.0032134000000000004,
+      "variables": 44,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        8,
+        1,
+        1,
+        0,
+        13,
+        25,
+        1,
+        1
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -5,
+      "row_count": 15,
+      "wall_time_seconds": 0.0004967,
+      "variables": 15,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        8,
+        1,
+        1,
+        0,
+        15,
+        22,
+        2,
+        1
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -6,
+      "row_count": 18,
+      "wall_time_seconds": 9.11e-05,
+      "variables": 18,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        8,
+        1,
+        1,
+        0,
+        17,
+        19,
+        3,
+        1
+      ],
+      "status": "OPTIMAL",
+      "summed_gap": -7,
+      "row_count": 25,
+      "wall_time_seconds": 0.0017034,
+      "variables": 25,
+      "constraints": 10,
+      "point_row_multiplicities": [
+        {
+          "row": [
+            3,
+            0,
+            0,
+            0,
+            3,
+            7,
+            3,
+            0
+          ],
+          "multiplicity": 5
+        },
+        {
+          "row": [
+            3,
+            0,
+            0,
+            0,
+            2,
+            10,
+            0,
+            1
+          ],
+          "multiplicity": 1
+        },
+        {
+          "row": [
+            1,
+            1,
+            1,
+            0,
+            7,
+            6,
+            0,
+            1
+          ],
+          "multiplicity": 4
+        },
+        {
+          "row": [
+            2,
+            0,
+            1,
+            0,
+            6,
+            7,
+            0,
+            1
+          ],
+          "multiplicity": 1
+        }
+      ]
+    },
+    {
+      "signature": [
+        9,
+        1,
+        1,
+        0,
+        16,
+        19,
+        5,
+        0
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": 0,
+      "row_count": 30,
+      "wall_time_seconds": 0.0025335,
+      "variables": 30,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        9,
+        1,
+        1,
+        0,
+        18,
+        16,
+        6,
+        0
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -1,
+      "row_count": 30,
+      "wall_time_seconds": 0.0025826,
+      "variables": 30,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        9,
+        1,
+        1,
+        0,
+        20,
+        13,
+        7,
+        0
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -2,
+      "row_count": 30,
+      "wall_time_seconds": 0.0022408000000000003,
+      "variables": 30,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        7,
+        2,
+        1,
+        0,
+        18,
+        18,
+        3,
+        1
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": 0,
+      "row_count": 23,
+      "wall_time_seconds": 0.0014833000000000001,
+      "variables": 23,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        8,
+        0,
+        0,
+        1,
+        13,
+        26,
+        0,
+        1
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -8,
+      "row_count": 5,
+      "wall_time_seconds": 5.4600000000000006e-05,
+      "variables": 5,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        9,
+        0,
+        0,
+        1,
+        12,
+        26,
+        2,
+        0
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -1,
+      "row_count": 4,
+      "wall_time_seconds": 4.9000000000000005e-05,
+      "variables": 4,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        9,
+        0,
+        0,
+        1,
+        14,
+        23,
+        3,
+        0
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -2,
+      "row_count": 6,
+      "wall_time_seconds": 4.19e-05,
+      "variables": 6,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        9,
+        0,
+        0,
+        1,
+        16,
+        20,
+        4,
+        0
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -3,
+      "row_count": 9,
+      "wall_time_seconds": 0.0014187000000000002,
+      "variables": 9,
+      "constraints": 10
+    },
+    {
+      "signature": [
+        7,
+        1,
+        0,
+        1,
+        14,
+        25,
+        0,
+        1
+      ],
+      "status": "INFEASIBLE",
+      "summed_gap": -1,
+      "row_count": 6,
+      "wall_time_seconds": 5.36e-05,
+      "variables": 6,
+      "constraints": 10
+    }
+  ]
+}

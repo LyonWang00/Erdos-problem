@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "n": 15,
+  "branch": "maximum block size at most seven",
+  "solver_or_orbit_enumeration": false,
+  "reference_pdf_sha256": "5a765f81d1ee1a527e7ef3b5b4bfa02b354c52903f80ae11d3fbfda90ece3eed",
+  "local_inequality": "136*t2+93*t3+60*t4+30*t5-2902 >= 0",
+  "positive_defect_minimum_residual": 28,
+  "simplicial_type_checks": [
+    {
+      "label": "A(14,2)",
+      "type_t2_through_t7": [
+        11,
+        12,
+        4,
+        2,
+        0,
+        0
+      ],
+      "residual": 10
+    },
+    {
+      "label": "A(14,3)",
+      "type_t2_through_t7": [
+        9,
+        16,
+        4,
+        1,
+        0,
+        0
+      ],
+      "residual": 80
+    },
+    {
+      "label": "A(14,4)",
+      "type_t2_through_t7": [
+        10,
+        14,
+        4,
+        0,
+        1,
+        0
+      ],
+      "residual": 0
+    }
+  ],
+  "global_identity": "420*C-35270=140*(l2-7)+420*l4+980*l5+1680*l6+2520*l7+sum_x R_x",
+  "C84_exclusion": "unique residual 10 gives sum(t2)=151 mod 3",
+  "conclusion": "circle_count_at_least_85"
+}

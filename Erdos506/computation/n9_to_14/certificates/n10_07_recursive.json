@@ -1,0 +1,867 @@
+{
+  "schema_version": 1,
+  "status": "INCOMPLETE",
+  "claim": "Recursive inversion-row balance down to an exact nine-point abstract-support base; only INFEASIBLE statuses exclude and UNKNOWN is retained.",
+  "n": 10,
+  "source_file": "n10_06_block_rows.json",
+  "source_sha256": "40a055348a976517aa4ebfc095c524b2305df520570c607d949b4fffba62ba08",
+  "input_signature_count": 12,
+  "seconds_per_base_signature": 240.0,
+  "level_signature_counts": {
+    "10": 12,
+    "9": 26
+  },
+  "level_status_counts": {
+    "9": {
+      "INFEASIBLE": 25,
+      "OPTIMAL": 1
+    },
+    "10": {
+      "INFEASIBLE_NO_POINT_ROW": 11,
+      "OPTIMAL": 1
+    }
+  },
+  "pre_recursion_balance_status_counts": {
+    "10": {
+      "OPTIMAL": 12
+    }
+  },
+  "retained_signature_count": 1,
+  "levels": {
+    "9": [
+      {
+        "signature": [
+          3,
+          3,
+          0,
+          0,
+          13,
+          14,
+          0,
+          0,
+          9
+        ],
+        "status": "INFEASIBLE",
+        "reason": "exact_abstract_support",
+        "wall_time_seconds": 5.477408699982334,
+        "variables": 840,
+        "constraints": 546,
+        "branches": 18383,
+        "conflicts": 291,
+        "anchor": {
+          "kind": "line",
+          "size": 4
+        }
+      },
+      {
+        "signature": [
+          3,
+          3,
+          0,
+          0,
+          15,
+          11,
+          1,
+          0,
+          9
+        ],
+        "status": "INFEASIBLE",
+        "reason": "exact_abstract_support",
+        "wall_time_seconds": 1.524663900025189,
+        "variables": 840,
+        "constraints": 546,
+        "branches": 5131,
+        "conflicts": 78,
+        "anchor": {
+          "kind": "circle",
+          "size": 5
+        }
+      },
+      {
+        "signature": [
+          3,
+          3,
+          0,
+          0,
+          17,
+          8,
+          2,
+          0,
+          9
+        ],
+        "status": "INFEASIBLE",
+        "reason": "exact_abstract_support",
+        "wall_time_seconds": 0.9642382000456564,
+        "variables": 840,
+        "constraints": 546,
+        "branches": 5313,
+        "conflicts": 20,
+        "anchor": {
+          "kind": "circle",
+          "size": 5
+        }
+      },
+      {
+        "signature": [
+          4,
+          3,
+          0,
+          0,
+          16,
+          13,
+          0,
+          0,
+          6
+        ],
+        "status": "INFEASIBLE",
+        "reason": "exact_abstract_support",
+        "wall_time_seconds": 3.4084671000018716,
+        "variables": 840,
+        "constraints": 546,
+        "branches": 10639,
+        "conflicts": 405,
+        "anchor": {
+          "kind": "line",
+          "size": 4
+        }
+      },
+      {
+        "signature": [
+          4,
+          3,
+          0,
+          0,
+          18,
+          10,
+          1,
+          0,
+          6
+        ],
+        "status": "INFEASIBLE",
+        "reason": "exact_abstract_support",
+        "wall_time_seconds": 0.7734161000116728,
+        "variables": 840,
+        "constraints": 546,
+        "branches": 2295,
+        "conflicts": 0,
+        "anchor": {
+          "kind": "circle",
+          "size": 5
+        }
+      },
+      {
+        "signature": [
+          4,
+          3,
+          0,
+          0,
+          20,
+          7,
+          2,
+          0,
+          6
+        ],
+        "status": "INFEASIBLE",
+        "reason": "exact_abstract_support",
+        "wall_time_seconds": 1.343677699973341,
+        "variables": 840,
+        "constraints": 546,
+        "branches": 4591,
+        "conflicts": 85,
+        "anchor": {
+          "kind": "circle",
+          "size": 5
+        }
+      },
+      {
+        "signature": [
+          5,
+          2,
+          0,
+          0,
+          11,
+          15,
+          0,
+          0,
+          9
+        ],
+        "status": "INFEASIBLE",
+        "reason": "exact_abstract_support",
+        "wall_time_seconds": 2.582945500034839,
+        "variables": 840,
+        "constraints": 546,
+        "branches": 8885,
+        "conflicts": 326,
+        "anchor": {
+          "kind": "line",
+          "size": 4
+        }
+      },
+      {
+        "signature": [
+          5,
+          2,
+          0,
+          0,
+          13,
+          12,
+          1,
+          0,
+          9
+        ],
+        "status": "INFEASIBLE",
+        "reason": "exact_abstract_support",
+        "wall_time_seconds": 1.8334308000048622,
+        "variables": 840,
+        "constraints": 546,
+        "branches": 10653,
+        "conflicts": 167,
+        "anchor": {
+          "kind": "circle",
+          "size": 5
+        }
+      },
+      {
+        "signature": [
+          5,
+          2,
+          0,
+          0,
+          15,
+          9,
+          2,
+          0,
+          9
+        ],
+        "status": "INFEASIBLE",
+        "reason": "exact_abstract_support",
+        "wall_time_seconds": 1.0502212999854237,
+        "variables": 840,
+        "constraints": 546,
+        "branches": 5170,
+        "conflicts": 29,
+        "anchor": {
+          "kind": "circle",
+          "size": 5
+        }
+      },
+      {
+        "signature": [
+          5,
+          2,
+          0,
+          0,
+          17,
+          6,
+          3,
+          0,
+          9
+        ],
+        "status": "INFEASIBLE",
+        "reason": "exact_abstract_support",
+        "wall_time_seconds": 1.2834857999696396,
+        "variables": 840,
+        "constraints": 546,
+        "branches": 4871,
+        "conflicts": 171,
+        "anchor": {
+          "kind": "circle",
+          "size": 5
+        }
+      },
+      {
+        "signature": [
+          6,
+          2,
+          0,
+          0,
+          14,
+          14,
+          0,
+          0,
+          6
+        ],
+        "status": "INFEASIBLE",
+        "reason": "exact_abstract_support",
+        "wall_time_seconds": 7.541754100006074,
+        "variables": 840,
+        "constraints": 546,
+        "branches": 14407,
+        "conflicts": 947,
+        "anchor": {
+          "kind": "line",
+          "size": 4
+        }
+      },
+      {
+        "signature": [
+          6,
+          2,
+          0,
+          0,
+          16,
+          11,
+          1,
+          0,
+          6
+        ],
+        "status": "INFEASIBLE",
+        "reason": "exact_abstract_support",
+        "wall_time_seconds": 10.153003200015519,
+        "variables": 840,
+        "constraints": 546,
+        "branches": 31900,
+        "conflicts": 1493,
+        "anchor": {
+          "kind": "circle",
+          "size": 5
+        }
+      },
+      {
+        "signature": [
+          6,
+          2,
+          0,
+          0,
+          18,
+          8,
+          2,
+          0,
+          6
+        ],
+        "status": "INFEASIBLE",
+        "reason": "exact_abstract_support",
+        "wall_time_seconds": 5.181494499964174,
+        "variables": 840,
+        "constraints": 546,
+        "branches": 12883,
+        "conflicts": 250,
+        "anchor": {
+          "kind": "circle",
+          "size": 5
+        }
+      },
+      {
+        "signature": [
+          6,
+          2,
+          0,
+          0,
+          20,
+          5,
+          3,
+          0,
+          6
+        ],
+        "status": "INFEASIBLE",
+        "reason": "exact_abstract_support",
+        "wall_time_seconds": 3.0647167999995872,
+        "variables": 840,
+        "constraints": 546,
+        "branches": 10592,
+        "conflicts": 225,
+        "anchor": {
+          "kind": "circle",
+          "size": 5
+        }
+      },
+      {
+        "signature": [
+          7,
+          1,
+          0,
+          0,
+          11,
+          13,
+          1,
+          0,
+          9
+        ],
+        "status": "INFEASIBLE",
+        "reason": "exact_abstract_support",
+        "wall_time_seconds": 3.0261562999803573,
+        "variables": 840,
+        "constraints": 546,
+        "branches": 4779,
+        "conflicts": 157,
+        "anchor": {
+          "kind": "circle",
+          "size": 5
+        }
+      },
+      {
+        "signature": [
+          7,
+          1,
+          0,
+          0,
+          13,
+          10,
+          2,
+          0,
+          9
+        ],
+        "status": "INFEASIBLE",
+        "reason": "exact_abstract_support",
+        "wall_time_seconds": 5.6491133000236005,
+        "variables": 840,
+        "constraints": 546,
+        "branches": 16103,
+        "conflicts": 202,
+        "anchor": {
+          "kind": "circle",
+          "size": 5
+        }
+      },
+      {
+        "signature": [
+          7,
+          1,
+          0,
+          0,
+          15,
+          7,
+          3,
+          0,
+          9
+        ],
+        "status": "INFEASIBLE",
+        "reason": "exact_abstract_support",
+        "wall_time_seconds": 2.5614307000068948,
+        "variables": 840,
+        "constraints": 546,
+        "branches": 5831,
+        "conflicts": 103,
+        "anchor": {
+          "kind": "circle",
+          "size": 5
+        }
+      },
+      {
+        "signature": [
+          7,
+          1,
+          0,
+          0,
+          17,
+          4,
+          4,
+          0,
+          9
+        ],
+        "status": "INFEASIBLE",
+        "reason": "exact_abstract_support",
+        "wall_time_seconds": 1.4358123999554664,
+        "variables": 840,
+        "constraints": 546,
+        "branches": 2743,
+        "conflicts": 50,
+        "anchor": {
+          "kind": "circle",
+          "size": 5
+        }
+      },
+      {
+        "signature": [
+          8,
+          1,
+          0,
+          0,
+          14,
+          12,
+          1,
+          0,
+          6
+        ],
+        "status": "OPTIMAL",
+        "reason": "exact_abstract_support",
+        "wall_time_seconds": 1.4636487999814562,
+        "variables": 840,
+        "constraints": 546,
+        "branches": 1895,
+        "conflicts": 35,
+        "anchor": {
+          "kind": "circle",
+          "size": 5
+        }
+      },
+      {
+        "signature": [
+          8,
+          1,
+          0,
+          0,
+          16,
+          9,
+          2,
+          0,
+          6
+        ],
+        "status": "INFEASIBLE",
+        "reason": "exact_abstract_support",
+        "wall_time_seconds": 11.288963400002103,
+        "variables": 840,
+        "constraints": 546,
+        "branches": 37701,
+        "conflicts": 851,
+        "anchor": {
+          "kind": "circle",
+          "size": 5
+        }
+      },
+      {
+        "signature": [
+          8,
+          1,
+          0,
+          0,
+          18,
+          6,
+          3,
+          0,
+          6
+        ],
+        "status": "INFEASIBLE",
+        "reason": "exact_abstract_support",
+        "wall_time_seconds": 7.048751400026958,
+        "variables": 840,
+        "constraints": 546,
+        "branches": 19079,
+        "conflicts": 400,
+        "anchor": {
+          "kind": "circle",
+          "size": 5
+        }
+      },
+      {
+        "signature": [
+          8,
+          1,
+          0,
+          0,
+          20,
+          3,
+          4,
+          0,
+          6
+        ],
+        "status": "INFEASIBLE",
+        "reason": "exact_abstract_support",
+        "wall_time_seconds": 1.4122060000081547,
+        "variables": 840,
+        "constraints": 546,
+        "branches": 2742,
+        "conflicts": 50,
+        "anchor": {
+          "kind": "circle",
+          "size": 5
+        }
+      },
+      {
+        "signature": [
+          10,
+          0,
+          0,
+          0,
+          14,
+          10,
+          2,
+          0,
+          6
+        ],
+        "status": "INFEASIBLE",
+        "reason": "exact_abstract_support",
+        "wall_time_seconds": 2.97822480002651,
+        "variables": 840,
+        "constraints": 546,
+        "branches": 6572,
+        "conflicts": 325,
+        "anchor": {
+          "kind": "circle",
+          "size": 5
+        }
+      },
+      {
+        "signature": [
+          10,
+          0,
+          0,
+          0,
+          16,
+          7,
+          3,
+          0,
+          6
+        ],
+        "status": "INFEASIBLE",
+        "reason": "exact_abstract_support",
+        "wall_time_seconds": 1.7062774999649264,
+        "variables": 840,
+        "constraints": 546,
+        "branches": 2993,
+        "conflicts": 26,
+        "anchor": {
+          "kind": "circle",
+          "size": 5
+        }
+      },
+      {
+        "signature": [
+          10,
+          0,
+          0,
+          0,
+          18,
+          4,
+          4,
+          0,
+          6
+        ],
+        "status": "INFEASIBLE",
+        "reason": "exact_abstract_support",
+        "wall_time_seconds": 0.6571182999759912,
+        "variables": 840,
+        "constraints": 546,
+        "branches": 0,
+        "conflicts": 0,
+        "anchor": {
+          "kind": "circle",
+          "size": 5
+        }
+      },
+      {
+        "signature": [
+          10,
+          0,
+          0,
+          0,
+          20,
+          1,
+          5,
+          0,
+          6
+        ],
+        "status": "INFEASIBLE",
+        "reason": "exact_abstract_support",
+        "wall_time_seconds": 0.7541887999977916,
+        "variables": 840,
+        "constraints": 546,
+        "branches": 0,
+        "conflicts": 0,
+        "anchor": {
+          "kind": "circle",
+          "size": 5
+        }
+      }
+    ],
+    "10": [
+      {
+        "signature": [
+          8,
+          2,
+          0,
+          0,
+          16,
+          12,
+          4,
+          0,
+          9
+        ],
+        "status": "INFEASIBLE_NO_POINT_ROW",
+        "candidate_row_count": 28,
+        "retained_row_count": 0,
+        "wall_time_seconds": 0.0
+      },
+      {
+        "signature": [
+          8,
+          2,
+          0,
+          0,
+          18,
+          9,
+          5,
+          0,
+          9
+        ],
+        "status": "INFEASIBLE_NO_POINT_ROW",
+        "candidate_row_count": 27,
+        "retained_row_count": 0,
+        "wall_time_seconds": 0.0
+      },
+      {
+        "signature": [
+          9,
+          1,
+          0,
+          0,
+          13,
+          16,
+          3,
+          0,
+          12
+        ],
+        "status": "INFEASIBLE_NO_POINT_ROW",
+        "candidate_row_count": 32,
+        "retained_row_count": 0,
+        "wall_time_seconds": 0.0
+      },
+      {
+        "signature": [
+          9,
+          1,
+          0,
+          0,
+          15,
+          13,
+          4,
+          0,
+          12
+        ],
+        "status": "INFEASIBLE_NO_POINT_ROW",
+        "candidate_row_count": 32,
+        "retained_row_count": 0,
+        "wall_time_seconds": 0.0
+      },
+      {
+        "signature": [
+          9,
+          1,
+          0,
+          0,
+          17,
+          10,
+          5,
+          0,
+          12
+        ],
+        "status": "INFEASIBLE_NO_POINT_ROW",
+        "candidate_row_count": 32,
+        "retained_row_count": 0,
+        "wall_time_seconds": 0.0
+      },
+      {
+        "signature": [
+          10,
+          0,
+          0,
+          0,
+          10,
+          20,
+          2,
+          0,
+          15
+        ],
+        "status": "OPTIMAL",
+        "candidate_row_count": 15,
+        "retained_row_count": 4,
+        "distinct_child_count": 1,
+        "wall_time_seconds": 0.0009527,
+        "variables": 4,
+        "constraints": 9
+      },
+      {
+        "signature": [
+          10,
+          0,
+          0,
+          0,
+          12,
+          17,
+          3,
+          0,
+          15
+        ],
+        "status": "INFEASIBLE_NO_POINT_ROW",
+        "candidate_row_count": 22,
+        "retained_row_count": 0,
+        "wall_time_seconds": 0.0
+      },
+      {
+        "signature": [
+          10,
+          0,
+          0,
+          0,
+          14,
+          14,
+          4,
+          0,
+          15
+        ],
+        "status": "INFEASIBLE_NO_POINT_ROW",
+        "candidate_row_count": 22,
+        "retained_row_count": 0,
+        "wall_time_seconds": 0.0
+      },
+      {
+        "signature": [
+          10,
+          0,
+          0,
+          0,
+          16,
+          11,
+          5,
+          0,
+          15
+        ],
+        "status": "INFEASIBLE_NO_POINT_ROW",
+        "candidate_row_count": 22,
+        "retained_row_count": 0,
+        "wall_time_seconds": 0.0
+      },
+      {
+        "signature": [
+          10,
+          1,
+          0,
+          0,
+          14,
+          13,
+          4,
+          0,
+          9
+        ],
+        "status": "INFEASIBLE_NO_POINT_ROW",
+        "candidate_row_count": 18,
+        "retained_row_count": 0,
+        "wall_time_seconds": 0.0
+      },
+      {
+        "signature": [
+          10,
+          1,
+          0,
+          0,
+          16,
+          10,
+          5,
+          0,
+          9
+        ],
+        "status": "INFEASIBLE_NO_POINT_ROW",
+        "candidate_row_count": 18,
+        "retained_row_count": 0,
+        "wall_time_seconds": 0.0
+      },
+      {
+        "signature": [
+          11,
+          0,
+          0,
+          0,
+          15,
+          11,
+          5,
+          0,
+          12
+        ],
+        "status": "INFEASIBLE_NO_POINT_ROW",
+        "candidate_row_count": 15,
+        "retained_row_count": 0,
+        "wall_time_seconds": 0.0
+      }
+    ]
+  }
+}

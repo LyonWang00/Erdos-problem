@@ -1,0 +1,840 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "claim": "Necessary aggregate local-arrangement filter.",
+  "n": 9,
+  "sizes": [
+    3,
+    4,
+    5
+  ],
+  "proof_scope": "global signature inequalities, block-family convexity, summed local line inequalities, and target-wise integer balance of local types; no labelled supports",
+  "local_type_count": 18,
+  "reachable_target_count": 5,
+  "distinct_target_count": 9,
+  "target_audits": [
+    {
+      "target": [
+        0,
+        15
+      ],
+      "status": "INFEASIBLE",
+      "wall_time_seconds": 0.012609200000000001
+    },
+    {
+      "target": [
+        9,
+        0
+      ],
+      "status": "INFEASIBLE",
+      "wall_time_seconds": 0.00013440000000000001
+    },
+    {
+      "target": [
+        10,
+        5
+      ],
+      "status": "INFEASIBLE",
+      "wall_time_seconds": 0.0181657
+    },
+    {
+      "target": [
+        11,
+        10
+      ],
+      "status": "OPTIMAL",
+      "wall_time_seconds": 0.0128511
+    },
+    {
+      "target": [
+        12,
+        15
+      ],
+      "status": "OPTIMAL",
+      "wall_time_seconds": 0.0017008000000000001
+    },
+    {
+      "target": [
+        21,
+        0
+      ],
+      "status": "INFEASIBLE",
+      "wall_time_seconds": 0.00020040000000000002
+    },
+    {
+      "target": [
+        22,
+        5
+      ],
+      "status": "OPTIMAL",
+      "wall_time_seconds": 0.0029231
+    },
+    {
+      "target": [
+        23,
+        10
+      ],
+      "status": "OPTIMAL",
+      "wall_time_seconds": 0.0015677
+    },
+    {
+      "target": [
+        24,
+        15
+      ],
+      "status": "OPTIMAL",
+      "wall_time_seconds": 0.0015321
+    }
+  ],
+  "ortools_version": "9.15.6755",
+  "coordinate_bounds": [
+    24,
+    15
+  ],
+  "layers": [
+    {
+      "circle_count": 17,
+      "raw_signature_count": 0,
+      "after_block_family_convexity": 0,
+      "after_summed_local_line_inequalities": 0,
+      "after_local_type_sum": 0,
+      "survivors": []
+    },
+    {
+      "circle_count": 18,
+      "raw_signature_count": 0,
+      "after_block_family_convexity": 0,
+      "after_summed_local_line_inequalities": 0,
+      "after_local_type_sum": 0,
+      "survivors": []
+    },
+    {
+      "circle_count": 19,
+      "raw_signature_count": 1,
+      "after_block_family_convexity": 1,
+      "after_summed_local_line_inequalities": 1,
+      "after_local_type_sum": 0,
+      "survivors": []
+    },
+    {
+      "circle_count": 20,
+      "raw_signature_count": 6,
+      "after_block_family_convexity": 6,
+      "after_summed_local_line_inequalities": 6,
+      "after_local_type_sum": 2,
+      "survivors": [
+        {
+          "signature": [
+            10,
+            0,
+            0,
+            6,
+            12,
+            2
+          ],
+          "target": [
+            11,
+            10
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            10,
+            0,
+            0,
+            8,
+            9,
+            3
+          ],
+          "target": [
+            12,
+            15
+          ],
+          "local_type_sum_reachable": true
+        }
+      ]
+    },
+    {
+      "circle_count": 21,
+      "raw_signature_count": 13,
+      "after_block_family_convexity": 11,
+      "after_summed_local_line_inequalities": 11,
+      "after_local_type_sum": 4,
+      "survivors": [
+        {
+          "signature": [
+            9,
+            0,
+            0,
+            7,
+            12,
+            2
+          ],
+          "target": [
+            11,
+            10
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            9,
+            0,
+            0,
+            9,
+            9,
+            3
+          ],
+          "target": [
+            12,
+            15
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            8,
+            1,
+            0,
+            8,
+            11,
+            2
+          ],
+          "target": [
+            11,
+            10
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            8,
+            1,
+            0,
+            10,
+            8,
+            3
+          ],
+          "target": [
+            12,
+            15
+          ],
+          "local_type_sum_reachable": true
+        }
+      ]
+    },
+    {
+      "circle_count": 22,
+      "raw_signature_count": 24,
+      "after_block_family_convexity": 19,
+      "after_summed_local_line_inequalities": 19,
+      "after_local_type_sum": 8,
+      "survivors": [
+        {
+          "signature": [
+            8,
+            0,
+            0,
+            8,
+            12,
+            2
+          ],
+          "target": [
+            11,
+            10
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            8,
+            0,
+            0,
+            10,
+            9,
+            3
+          ],
+          "target": [
+            12,
+            15
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            7,
+            1,
+            0,
+            9,
+            11,
+            2
+          ],
+          "target": [
+            11,
+            10
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            7,
+            1,
+            0,
+            11,
+            8,
+            3
+          ],
+          "target": [
+            12,
+            15
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            6,
+            2,
+            0,
+            10,
+            10,
+            2
+          ],
+          "target": [
+            11,
+            10
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            6,
+            2,
+            0,
+            12,
+            7,
+            3
+          ],
+          "target": [
+            12,
+            15
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            7,
+            0,
+            1,
+            9,
+            12,
+            1
+          ],
+          "target": [
+            11,
+            10
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            7,
+            0,
+            1,
+            11,
+            9,
+            2
+          ],
+          "target": [
+            12,
+            15
+          ],
+          "local_type_sum_reachable": true
+        }
+      ]
+    },
+    {
+      "circle_count": 23,
+      "raw_signature_count": 37,
+      "after_block_family_convexity": 28,
+      "after_summed_local_line_inequalities": 28,
+      "after_local_type_sum": 13,
+      "survivors": [
+        {
+          "signature": [
+            7,
+            0,
+            0,
+            9,
+            12,
+            2
+          ],
+          "target": [
+            11,
+            10
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            7,
+            0,
+            0,
+            11,
+            9,
+            3
+          ],
+          "target": [
+            12,
+            15
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            10,
+            0,
+            0,
+            8,
+            14,
+            1
+          ],
+          "target": [
+            22,
+            5
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            10,
+            0,
+            0,
+            10,
+            11,
+            2
+          ],
+          "target": [
+            23,
+            10
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            10,
+            0,
+            0,
+            12,
+            8,
+            3
+          ],
+          "target": [
+            24,
+            15
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            6,
+            1,
+            0,
+            10,
+            11,
+            2
+          ],
+          "target": [
+            11,
+            10
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            6,
+            1,
+            0,
+            12,
+            8,
+            3
+          ],
+          "target": [
+            12,
+            15
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            5,
+            2,
+            0,
+            11,
+            10,
+            2
+          ],
+          "target": [
+            11,
+            10
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            5,
+            2,
+            0,
+            13,
+            7,
+            3
+          ],
+          "target": [
+            12,
+            15
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            4,
+            3,
+            0,
+            12,
+            9,
+            2
+          ],
+          "target": [
+            11,
+            10
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            4,
+            3,
+            0,
+            14,
+            6,
+            3
+          ],
+          "target": [
+            12,
+            15
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            6,
+            0,
+            1,
+            10,
+            12,
+            1
+          ],
+          "target": [
+            11,
+            10
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            6,
+            0,
+            1,
+            12,
+            9,
+            2
+          ],
+          "target": [
+            12,
+            15
+          ],
+          "local_type_sum_reachable": true
+        }
+      ]
+    },
+    {
+      "circle_count": 24,
+      "raw_signature_count": 48,
+      "after_block_family_convexity": 36,
+      "after_summed_local_line_inequalities": 36,
+      "after_local_type_sum": 18,
+      "survivors": [
+        {
+          "signature": [
+            6,
+            0,
+            0,
+            10,
+            12,
+            2
+          ],
+          "target": [
+            11,
+            10
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            6,
+            0,
+            0,
+            12,
+            9,
+            3
+          ],
+          "target": [
+            12,
+            15
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            9,
+            0,
+            0,
+            9,
+            14,
+            1
+          ],
+          "target": [
+            22,
+            5
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            9,
+            0,
+            0,
+            11,
+            11,
+            2
+          ],
+          "target": [
+            23,
+            10
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            9,
+            0,
+            0,
+            13,
+            8,
+            3
+          ],
+          "target": [
+            24,
+            15
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            5,
+            1,
+            0,
+            11,
+            11,
+            2
+          ],
+          "target": [
+            11,
+            10
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            5,
+            1,
+            0,
+            13,
+            8,
+            3
+          ],
+          "target": [
+            12,
+            15
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            8,
+            1,
+            0,
+            10,
+            13,
+            1
+          ],
+          "target": [
+            22,
+            5
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            8,
+            1,
+            0,
+            12,
+            10,
+            2
+          ],
+          "target": [
+            23,
+            10
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            8,
+            1,
+            0,
+            14,
+            7,
+            3
+          ],
+          "target": [
+            24,
+            15
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            4,
+            2,
+            0,
+            12,
+            10,
+            2
+          ],
+          "target": [
+            11,
+            10
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            4,
+            2,
+            0,
+            14,
+            7,
+            3
+          ],
+          "target": [
+            12,
+            15
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            3,
+            3,
+            0,
+            13,
+            9,
+            2
+          ],
+          "target": [
+            11,
+            10
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            3,
+            3,
+            0,
+            15,
+            6,
+            3
+          ],
+          "target": [
+            12,
+            15
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            5,
+            0,
+            1,
+            11,
+            12,
+            1
+          ],
+          "target": [
+            11,
+            10
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            5,
+            0,
+            1,
+            13,
+            9,
+            2
+          ],
+          "target": [
+            12,
+            15
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            4,
+            1,
+            1,
+            12,
+            11,
+            1
+          ],
+          "target": [
+            11,
+            10
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            4,
+            1,
+            1,
+            14,
+            8,
+            2
+          ],
+          "target": [
+            12,
+            15
+          ],
+          "local_type_sum_reachable": true
+        }
+      ]
+    }
+  ]
+}

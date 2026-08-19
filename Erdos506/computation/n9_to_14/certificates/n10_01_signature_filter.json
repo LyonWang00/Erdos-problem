@@ -1,0 +1,3560 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "claim": "Necessary aggregate local-arrangement filter.",
+  "n": 10,
+  "sizes": [
+    3,
+    4,
+    5,
+    6
+  ],
+  "proof_scope": "global signature inequalities, block-family convexity, summed local line inequalities, and target-wise integer balance of local types; no labelled supports",
+  "local_type_count": 44,
+  "reachable_target_count": 15,
+  "distinct_target_count": 25,
+  "target_audits": [
+    {
+      "target": [
+        0,
+        30,
+        0
+      ],
+      "status": "OPTIMAL",
+      "wall_time_seconds": 0.0026558000000000003
+    },
+    {
+      "target": [
+        6,
+        0,
+        12
+      ],
+      "status": "INFEASIBLE",
+      "wall_time_seconds": 9.730000000000001e-05
+    },
+    {
+      "target": [
+        7,
+        5,
+        6
+      ],
+      "status": "INFEASIBLE",
+      "wall_time_seconds": 0.000125
+    },
+    {
+      "target": [
+        8,
+        10,
+        6
+      ],
+      "status": "INFEASIBLE",
+      "wall_time_seconds": 0.0001088
+    },
+    {
+      "target": [
+        9,
+        15,
+        0
+      ],
+      "status": "INFEASIBLE",
+      "wall_time_seconds": 0.0017061
+    },
+    {
+      "target": [
+        9,
+        15,
+        6
+      ],
+      "status": "INFEASIBLE",
+      "wall_time_seconds": 0.00044780000000000004
+    },
+    {
+      "target": [
+        10,
+        20,
+        0
+      ],
+      "status": "OPTIMAL",
+      "wall_time_seconds": 0.0016367
+    },
+    {
+      "target": [
+        11,
+        25,
+        0
+      ],
+      "status": "OPTIMAL",
+      "wall_time_seconds": 0.0016165
+    },
+    {
+      "target": [
+        12,
+        30,
+        0
+      ],
+      "status": "OPTIMAL",
+      "wall_time_seconds": 0.0016932000000000002
+    },
+    {
+      "target": [
+        18,
+        0,
+        6
+      ],
+      "status": "INFEASIBLE",
+      "wall_time_seconds": 0.00045480000000000005
+    },
+    {
+      "target": [
+        18,
+        0,
+        12
+      ],
+      "status": "INFEASIBLE",
+      "wall_time_seconds": 0.00031620000000000004
+    },
+    {
+      "target": [
+        19,
+        5,
+        0
+      ],
+      "status": "INFEASIBLE",
+      "wall_time_seconds": 0.0019818
+    },
+    {
+      "target": [
+        19,
+        5,
+        6
+      ],
+      "status": "INFEASIBLE",
+      "wall_time_seconds": 0.0008634000000000001
+    },
+    {
+      "target": [
+        20,
+        10,
+        0
+      ],
+      "status": "OPTIMAL",
+      "wall_time_seconds": 0.0029904000000000003
+    },
+    {
+      "target": [
+        20,
+        10,
+        6
+      ],
+      "status": "OPTIMAL",
+      "wall_time_seconds": 0.0011915
+    },
+    {
+      "target": [
+        21,
+        15,
+        0
+      ],
+      "status": "OPTIMAL",
+      "wall_time_seconds": 0.0023959000000000003
+    },
+    {
+      "target": [
+        21,
+        15,
+        6
+      ],
+      "status": "OPTIMAL",
+      "wall_time_seconds": 0.0014794
+    },
+    {
+      "target": [
+        22,
+        20,
+        0
+      ],
+      "status": "OPTIMAL",
+      "wall_time_seconds": 0.002667
+    },
+    {
+      "target": [
+        23,
+        25,
+        0
+      ],
+      "status": "OPTIMAL",
+      "wall_time_seconds": 0.0027336
+    },
+    {
+      "target": [
+        24,
+        30,
+        0
+      ],
+      "status": "OPTIMAL",
+      "wall_time_seconds": 0.0026906
+    },
+    {
+      "target": [
+        30,
+        0,
+        6
+      ],
+      "status": "OPTIMAL",
+      "wall_time_seconds": 0.0013160000000000001
+    },
+    {
+      "target": [
+        30,
+        0,
+        12
+      ],
+      "status": "INFEASIBLE",
+      "wall_time_seconds": 0.0005129
+    },
+    {
+      "target": [
+        31,
+        5,
+        6
+      ],
+      "status": "OPTIMAL",
+      "wall_time_seconds": 0.0034293
+    },
+    {
+      "target": [
+        32,
+        10,
+        6
+      ],
+      "status": "OPTIMAL",
+      "wall_time_seconds": 0.0033971
+    },
+    {
+      "target": [
+        33,
+        15,
+        6
+      ],
+      "status": "OPTIMAL",
+      "wall_time_seconds": 0.0037517
+    }
+  ],
+  "ortools_version": "9.15.6755",
+  "coordinate_bounds": [
+    33,
+    30,
+    12
+  ],
+  "layers": [
+    {
+      "circle_count": 25,
+      "raw_signature_count": 0,
+      "after_block_family_convexity": 0,
+      "after_summed_local_line_inequalities": 0,
+      "after_local_type_sum": 0,
+      "survivors": []
+    },
+    {
+      "circle_count": 26,
+      "raw_signature_count": 0,
+      "after_block_family_convexity": 0,
+      "after_summed_local_line_inequalities": 0,
+      "after_local_type_sum": 0,
+      "survivors": []
+    },
+    {
+      "circle_count": 27,
+      "raw_signature_count": 0,
+      "after_block_family_convexity": 0,
+      "after_summed_local_line_inequalities": 0,
+      "after_local_type_sum": 0,
+      "survivors": []
+    },
+    {
+      "circle_count": 28,
+      "raw_signature_count": 12,
+      "after_block_family_convexity": 12,
+      "after_summed_local_line_inequalities": 12,
+      "after_local_type_sum": 3,
+      "survivors": [
+        {
+          "signature": [
+            11,
+            0,
+            0,
+            0,
+            9,
+            15,
+            4,
+            0
+          ],
+          "target": [
+            10,
+            20,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            10,
+            1,
+            0,
+            0,
+            10,
+            14,
+            4,
+            0
+          ],
+          "target": [
+            10,
+            20,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            10,
+            0,
+            1,
+            0,
+            10,
+            15,
+            3,
+            0
+          ],
+          "target": [
+            10,
+            20,
+            0
+          ],
+          "local_type_sum_reachable": true
+        }
+      ]
+    },
+    {
+      "circle_count": 29,
+      "raw_signature_count": 36,
+      "after_block_family_convexity": 36,
+      "after_summed_local_line_inequalities": 36,
+      "after_local_type_sum": 11,
+      "survivors": [
+        {
+          "signature": [
+            7,
+            0,
+            0,
+            0,
+            13,
+            10,
+            6,
+            0
+          ],
+          "target": [
+            0,
+            30,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            10,
+            0,
+            0,
+            0,
+            10,
+            15,
+            4,
+            0
+          ],
+          "target": [
+            10,
+            20,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            10,
+            0,
+            0,
+            0,
+            12,
+            12,
+            5,
+            0
+          ],
+          "target": [
+            11,
+            25,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            12,
+            0,
+            0,
+            0,
+            12,
+            14,
+            2,
+            1
+          ],
+          "target": [
+            20,
+            10,
+            6
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            9,
+            1,
+            0,
+            0,
+            11,
+            14,
+            4,
+            0
+          ],
+          "target": [
+            10,
+            20,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            9,
+            1,
+            0,
+            0,
+            13,
+            11,
+            5,
+            0
+          ],
+          "target": [
+            11,
+            25,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            11,
+            1,
+            0,
+            0,
+            13,
+            13,
+            2,
+            1
+          ],
+          "target": [
+            20,
+            10,
+            6
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            8,
+            2,
+            0,
+            0,
+            12,
+            13,
+            4,
+            0
+          ],
+          "target": [
+            10,
+            20,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            7,
+            3,
+            0,
+            0,
+            13,
+            12,
+            4,
+            0
+          ],
+          "target": [
+            10,
+            20,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            9,
+            0,
+            1,
+            0,
+            11,
+            15,
+            3,
+            0
+          ],
+          "target": [
+            10,
+            20,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            9,
+            0,
+            1,
+            0,
+            13,
+            12,
+            4,
+            0
+          ],
+          "target": [
+            11,
+            25,
+            0
+          ],
+          "local_type_sum_reachable": true
+        }
+      ]
+    },
+    {
+      "circle_count": 30,
+      "raw_signature_count": 85,
+      "after_block_family_convexity": 78,
+      "after_summed_local_line_inequalities": 78,
+      "after_local_type_sum": 35,
+      "survivors": [
+        {
+          "signature": [
+            6,
+            0,
+            0,
+            0,
+            14,
+            10,
+            6,
+            0
+          ],
+          "target": [
+            0,
+            30,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            9,
+            0,
+            0,
+            0,
+            11,
+            15,
+            4,
+            0
+          ],
+          "target": [
+            10,
+            20,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            9,
+            0,
+            0,
+            0,
+            13,
+            12,
+            5,
+            0
+          ],
+          "target": [
+            11,
+            25,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            9,
+            0,
+            0,
+            0,
+            15,
+            9,
+            6,
+            0
+          ],
+          "target": [
+            12,
+            30,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            11,
+            0,
+            0,
+            0,
+            13,
+            14,
+            2,
+            1
+          ],
+          "target": [
+            20,
+            10,
+            6
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            11,
+            0,
+            0,
+            0,
+            15,
+            11,
+            3,
+            1
+          ],
+          "target": [
+            21,
+            15,
+            6
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            12,
+            0,
+            0,
+            0,
+            8,
+            20,
+            2,
+            0
+          ],
+          "target": [
+            20,
+            10,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            12,
+            0,
+            0,
+            0,
+            10,
+            17,
+            3,
+            0
+          ],
+          "target": [
+            21,
+            15,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            12,
+            0,
+            0,
+            0,
+            12,
+            14,
+            4,
+            0
+          ],
+          "target": [
+            22,
+            20,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            12,
+            0,
+            0,
+            0,
+            14,
+            11,
+            5,
+            0
+          ],
+          "target": [
+            23,
+            25,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            12,
+            0,
+            0,
+            0,
+            16,
+            8,
+            6,
+            0
+          ],
+          "target": [
+            24,
+            30,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            5,
+            1,
+            0,
+            0,
+            15,
+            9,
+            6,
+            0
+          ],
+          "target": [
+            0,
+            30,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            8,
+            1,
+            0,
+            0,
+            12,
+            14,
+            4,
+            0
+          ],
+          "target": [
+            10,
+            20,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            8,
+            1,
+            0,
+            0,
+            14,
+            11,
+            5,
+            0
+          ],
+          "target": [
+            11,
+            25,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            8,
+            1,
+            0,
+            0,
+            16,
+            8,
+            6,
+            0
+          ],
+          "target": [
+            12,
+            30,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            10,
+            1,
+            0,
+            0,
+            14,
+            13,
+            2,
+            1
+          ],
+          "target": [
+            20,
+            10,
+            6
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            10,
+            1,
+            0,
+            0,
+            16,
+            10,
+            3,
+            1
+          ],
+          "target": [
+            21,
+            15,
+            6
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            11,
+            1,
+            0,
+            0,
+            9,
+            19,
+            2,
+            0
+          ],
+          "target": [
+            20,
+            10,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            11,
+            1,
+            0,
+            0,
+            11,
+            16,
+            3,
+            0
+          ],
+          "target": [
+            21,
+            15,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            11,
+            1,
+            0,
+            0,
+            13,
+            13,
+            4,
+            0
+          ],
+          "target": [
+            22,
+            20,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            11,
+            1,
+            0,
+            0,
+            15,
+            10,
+            5,
+            0
+          ],
+          "target": [
+            23,
+            25,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            4,
+            2,
+            0,
+            0,
+            16,
+            8,
+            6,
+            0
+          ],
+          "target": [
+            0,
+            30,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            7,
+            2,
+            0,
+            0,
+            13,
+            13,
+            4,
+            0
+          ],
+          "target": [
+            10,
+            20,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            7,
+            2,
+            0,
+            0,
+            15,
+            10,
+            5,
+            0
+          ],
+          "target": [
+            11,
+            25,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            9,
+            2,
+            0,
+            0,
+            15,
+            12,
+            2,
+            1
+          ],
+          "target": [
+            20,
+            10,
+            6
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            6,
+            3,
+            0,
+            0,
+            14,
+            12,
+            4,
+            0
+          ],
+          "target": [
+            10,
+            20,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            6,
+            3,
+            0,
+            0,
+            16,
+            9,
+            5,
+            0
+          ],
+          "target": [
+            11,
+            25,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            5,
+            0,
+            1,
+            0,
+            15,
+            10,
+            5,
+            0
+          ],
+          "target": [
+            0,
+            30,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            8,
+            0,
+            1,
+            0,
+            12,
+            15,
+            3,
+            0
+          ],
+          "target": [
+            10,
+            20,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            8,
+            0,
+            1,
+            0,
+            14,
+            12,
+            4,
+            0
+          ],
+          "target": [
+            11,
+            25,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            8,
+            0,
+            1,
+            0,
+            16,
+            9,
+            5,
+            0
+          ],
+          "target": [
+            12,
+            30,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            10,
+            0,
+            1,
+            0,
+            14,
+            14,
+            1,
+            1
+          ],
+          "target": [
+            20,
+            10,
+            6
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            10,
+            0,
+            1,
+            0,
+            16,
+            11,
+            2,
+            1
+          ],
+          "target": [
+            21,
+            15,
+            6
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            7,
+            1,
+            1,
+            0,
+            13,
+            14,
+            3,
+            0
+          ],
+          "target": [
+            10,
+            20,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            7,
+            1,
+            1,
+            0,
+            15,
+            11,
+            4,
+            0
+          ],
+          "target": [
+            11,
+            25,
+            0
+          ],
+          "local_type_sum_reachable": true
+        }
+      ]
+    },
+    {
+      "circle_count": 31,
+      "raw_signature_count": 168,
+      "after_block_family_convexity": 111,
+      "after_summed_local_line_inequalities": 111,
+      "after_local_type_sum": 58,
+      "survivors": [
+        {
+          "signature": [
+            5,
+            0,
+            0,
+            0,
+            15,
+            10,
+            6,
+            0
+          ],
+          "target": [
+            0,
+            30,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            8,
+            0,
+            0,
+            0,
+            12,
+            15,
+            4,
+            0
+          ],
+          "target": [
+            10,
+            20,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            8,
+            0,
+            0,
+            0,
+            14,
+            12,
+            5,
+            0
+          ],
+          "target": [
+            11,
+            25,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            8,
+            0,
+            0,
+            0,
+            16,
+            9,
+            6,
+            0
+          ],
+          "target": [
+            12,
+            30,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            10,
+            0,
+            0,
+            0,
+            14,
+            14,
+            2,
+            1
+          ],
+          "target": [
+            20,
+            10,
+            6
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            10,
+            0,
+            0,
+            0,
+            16,
+            11,
+            3,
+            1
+          ],
+          "target": [
+            21,
+            15,
+            6
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            11,
+            0,
+            0,
+            0,
+            9,
+            20,
+            2,
+            0
+          ],
+          "target": [
+            20,
+            10,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            11,
+            0,
+            0,
+            0,
+            11,
+            17,
+            3,
+            0
+          ],
+          "target": [
+            21,
+            15,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            11,
+            0,
+            0,
+            0,
+            13,
+            14,
+            4,
+            0
+          ],
+          "target": [
+            22,
+            20,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            11,
+            0,
+            0,
+            0,
+            15,
+            11,
+            5,
+            0
+          ],
+          "target": [
+            23,
+            25,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            11,
+            0,
+            0,
+            0,
+            17,
+            8,
+            6,
+            0
+          ],
+          "target": [
+            24,
+            30,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            4,
+            1,
+            0,
+            0,
+            16,
+            9,
+            6,
+            0
+          ],
+          "target": [
+            0,
+            30,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            7,
+            1,
+            0,
+            0,
+            13,
+            14,
+            4,
+            0
+          ],
+          "target": [
+            10,
+            20,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            7,
+            1,
+            0,
+            0,
+            15,
+            11,
+            5,
+            0
+          ],
+          "target": [
+            11,
+            25,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            7,
+            1,
+            0,
+            0,
+            17,
+            8,
+            6,
+            0
+          ],
+          "target": [
+            12,
+            30,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            9,
+            1,
+            0,
+            0,
+            15,
+            13,
+            2,
+            1
+          ],
+          "target": [
+            20,
+            10,
+            6
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            9,
+            1,
+            0,
+            0,
+            17,
+            10,
+            3,
+            1
+          ],
+          "target": [
+            21,
+            15,
+            6
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            10,
+            1,
+            0,
+            0,
+            10,
+            19,
+            2,
+            0
+          ],
+          "target": [
+            20,
+            10,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            10,
+            1,
+            0,
+            0,
+            12,
+            16,
+            3,
+            0
+          ],
+          "target": [
+            21,
+            15,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            10,
+            1,
+            0,
+            0,
+            14,
+            13,
+            4,
+            0
+          ],
+          "target": [
+            22,
+            20,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            10,
+            1,
+            0,
+            0,
+            16,
+            10,
+            5,
+            0
+          ],
+          "target": [
+            23,
+            25,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            10,
+            1,
+            0,
+            0,
+            18,
+            7,
+            6,
+            0
+          ],
+          "target": [
+            24,
+            30,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            3,
+            2,
+            0,
+            0,
+            17,
+            8,
+            6,
+            0
+          ],
+          "target": [
+            0,
+            30,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            6,
+            2,
+            0,
+            0,
+            14,
+            13,
+            4,
+            0
+          ],
+          "target": [
+            10,
+            20,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            6,
+            2,
+            0,
+            0,
+            16,
+            10,
+            5,
+            0
+          ],
+          "target": [
+            11,
+            25,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            6,
+            2,
+            0,
+            0,
+            18,
+            7,
+            6,
+            0
+          ],
+          "target": [
+            12,
+            30,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            8,
+            2,
+            0,
+            0,
+            16,
+            12,
+            2,
+            1
+          ],
+          "target": [
+            20,
+            10,
+            6
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            8,
+            2,
+            0,
+            0,
+            18,
+            9,
+            3,
+            1
+          ],
+          "target": [
+            21,
+            15,
+            6
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            9,
+            2,
+            0,
+            0,
+            11,
+            18,
+            2,
+            0
+          ],
+          "target": [
+            20,
+            10,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            9,
+            2,
+            0,
+            0,
+            13,
+            15,
+            3,
+            0
+          ],
+          "target": [
+            21,
+            15,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            9,
+            2,
+            0,
+            0,
+            15,
+            12,
+            4,
+            0
+          ],
+          "target": [
+            22,
+            20,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            9,
+            2,
+            0,
+            0,
+            17,
+            9,
+            5,
+            0
+          ],
+          "target": [
+            23,
+            25,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            9,
+            2,
+            0,
+            0,
+            19,
+            6,
+            6,
+            0
+          ],
+          "target": [
+            24,
+            30,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            2,
+            3,
+            0,
+            0,
+            18,
+            7,
+            6,
+            0
+          ],
+          "target": [
+            0,
+            30,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            5,
+            3,
+            0,
+            0,
+            15,
+            12,
+            4,
+            0
+          ],
+          "target": [
+            10,
+            20,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            5,
+            3,
+            0,
+            0,
+            17,
+            9,
+            5,
+            0
+          ],
+          "target": [
+            11,
+            25,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            5,
+            3,
+            0,
+            0,
+            19,
+            6,
+            6,
+            0
+          ],
+          "target": [
+            12,
+            30,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            7,
+            3,
+            0,
+            0,
+            17,
+            11,
+            2,
+            1
+          ],
+          "target": [
+            20,
+            10,
+            6
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            7,
+            3,
+            0,
+            0,
+            19,
+            8,
+            3,
+            1
+          ],
+          "target": [
+            21,
+            15,
+            6
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            1,
+            4,
+            0,
+            0,
+            19,
+            6,
+            6,
+            0
+          ],
+          "target": [
+            0,
+            30,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            4,
+            4,
+            0,
+            0,
+            16,
+            11,
+            4,
+            0
+          ],
+          "target": [
+            10,
+            20,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            4,
+            4,
+            0,
+            0,
+            18,
+            8,
+            5,
+            0
+          ],
+          "target": [
+            11,
+            25,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            4,
+            4,
+            0,
+            0,
+            20,
+            5,
+            6,
+            0
+          ],
+          "target": [
+            12,
+            30,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            4,
+            0,
+            1,
+            0,
+            16,
+            10,
+            5,
+            0
+          ],
+          "target": [
+            0,
+            30,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            7,
+            0,
+            1,
+            0,
+            13,
+            15,
+            3,
+            0
+          ],
+          "target": [
+            10,
+            20,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            7,
+            0,
+            1,
+            0,
+            15,
+            12,
+            4,
+            0
+          ],
+          "target": [
+            11,
+            25,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            7,
+            0,
+            1,
+            0,
+            17,
+            9,
+            5,
+            0
+          ],
+          "target": [
+            12,
+            30,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            9,
+            0,
+            1,
+            0,
+            15,
+            14,
+            1,
+            1
+          ],
+          "target": [
+            20,
+            10,
+            6
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            9,
+            0,
+            1,
+            0,
+            17,
+            11,
+            2,
+            1
+          ],
+          "target": [
+            21,
+            15,
+            6
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            10,
+            0,
+            1,
+            0,
+            10,
+            20,
+            1,
+            0
+          ],
+          "target": [
+            20,
+            10,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            10,
+            0,
+            1,
+            0,
+            12,
+            17,
+            2,
+            0
+          ],
+          "target": [
+            21,
+            15,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            10,
+            0,
+            1,
+            0,
+            14,
+            14,
+            3,
+            0
+          ],
+          "target": [
+            22,
+            20,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            10,
+            0,
+            1,
+            0,
+            16,
+            11,
+            4,
+            0
+          ],
+          "target": [
+            23,
+            25,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            10,
+            0,
+            1,
+            0,
+            18,
+            8,
+            5,
+            0
+          ],
+          "target": [
+            24,
+            30,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            6,
+            1,
+            1,
+            0,
+            14,
+            14,
+            3,
+            0
+          ],
+          "target": [
+            10,
+            20,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            6,
+            1,
+            1,
+            0,
+            16,
+            11,
+            4,
+            0
+          ],
+          "target": [
+            11,
+            25,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            5,
+            2,
+            1,
+            0,
+            15,
+            13,
+            3,
+            0
+          ],
+          "target": [
+            10,
+            20,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            5,
+            2,
+            1,
+            0,
+            17,
+            10,
+            4,
+            0
+          ],
+          "target": [
+            11,
+            25,
+            0
+          ],
+          "local_type_sum_reachable": true
+        }
+      ]
+    },
+    {
+      "circle_count": 32,
+      "raw_signature_count": 250,
+      "after_block_family_convexity": 132,
+      "after_summed_local_line_inequalities": 132,
+      "after_local_type_sum": 73,
+      "survivors": [
+        {
+          "signature": [
+            4,
+            0,
+            0,
+            0,
+            16,
+            10,
+            6,
+            0
+          ],
+          "target": [
+            0,
+            30,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            7,
+            0,
+            0,
+            0,
+            13,
+            15,
+            4,
+            0
+          ],
+          "target": [
+            10,
+            20,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            7,
+            0,
+            0,
+            0,
+            15,
+            12,
+            5,
+            0
+          ],
+          "target": [
+            11,
+            25,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            7,
+            0,
+            0,
+            0,
+            17,
+            9,
+            6,
+            0
+          ],
+          "target": [
+            12,
+            30,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            9,
+            0,
+            0,
+            0,
+            15,
+            14,
+            2,
+            1
+          ],
+          "target": [
+            20,
+            10,
+            6
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            9,
+            0,
+            0,
+            0,
+            17,
+            11,
+            3,
+            1
+          ],
+          "target": [
+            21,
+            15,
+            6
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            10,
+            0,
+            0,
+            0,
+            10,
+            20,
+            2,
+            0
+          ],
+          "target": [
+            20,
+            10,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            10,
+            0,
+            0,
+            0,
+            12,
+            17,
+            3,
+            0
+          ],
+          "target": [
+            21,
+            15,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            10,
+            0,
+            0,
+            0,
+            14,
+            14,
+            4,
+            0
+          ],
+          "target": [
+            22,
+            20,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            10,
+            0,
+            0,
+            0,
+            16,
+            11,
+            5,
+            0
+          ],
+          "target": [
+            23,
+            25,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            10,
+            0,
+            0,
+            0,
+            18,
+            8,
+            6,
+            0
+          ],
+          "target": [
+            24,
+            30,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            12,
+            0,
+            0,
+            0,
+            12,
+            19,
+            0,
+            1
+          ],
+          "target": [
+            30,
+            0,
+            6
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            12,
+            0,
+            0,
+            0,
+            14,
+            16,
+            1,
+            1
+          ],
+          "target": [
+            31,
+            5,
+            6
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            12,
+            0,
+            0,
+            0,
+            16,
+            13,
+            2,
+            1
+          ],
+          "target": [
+            32,
+            10,
+            6
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            12,
+            0,
+            0,
+            0,
+            18,
+            10,
+            3,
+            1
+          ],
+          "target": [
+            33,
+            15,
+            6
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            3,
+            1,
+            0,
+            0,
+            17,
+            9,
+            6,
+            0
+          ],
+          "target": [
+            0,
+            30,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            6,
+            1,
+            0,
+            0,
+            14,
+            14,
+            4,
+            0
+          ],
+          "target": [
+            10,
+            20,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            6,
+            1,
+            0,
+            0,
+            16,
+            11,
+            5,
+            0
+          ],
+          "target": [
+            11,
+            25,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            6,
+            1,
+            0,
+            0,
+            18,
+            8,
+            6,
+            0
+          ],
+          "target": [
+            12,
+            30,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            8,
+            1,
+            0,
+            0,
+            16,
+            13,
+            2,
+            1
+          ],
+          "target": [
+            20,
+            10,
+            6
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            8,
+            1,
+            0,
+            0,
+            18,
+            10,
+            3,
+            1
+          ],
+          "target": [
+            21,
+            15,
+            6
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            9,
+            1,
+            0,
+            0,
+            11,
+            19,
+            2,
+            0
+          ],
+          "target": [
+            20,
+            10,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            9,
+            1,
+            0,
+            0,
+            13,
+            16,
+            3,
+            0
+          ],
+          "target": [
+            21,
+            15,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            9,
+            1,
+            0,
+            0,
+            15,
+            13,
+            4,
+            0
+          ],
+          "target": [
+            22,
+            20,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            9,
+            1,
+            0,
+            0,
+            17,
+            10,
+            5,
+            0
+          ],
+          "target": [
+            23,
+            25,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            9,
+            1,
+            0,
+            0,
+            19,
+            7,
+            6,
+            0
+          ],
+          "target": [
+            24,
+            30,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            11,
+            1,
+            0,
+            0,
+            13,
+            18,
+            0,
+            1
+          ],
+          "target": [
+            30,
+            0,
+            6
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            11,
+            1,
+            0,
+            0,
+            15,
+            15,
+            1,
+            1
+          ],
+          "target": [
+            31,
+            5,
+            6
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            11,
+            1,
+            0,
+            0,
+            17,
+            12,
+            2,
+            1
+          ],
+          "target": [
+            32,
+            10,
+            6
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            11,
+            1,
+            0,
+            0,
+            19,
+            9,
+            3,
+            1
+          ],
+          "target": [
+            33,
+            15,
+            6
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            2,
+            2,
+            0,
+            0,
+            18,
+            8,
+            6,
+            0
+          ],
+          "target": [
+            0,
+            30,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            5,
+            2,
+            0,
+            0,
+            15,
+            13,
+            4,
+            0
+          ],
+          "target": [
+            10,
+            20,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            5,
+            2,
+            0,
+            0,
+            17,
+            10,
+            5,
+            0
+          ],
+          "target": [
+            11,
+            25,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            5,
+            2,
+            0,
+            0,
+            19,
+            7,
+            6,
+            0
+          ],
+          "target": [
+            12,
+            30,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            7,
+            2,
+            0,
+            0,
+            17,
+            12,
+            2,
+            1
+          ],
+          "target": [
+            20,
+            10,
+            6
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            7,
+            2,
+            0,
+            0,
+            19,
+            9,
+            3,
+            1
+          ],
+          "target": [
+            21,
+            15,
+            6
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            8,
+            2,
+            0,
+            0,
+            12,
+            18,
+            2,
+            0
+          ],
+          "target": [
+            20,
+            10,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            8,
+            2,
+            0,
+            0,
+            14,
+            15,
+            3,
+            0
+          ],
+          "target": [
+            21,
+            15,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            8,
+            2,
+            0,
+            0,
+            16,
+            12,
+            4,
+            0
+          ],
+          "target": [
+            22,
+            20,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            8,
+            2,
+            0,
+            0,
+            18,
+            9,
+            5,
+            0
+          ],
+          "target": [
+            23,
+            25,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            8,
+            2,
+            0,
+            0,
+            20,
+            6,
+            6,
+            0
+          ],
+          "target": [
+            24,
+            30,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            1,
+            3,
+            0,
+            0,
+            19,
+            7,
+            6,
+            0
+          ],
+          "target": [
+            0,
+            30,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            4,
+            3,
+            0,
+            0,
+            16,
+            12,
+            4,
+            0
+          ],
+          "target": [
+            10,
+            20,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            4,
+            3,
+            0,
+            0,
+            18,
+            9,
+            5,
+            0
+          ],
+          "target": [
+            11,
+            25,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            4,
+            3,
+            0,
+            0,
+            20,
+            6,
+            6,
+            0
+          ],
+          "target": [
+            12,
+            30,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            6,
+            3,
+            0,
+            0,
+            18,
+            11,
+            2,
+            1
+          ],
+          "target": [
+            20,
+            10,
+            6
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            6,
+            3,
+            0,
+            0,
+            20,
+            8,
+            3,
+            1
+          ],
+          "target": [
+            21,
+            15,
+            6
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            7,
+            3,
+            0,
+            0,
+            13,
+            17,
+            2,
+            0
+          ],
+          "target": [
+            20,
+            10,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            7,
+            3,
+            0,
+            0,
+            15,
+            14,
+            3,
+            0
+          ],
+          "target": [
+            21,
+            15,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            7,
+            3,
+            0,
+            0,
+            17,
+            11,
+            4,
+            0
+          ],
+          "target": [
+            22,
+            20,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            7,
+            3,
+            0,
+            0,
+            19,
+            8,
+            5,
+            0
+          ],
+          "target": [
+            23,
+            25,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            7,
+            3,
+            0,
+            0,
+            21,
+            5,
+            6,
+            0
+          ],
+          "target": [
+            24,
+            30,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            0,
+            4,
+            0,
+            0,
+            20,
+            6,
+            6,
+            0
+          ],
+          "target": [
+            0,
+            30,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            3,
+            4,
+            0,
+            0,
+            17,
+            11,
+            4,
+            0
+          ],
+          "target": [
+            10,
+            20,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            3,
+            4,
+            0,
+            0,
+            19,
+            8,
+            5,
+            0
+          ],
+          "target": [
+            11,
+            25,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            3,
+            4,
+            0,
+            0,
+            21,
+            5,
+            6,
+            0
+          ],
+          "target": [
+            12,
+            30,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            3,
+            0,
+            1,
+            0,
+            17,
+            10,
+            5,
+            0
+          ],
+          "target": [
+            0,
+            30,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            6,
+            0,
+            1,
+            0,
+            14,
+            15,
+            3,
+            0
+          ],
+          "target": [
+            10,
+            20,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            6,
+            0,
+            1,
+            0,
+            16,
+            12,
+            4,
+            0
+          ],
+          "target": [
+            11,
+            25,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            6,
+            0,
+            1,
+            0,
+            18,
+            9,
+            5,
+            0
+          ],
+          "target": [
+            12,
+            30,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            8,
+            0,
+            1,
+            0,
+            16,
+            14,
+            1,
+            1
+          ],
+          "target": [
+            20,
+            10,
+            6
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            8,
+            0,
+            1,
+            0,
+            18,
+            11,
+            2,
+            1
+          ],
+          "target": [
+            21,
+            15,
+            6
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            9,
+            0,
+            1,
+            0,
+            11,
+            20,
+            1,
+            0
+          ],
+          "target": [
+            20,
+            10,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            9,
+            0,
+            1,
+            0,
+            13,
+            17,
+            2,
+            0
+          ],
+          "target": [
+            21,
+            15,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            9,
+            0,
+            1,
+            0,
+            15,
+            14,
+            3,
+            0
+          ],
+          "target": [
+            22,
+            20,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            9,
+            0,
+            1,
+            0,
+            17,
+            11,
+            4,
+            0
+          ],
+          "target": [
+            23,
+            25,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            9,
+            0,
+            1,
+            0,
+            19,
+            8,
+            5,
+            0
+          ],
+          "target": [
+            24,
+            30,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            5,
+            1,
+            1,
+            0,
+            15,
+            14,
+            3,
+            0
+          ],
+          "target": [
+            10,
+            20,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            5,
+            1,
+            1,
+            0,
+            17,
+            11,
+            4,
+            0
+          ],
+          "target": [
+            11,
+            25,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            7,
+            1,
+            1,
+            0,
+            17,
+            13,
+            1,
+            1
+          ],
+          "target": [
+            20,
+            10,
+            6
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            4,
+            2,
+            1,
+            0,
+            16,
+            13,
+            3,
+            0
+          ],
+          "target": [
+            10,
+            20,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            4,
+            2,
+            1,
+            0,
+            18,
+            10,
+            4,
+            0
+          ],
+          "target": [
+            11,
+            25,
+            0
+          ],
+          "local_type_sum_reachable": true
+        },
+        {
+          "signature": [
+            5,
+            0,
+            2,
+            0,
+            15,
+            15,
+            2,
+            0
+          ],
+          "target": [
+            10,
+            20,
+            0
+          ],
+          "local_type_sum_reachable": true
+        }
+      ]
+    }
+  ]
+}

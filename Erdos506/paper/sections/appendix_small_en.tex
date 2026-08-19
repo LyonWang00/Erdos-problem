@@ -1,0 +1,103 @@
+\subsection{Nine through fourteen points}
+
+The source files for these six layers are in
+\begin{center}
+\file{computation/n9_to_14/}.
+\end{center}
+From that directory run
+\begin{verbatim}
+python run_verification.py --jobs 8 --seconds 240
+\end{verbatim}
+The number of workers may be changed without changing the models.  Every
+individual solver uses a fixed random seed; a timeout has status
+\texttt{UNKNOWN} and is retained.  A successful replay ends with
+\file{certificates/manifest.json}, whose seven terminal checks are
+\texttt{true} and whose status is \texttt{PASS}.  If a replay is interrupted
+after all terminal certificates have been written, the same terminal and
+SHA-256 audit can be rerun with \file{audit_manifest.py}.
+The active lower-bound table contains $c(7)=11$.  All certificates in the
+present package were regenerated after that correction; in particular, the
+twelve-point recursion now has 622, rather than 617, nine-point child
+count vectors.
+
+The files are grouped by mathematical role as follows.
+Some filenames retain implementation terminology: in those names,
+\texttt{signature} means the global count vector defined in
+Section~\ref{sec:small-uniform-en}, \texttt{profile} means the degrees attached
+to point pairs, and \texttt{support} means an actual subset of labelled points.
+These words are not additional mathematical notions.
+\begin{longtable}{P{6.2cm}P{8.3cm}}
+\toprule File & Role in the verification\\ \midrule
+\file{signature_filters.py} & enumerates all global count vectors from
+\eqref{eq:small-line-pairs-en}--\eqref{eq:small-triple-partition-en}, the
+largest-block bounds, deletion averages, and the cited line-arrangement
+inequalities\\
+\file{projected_arrangement_model.py} & generates all numerical local
+multiplicity types and their line/circle splits; the final source contains no
+historical line-deletion obstruction table\\
+\file{verify_local_type_filter.py} & checks exact unlabelled sums of the local
+multiplicity vectors and writes \file{nN_01_signature_filter.json}\\
+\file{verify_augmented_line_melchior.py} & checks first
+\eqref{eq:augmented-line-summed-en}, then the sums over all points required by
+\eqref{eq:augmented-line-point-en}; it writes certificates 02 and 03\\
+\file{filter_by_classified_split_endpoints.py} & checks the consistency
+identities linking point degrees and point-pair degrees in
+\eqref{eq:small-category-totals-en}--\eqref{eq:small-pair-profile2-en};
+the runner explicitly disables both optional finite catalogues\\
+\file{pair_profile_generator.py},
+\file{verify_pair_moment_filter.py} & generate all point-pair degree data and
+impose the exact sums of intersection sizes and of their second binomial
+coefficients, together with the disjoint-triple counts; they write
+certificate 05\\
+\file{block_intersection_rows.py},
+\file{block_row_existence_filter.py} & at $n=10$, impose the three exact
+triple strata around each represented block and the bound on matchings between
+two blocks, reducing 21 count vectors to 12\\
+\file{verify_recursive_inversion_rows.py} & maps each local multiplicity vector
+to the full count vector one order lower, balances all point totals at each
+level, and at the nine-point base selects the maximal lines and circles as
+subsets of the labelled points\\
+\file{verify_n10_final_radical_axis.py} & reconstructs the two matching
+orbits, the unique surviving line-design orbit, and the five exact minors that
+exclude the final ten-point count vector; it first reads certificate 07, records
+its SHA-256 digest, and checks that the retained rows force the two five-point
+circles to partition the point set\\
+\file{verify_n13_n14_global_inequalities.py} & independently regenerates the
+3962 and 8981 raw count vectors and checks the global exclusions and
+\eqref{eq:n13-global-two-ineq-en}; it does not select labelled point subsets\\
+\file{run_verification.py}, \file{audit_manifest.py} & execute the stages in
+order and check all terminal statuses, the unique intermediate $n=10$ count
+vector, file sizes, and SHA-256 digests\\
+\bottomrule
+\end{longtable}
+
+The terminal certificate paths are
+{\raggedright
+\begin{description}[style=nextline,leftmargin=2.8em]
+\item[$n=9$] \file{certificates/n9_04_exact_support.json}.
+\item[$n=10$] \file{certificates/n10_07_recursive.json} and
+  \file{certificates/n10_08_final_geometry.json}.
+\item[$n=11$] \file{certificates/n11_06_recursive.json}.
+\item[$n=12$] \file{certificates/n12_06_recursive.json}.
+\item[$n=13,14$] \file{certificates/n13_n14_global_inequalities.json}.
+\end{description}
+\par}
+The intermediate filenames have the numerical prefixes displayed in the
+table and are consumed in that order.  Each stage after 01 records the path
+and SHA-256 digest of its immediate input whenever it reads one.  The final
+manifest records forty-two source and certificate files.  Thus a reader may
+delete the \file{certificates} directory and regenerate the complete chain
+from the listed source files.
+
+In the audited four-worker replay, the full chain took 348.52 seconds of wall
+time.  The largest labelled base model had 840 Boolean variables and 546
+constraints, and the slowest individual recursive solve took 6.62 seconds.
+No solve approached the 240-second limit.  These figures are reported only to
+indicate scale; they are not assumptions in any certificate.
+
+The reproduction uses CPython~3.13 because the audited binary modules are its
+CPython~3.13 builds.  The pinned integer solver is OR-Tools 9.15.6755, loaded through
+\file{computation/runtime_dependencies.py}.  SymPy is used only for the exact
+ten-point polynomial calculations.  Floating-point feasibility, random
+search, and a solver status other than explicit infeasibility are never used
+to exclude a case.

@@ -1,0 +1,6673 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "claim": "The summed augmented-line Melchior inequality is checked exactly; when requested, the remaining signatures are checked by integer point-row balance only.  UNKNOWN is retained.",
+  "n": 11,
+  "source_file": "n11_01_signature_filter.json",
+  "source_sha256": "b88f0e8772ee3c9707828325a448cffb4232013a909947ebbedada80755012ad",
+  "input_signature_count": 416,
+  "summed_only": true,
+  "status_counts": {
+    "INFEASIBLE_SUMMED_INEQUALITY": 256,
+    "SURVIVES_SUMMED_INEQUALITY": 160
+  },
+  "retained_signature_count": 160,
+  "records": [
+    {
+      "signature": [
+        13,
+        0,
+        0,
+        0,
+        8,
+        26,
+        0,
+        2
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 1,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        14,
+        0,
+        0,
+        0,
+        9,
+        23,
+        3,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 7,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        14,
+        0,
+        0,
+        0,
+        11,
+        20,
+        4,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 6,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        15,
+        0,
+        0,
+        0,
+        8,
+        23,
+        5,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 14,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        15,
+        0,
+        0,
+        0,
+        10,
+        20,
+        6,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 13,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        16,
+        0,
+        0,
+        0,
+        9,
+        25,
+        0,
+        2
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 16,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        16,
+        0,
+        0,
+        0,
+        11,
+        22,
+        1,
+        2
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 15,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        12,
+        1,
+        0,
+        0,
+        9,
+        25,
+        0,
+        2
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 8,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        13,
+        1,
+        0,
+        0,
+        8,
+        25,
+        2,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 15,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        13,
+        1,
+        0,
+        0,
+        10,
+        22,
+        3,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 14,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        14,
+        1,
+        0,
+        0,
+        9,
+        22,
+        5,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 21,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        14,
+        1,
+        0,
+        0,
+        11,
+        19,
+        6,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 20,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        11,
+        2,
+        0,
+        0,
+        10,
+        24,
+        0,
+        2
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 15,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        12,
+        2,
+        0,
+        0,
+        9,
+        24,
+        2,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 22,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        12,
+        2,
+        0,
+        0,
+        11,
+        21,
+        3,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 21,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        10,
+        3,
+        0,
+        0,
+        11,
+        23,
+        0,
+        2
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 22,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        13,
+        0,
+        1,
+        0,
+        8,
+        26,
+        1,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 24,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        13,
+        0,
+        1,
+        0,
+        10,
+        23,
+        2,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 23,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        12,
+        0,
+        0,
+        0,
+        9,
+        26,
+        0,
+        2
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -8,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        13,
+        0,
+        0,
+        0,
+        8,
+        26,
+        2,
+        1
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -1,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        13,
+        0,
+        0,
+        0,
+        10,
+        23,
+        3,
+        1
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -2,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        13,
+        0,
+        0,
+        0,
+        12,
+        20,
+        4,
+        1
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -3,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        14,
+        0,
+        0,
+        0,
+        9,
+        23,
+        5,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 5,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        14,
+        0,
+        0,
+        0,
+        11,
+        20,
+        6,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 4,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        14,
+        0,
+        0,
+        0,
+        13,
+        17,
+        7,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 3,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        15,
+        0,
+        0,
+        0,
+        10,
+        25,
+        0,
+        2
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 7,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        15,
+        0,
+        0,
+        0,
+        12,
+        22,
+        1,
+        2
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 6,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        16,
+        0,
+        0,
+        0,
+        9,
+        25,
+        2,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 14,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        16,
+        0,
+        0,
+        0,
+        11,
+        22,
+        3,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 13,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        16,
+        0,
+        0,
+        0,
+        13,
+        19,
+        4,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 12,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        11,
+        1,
+        0,
+        0,
+        10,
+        25,
+        0,
+        2
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -1,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        12,
+        1,
+        0,
+        0,
+        9,
+        25,
+        2,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 6,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        12,
+        1,
+        0,
+        0,
+        11,
+        22,
+        3,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 5,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        12,
+        1,
+        0,
+        0,
+        13,
+        19,
+        4,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 4,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        13,
+        1,
+        0,
+        0,
+        10,
+        22,
+        5,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 12,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        13,
+        1,
+        0,
+        0,
+        12,
+        19,
+        6,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 11,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        13,
+        1,
+        0,
+        0,
+        14,
+        16,
+        7,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 10,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        14,
+        1,
+        0,
+        0,
+        11,
+        24,
+        0,
+        2
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 14,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        14,
+        1,
+        0,
+        0,
+        13,
+        21,
+        1,
+        2
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 13,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        10,
+        2,
+        0,
+        0,
+        11,
+        24,
+        0,
+        2
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 6,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        11,
+        2,
+        0,
+        0,
+        10,
+        24,
+        2,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 13,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        11,
+        2,
+        0,
+        0,
+        12,
+        21,
+        3,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 12,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        11,
+        2,
+        0,
+        0,
+        14,
+        18,
+        4,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 11,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        12,
+        2,
+        0,
+        0,
+        11,
+        21,
+        5,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 19,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        12,
+        2,
+        0,
+        0,
+        13,
+        18,
+        6,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 18,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        9,
+        3,
+        0,
+        0,
+        12,
+        23,
+        0,
+        2
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 13,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        10,
+        3,
+        0,
+        0,
+        11,
+        23,
+        2,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 20,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        10,
+        3,
+        0,
+        0,
+        13,
+        20,
+        3,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 19,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        8,
+        4,
+        0,
+        0,
+        13,
+        22,
+        0,
+        2
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 20,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        12,
+        0,
+        1,
+        0,
+        9,
+        26,
+        1,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 15,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        12,
+        0,
+        1,
+        0,
+        11,
+        23,
+        2,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 14,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        12,
+        0,
+        1,
+        0,
+        13,
+        20,
+        3,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 13,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        13,
+        0,
+        1,
+        0,
+        10,
+        23,
+        4,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 21,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        13,
+        0,
+        1,
+        0,
+        12,
+        20,
+        5,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 20,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        13,
+        0,
+        1,
+        0,
+        14,
+        17,
+        6,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 19,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        11,
+        1,
+        1,
+        0,
+        10,
+        25,
+        1,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 22,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        11,
+        1,
+        1,
+        0,
+        12,
+        22,
+        2,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 21,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        11,
+        1,
+        1,
+        0,
+        14,
+        19,
+        3,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 20,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        11,
+        0,
+        0,
+        1,
+        10,
+        26,
+        0,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 19,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        11,
+        0,
+        0,
+        0,
+        10,
+        26,
+        0,
+        2
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -17,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        12,
+        0,
+        0,
+        0,
+        9,
+        26,
+        2,
+        1
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -10,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        12,
+        0,
+        0,
+        0,
+        11,
+        23,
+        3,
+        1
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -11,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        12,
+        0,
+        0,
+        0,
+        13,
+        20,
+        4,
+        1
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -12,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        13,
+        0,
+        0,
+        0,
+        10,
+        23,
+        5,
+        0
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -4,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        13,
+        0,
+        0,
+        0,
+        12,
+        20,
+        6,
+        0
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -5,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        13,
+        0,
+        0,
+        0,
+        14,
+        17,
+        7,
+        0
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -6,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        13,
+        0,
+        0,
+        0,
+        16,
+        14,
+        8,
+        0
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -7,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        14,
+        0,
+        0,
+        0,
+        11,
+        25,
+        0,
+        2
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -2,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        14,
+        0,
+        0,
+        0,
+        13,
+        22,
+        1,
+        2
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -3,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        15,
+        0,
+        0,
+        0,
+        8,
+        28,
+        1,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 6,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        15,
+        0,
+        0,
+        0,
+        10,
+        25,
+        2,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 5,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        15,
+        0,
+        0,
+        0,
+        12,
+        22,
+        3,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 4,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        15,
+        0,
+        0,
+        0,
+        14,
+        19,
+        4,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 3,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        15,
+        0,
+        0,
+        0,
+        16,
+        16,
+        5,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 2,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        16,
+        0,
+        0,
+        0,
+        9,
+        25,
+        4,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 12,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        16,
+        0,
+        0,
+        0,
+        11,
+        22,
+        5,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 11,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        16,
+        0,
+        0,
+        0,
+        13,
+        19,
+        6,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 10,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        16,
+        0,
+        0,
+        0,
+        15,
+        16,
+        7,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 9,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        16,
+        0,
+        0,
+        0,
+        17,
+        13,
+        8,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 8,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        10,
+        1,
+        0,
+        0,
+        11,
+        25,
+        0,
+        2
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -10,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        11,
+        1,
+        0,
+        0,
+        10,
+        25,
+        2,
+        1
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -3,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        11,
+        1,
+        0,
+        0,
+        12,
+        22,
+        3,
+        1
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -4,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        11,
+        1,
+        0,
+        0,
+        14,
+        19,
+        4,
+        1
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -5,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        12,
+        1,
+        0,
+        0,
+        11,
+        22,
+        5,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 3,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        12,
+        1,
+        0,
+        0,
+        13,
+        19,
+        6,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 2,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        12,
+        1,
+        0,
+        0,
+        15,
+        16,
+        7,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 1,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        12,
+        1,
+        0,
+        0,
+        17,
+        13,
+        8,
+        0
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": 0,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        13,
+        1,
+        0,
+        0,
+        12,
+        24,
+        0,
+        2
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 5,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        13,
+        1,
+        0,
+        0,
+        14,
+        21,
+        1,
+        2
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 4,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        14,
+        1,
+        0,
+        0,
+        9,
+        27,
+        1,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 13,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        14,
+        1,
+        0,
+        0,
+        11,
+        24,
+        2,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 12,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        14,
+        1,
+        0,
+        0,
+        13,
+        21,
+        3,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 11,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        14,
+        1,
+        0,
+        0,
+        15,
+        18,
+        4,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 10,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        14,
+        1,
+        0,
+        0,
+        17,
+        15,
+        5,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 9,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        9,
+        2,
+        0,
+        0,
+        12,
+        24,
+        0,
+        2
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -3,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        10,
+        2,
+        0,
+        0,
+        11,
+        24,
+        2,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 4,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        10,
+        2,
+        0,
+        0,
+        13,
+        21,
+        3,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 3,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        10,
+        2,
+        0,
+        0,
+        15,
+        18,
+        4,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 2,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        11,
+        2,
+        0,
+        0,
+        12,
+        21,
+        5,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 10,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        11,
+        2,
+        0,
+        0,
+        14,
+        18,
+        6,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 9,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        11,
+        2,
+        0,
+        0,
+        16,
+        15,
+        7,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 8,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        11,
+        2,
+        0,
+        0,
+        18,
+        12,
+        8,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 7,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        12,
+        2,
+        0,
+        0,
+        13,
+        23,
+        0,
+        2
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 12,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        12,
+        2,
+        0,
+        0,
+        15,
+        20,
+        1,
+        2
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 11,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        8,
+        3,
+        0,
+        0,
+        13,
+        23,
+        0,
+        2
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 4,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        9,
+        3,
+        0,
+        0,
+        12,
+        23,
+        2,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 11,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        9,
+        3,
+        0,
+        0,
+        14,
+        20,
+        3,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 10,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        9,
+        3,
+        0,
+        0,
+        16,
+        17,
+        4,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 9,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        10,
+        3,
+        0,
+        0,
+        13,
+        20,
+        5,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 17,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        10,
+        3,
+        0,
+        0,
+        15,
+        17,
+        6,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 16,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        10,
+        3,
+        0,
+        0,
+        17,
+        14,
+        7,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 15,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        7,
+        4,
+        0,
+        0,
+        14,
+        22,
+        0,
+        2
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 11,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        8,
+        4,
+        0,
+        0,
+        13,
+        22,
+        2,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 18,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        8,
+        4,
+        0,
+        0,
+        15,
+        19,
+        3,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 17,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        8,
+        4,
+        0,
+        0,
+        17,
+        16,
+        4,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 16,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        11,
+        0,
+        1,
+        0,
+        10,
+        26,
+        1,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 6,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        11,
+        0,
+        1,
+        0,
+        12,
+        23,
+        2,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 5,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        11,
+        0,
+        1,
+        0,
+        14,
+        20,
+        3,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 4,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        12,
+        0,
+        1,
+        0,
+        11,
+        23,
+        4,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 12,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        12,
+        0,
+        1,
+        0,
+        13,
+        20,
+        5,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 11,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        12,
+        0,
+        1,
+        0,
+        15,
+        17,
+        6,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 10,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        12,
+        0,
+        1,
+        0,
+        17,
+        14,
+        7,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 9,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        13,
+        0,
+        1,
+        0,
+        14,
+        22,
+        0,
+        2
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 13,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        10,
+        1,
+        1,
+        0,
+        11,
+        25,
+        1,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 13,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        10,
+        1,
+        1,
+        0,
+        13,
+        22,
+        2,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 12,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        10,
+        1,
+        1,
+        0,
+        15,
+        19,
+        3,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 11,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        11,
+        1,
+        1,
+        0,
+        12,
+        22,
+        4,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 19,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        11,
+        1,
+        1,
+        0,
+        14,
+        19,
+        5,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 18,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        11,
+        1,
+        1,
+        0,
+        16,
+        16,
+        6,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 17,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        11,
+        1,
+        1,
+        0,
+        18,
+        13,
+        7,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 16,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        10,
+        0,
+        0,
+        1,
+        11,
+        26,
+        0,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 10,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        11,
+        0,
+        0,
+        1,
+        10,
+        26,
+        2,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 17,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        11,
+        0,
+        0,
+        1,
+        12,
+        23,
+        3,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 16,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        11,
+        0,
+        0,
+        1,
+        14,
+        20,
+        4,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 15,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        10,
+        0,
+        0,
+        0,
+        11,
+        26,
+        0,
+        2
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -26,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        11,
+        0,
+        0,
+        0,
+        10,
+        26,
+        2,
+        1
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -19,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        11,
+        0,
+        0,
+        0,
+        12,
+        23,
+        3,
+        1
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -20,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        11,
+        0,
+        0,
+        0,
+        14,
+        20,
+        4,
+        1
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -21,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        12,
+        0,
+        0,
+        0,
+        11,
+        23,
+        5,
+        0
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -13,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        12,
+        0,
+        0,
+        0,
+        13,
+        20,
+        6,
+        0
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -14,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        12,
+        0,
+        0,
+        0,
+        15,
+        17,
+        7,
+        0
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -15,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        12,
+        0,
+        0,
+        0,
+        17,
+        14,
+        8,
+        0
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -16,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        13,
+        0,
+        0,
+        0,
+        12,
+        25,
+        0,
+        2
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -11,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        13,
+        0,
+        0,
+        0,
+        14,
+        22,
+        1,
+        2
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -12,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        14,
+        0,
+        0,
+        0,
+        9,
+        28,
+        1,
+        1
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -3,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        14,
+        0,
+        0,
+        0,
+        11,
+        25,
+        2,
+        1
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -4,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        14,
+        0,
+        0,
+        0,
+        13,
+        22,
+        3,
+        1
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -5,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        14,
+        0,
+        0,
+        0,
+        15,
+        19,
+        4,
+        1
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -6,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        14,
+        0,
+        0,
+        0,
+        17,
+        16,
+        5,
+        1
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -7,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        15,
+        0,
+        0,
+        0,
+        8,
+        28,
+        3,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 4,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        15,
+        0,
+        0,
+        0,
+        10,
+        25,
+        4,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 3,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        15,
+        0,
+        0,
+        0,
+        12,
+        22,
+        5,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 2,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        15,
+        0,
+        0,
+        0,
+        14,
+        19,
+        6,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 1,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        15,
+        0,
+        0,
+        0,
+        16,
+        16,
+        7,
+        0
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": 0,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        15,
+        0,
+        0,
+        0,
+        18,
+        13,
+        8,
+        0
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -1,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        15,
+        0,
+        0,
+        0,
+        20,
+        10,
+        9,
+        0
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -2,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        16,
+        0,
+        0,
+        0,
+        13,
+        24,
+        0,
+        2
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 4,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        16,
+        0,
+        0,
+        0,
+        15,
+        21,
+        1,
+        2
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 3,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        16,
+        0,
+        0,
+        0,
+        17,
+        18,
+        2,
+        2
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 2,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        9,
+        1,
+        0,
+        0,
+        12,
+        25,
+        0,
+        2
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -19,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        10,
+        1,
+        0,
+        0,
+        11,
+        25,
+        2,
+        1
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -12,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        10,
+        1,
+        0,
+        0,
+        13,
+        22,
+        3,
+        1
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -13,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        10,
+        1,
+        0,
+        0,
+        15,
+        19,
+        4,
+        1
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -14,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        11,
+        1,
+        0,
+        0,
+        12,
+        22,
+        5,
+        0
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -6,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        11,
+        1,
+        0,
+        0,
+        14,
+        19,
+        6,
+        0
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -7,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        11,
+        1,
+        0,
+        0,
+        16,
+        16,
+        7,
+        0
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -8,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        11,
+        1,
+        0,
+        0,
+        18,
+        13,
+        8,
+        0
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -9,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        12,
+        1,
+        0,
+        0,
+        13,
+        24,
+        0,
+        2
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -4,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        12,
+        1,
+        0,
+        0,
+        15,
+        21,
+        1,
+        2
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -5,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        13,
+        1,
+        0,
+        0,
+        10,
+        27,
+        1,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 4,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        13,
+        1,
+        0,
+        0,
+        12,
+        24,
+        2,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 3,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        13,
+        1,
+        0,
+        0,
+        14,
+        21,
+        3,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 2,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        13,
+        1,
+        0,
+        0,
+        16,
+        18,
+        4,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 1,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        13,
+        1,
+        0,
+        0,
+        18,
+        15,
+        5,
+        1
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": 0,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        14,
+        1,
+        0,
+        0,
+        9,
+        27,
+        3,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 11,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        14,
+        1,
+        0,
+        0,
+        11,
+        24,
+        4,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 10,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        14,
+        1,
+        0,
+        0,
+        13,
+        21,
+        5,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 9,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        14,
+        1,
+        0,
+        0,
+        15,
+        18,
+        6,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 8,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        14,
+        1,
+        0,
+        0,
+        17,
+        15,
+        7,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 7,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        14,
+        1,
+        0,
+        0,
+        19,
+        12,
+        8,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 6,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        14,
+        1,
+        0,
+        0,
+        21,
+        9,
+        9,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 5,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        8,
+        2,
+        0,
+        0,
+        13,
+        24,
+        0,
+        2
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -12,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        9,
+        2,
+        0,
+        0,
+        12,
+        24,
+        2,
+        1
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -5,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        9,
+        2,
+        0,
+        0,
+        14,
+        21,
+        3,
+        1
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -6,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        9,
+        2,
+        0,
+        0,
+        16,
+        18,
+        4,
+        1
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -7,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        10,
+        2,
+        0,
+        0,
+        13,
+        21,
+        5,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 1,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        10,
+        2,
+        0,
+        0,
+        15,
+        18,
+        6,
+        0
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": 0,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        10,
+        2,
+        0,
+        0,
+        17,
+        15,
+        7,
+        0
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -1,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        10,
+        2,
+        0,
+        0,
+        19,
+        12,
+        8,
+        0
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -2,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        11,
+        2,
+        0,
+        0,
+        14,
+        23,
+        0,
+        2
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 3,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        11,
+        2,
+        0,
+        0,
+        16,
+        20,
+        1,
+        2
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 2,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        12,
+        2,
+        0,
+        0,
+        11,
+        26,
+        1,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 11,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        12,
+        2,
+        0,
+        0,
+        13,
+        23,
+        2,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 10,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        12,
+        2,
+        0,
+        0,
+        15,
+        20,
+        3,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 9,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        12,
+        2,
+        0,
+        0,
+        17,
+        17,
+        4,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 8,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        12,
+        2,
+        0,
+        0,
+        19,
+        14,
+        5,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 7,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        7,
+        3,
+        0,
+        0,
+        14,
+        23,
+        0,
+        2
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -5,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        8,
+        3,
+        0,
+        0,
+        13,
+        23,
+        2,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 2,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        8,
+        3,
+        0,
+        0,
+        15,
+        20,
+        3,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 1,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        8,
+        3,
+        0,
+        0,
+        17,
+        17,
+        4,
+        1
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": 0,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        9,
+        3,
+        0,
+        0,
+        14,
+        20,
+        5,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 8,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        9,
+        3,
+        0,
+        0,
+        16,
+        17,
+        6,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 7,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        9,
+        3,
+        0,
+        0,
+        18,
+        14,
+        7,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 6,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        9,
+        3,
+        0,
+        0,
+        20,
+        11,
+        8,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 5,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        10,
+        3,
+        0,
+        0,
+        15,
+        22,
+        0,
+        2
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 10,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        10,
+        3,
+        0,
+        0,
+        17,
+        19,
+        1,
+        2
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 9,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        6,
+        4,
+        0,
+        0,
+        15,
+        22,
+        0,
+        2
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 2,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        7,
+        4,
+        0,
+        0,
+        14,
+        22,
+        2,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 9,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        7,
+        4,
+        0,
+        0,
+        16,
+        19,
+        3,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 8,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        7,
+        4,
+        0,
+        0,
+        18,
+        16,
+        4,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 7,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        8,
+        4,
+        0,
+        0,
+        15,
+        19,
+        5,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 15,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        8,
+        4,
+        0,
+        0,
+        17,
+        16,
+        6,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 14,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        8,
+        4,
+        0,
+        0,
+        19,
+        13,
+        7,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 13,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        8,
+        4,
+        0,
+        0,
+        21,
+        10,
+        8,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 12,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        5,
+        5,
+        0,
+        0,
+        16,
+        21,
+        0,
+        2
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 9,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        10,
+        0,
+        1,
+        0,
+        11,
+        26,
+        1,
+        1
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -3,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        10,
+        0,
+        1,
+        0,
+        13,
+        23,
+        2,
+        1
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -4,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        10,
+        0,
+        1,
+        0,
+        15,
+        20,
+        3,
+        1
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -5,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        11,
+        0,
+        1,
+        0,
+        12,
+        23,
+        4,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 3,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        11,
+        0,
+        1,
+        0,
+        14,
+        20,
+        5,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 2,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        11,
+        0,
+        1,
+        0,
+        16,
+        17,
+        6,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 1,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        11,
+        0,
+        1,
+        0,
+        18,
+        14,
+        7,
+        0
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": 0,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        12,
+        0,
+        1,
+        0,
+        15,
+        22,
+        0,
+        2
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 4,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        13,
+        0,
+        1,
+        0,
+        10,
+        28,
+        0,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 13,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        13,
+        0,
+        1,
+        0,
+        12,
+        25,
+        1,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 12,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        13,
+        0,
+        1,
+        0,
+        14,
+        22,
+        2,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 11,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        13,
+        0,
+        1,
+        0,
+        16,
+        19,
+        3,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 10,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        13,
+        0,
+        1,
+        0,
+        18,
+        16,
+        4,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 9,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        9,
+        1,
+        1,
+        0,
+        12,
+        25,
+        1,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 4,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        9,
+        1,
+        1,
+        0,
+        14,
+        22,
+        2,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 3,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        9,
+        1,
+        1,
+        0,
+        16,
+        19,
+        3,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 2,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        10,
+        1,
+        1,
+        0,
+        13,
+        22,
+        4,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 10,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        10,
+        1,
+        1,
+        0,
+        15,
+        19,
+        5,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 9,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        10,
+        1,
+        1,
+        0,
+        17,
+        16,
+        6,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 8,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        10,
+        1,
+        1,
+        0,
+        19,
+        13,
+        7,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 7,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        11,
+        1,
+        1,
+        0,
+        16,
+        21,
+        0,
+        2
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 11,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        8,
+        2,
+        1,
+        0,
+        13,
+        24,
+        1,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 11,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        8,
+        2,
+        1,
+        0,
+        15,
+        21,
+        2,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 10,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        8,
+        2,
+        1,
+        0,
+        17,
+        18,
+        3,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 9,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        9,
+        0,
+        2,
+        0,
+        12,
+        26,
+        0,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 13,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        9,
+        0,
+        2,
+        0,
+        14,
+        23,
+        1,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 12,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        9,
+        0,
+        2,
+        0,
+        16,
+        20,
+        2,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 11,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        9,
+        0,
+        0,
+        1,
+        12,
+        26,
+        0,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 1,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        10,
+        0,
+        0,
+        1,
+        11,
+        26,
+        2,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 8,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        10,
+        0,
+        0,
+        1,
+        13,
+        23,
+        3,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 7,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        10,
+        0,
+        0,
+        1,
+        15,
+        20,
+        4,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 6,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        8,
+        1,
+        0,
+        1,
+        13,
+        25,
+        0,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 8,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        9,
+        0,
+        0,
+        0,
+        12,
+        26,
+        0,
+        2
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -35,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        10,
+        0,
+        0,
+        0,
+        11,
+        26,
+        2,
+        1
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -28,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        10,
+        0,
+        0,
+        0,
+        13,
+        23,
+        3,
+        1
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -29,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        10,
+        0,
+        0,
+        0,
+        15,
+        20,
+        4,
+        1
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -30,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        11,
+        0,
+        0,
+        0,
+        12,
+        23,
+        5,
+        0
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -22,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        11,
+        0,
+        0,
+        0,
+        14,
+        20,
+        6,
+        0
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -23,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        11,
+        0,
+        0,
+        0,
+        16,
+        17,
+        7,
+        0
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -24,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        11,
+        0,
+        0,
+        0,
+        18,
+        14,
+        8,
+        0
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -25,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        12,
+        0,
+        0,
+        0,
+        13,
+        25,
+        0,
+        2
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -20,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        12,
+        0,
+        0,
+        0,
+        15,
+        22,
+        1,
+        2
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -21,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        13,
+        0,
+        0,
+        0,
+        10,
+        28,
+        1,
+        1
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -12,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        13,
+        0,
+        0,
+        0,
+        12,
+        25,
+        2,
+        1
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -13,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        13,
+        0,
+        0,
+        0,
+        14,
+        22,
+        3,
+        1
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -14,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        13,
+        0,
+        0,
+        0,
+        16,
+        19,
+        4,
+        1
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -15,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        13,
+        0,
+        0,
+        0,
+        18,
+        16,
+        5,
+        1
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -16,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        14,
+        0,
+        0,
+        0,
+        9,
+        28,
+        3,
+        0
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -5,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        14,
+        0,
+        0,
+        0,
+        11,
+        25,
+        4,
+        0
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -6,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        14,
+        0,
+        0,
+        0,
+        13,
+        22,
+        5,
+        0
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -7,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        14,
+        0,
+        0,
+        0,
+        15,
+        19,
+        6,
+        0
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -8,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        14,
+        0,
+        0,
+        0,
+        17,
+        16,
+        7,
+        0
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -9,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        14,
+        0,
+        0,
+        0,
+        19,
+        13,
+        8,
+        0
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -10,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        14,
+        0,
+        0,
+        0,
+        21,
+        10,
+        9,
+        0
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -11,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        15,
+        0,
+        0,
+        0,
+        14,
+        24,
+        0,
+        2
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -5,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        15,
+        0,
+        0,
+        0,
+        16,
+        21,
+        1,
+        2
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -6,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        15,
+        0,
+        0,
+        0,
+        18,
+        18,
+        2,
+        2
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -7,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        16,
+        0,
+        0,
+        0,
+        9,
+        30,
+        0,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 4,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        16,
+        0,
+        0,
+        0,
+        11,
+        27,
+        1,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 3,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        16,
+        0,
+        0,
+        0,
+        13,
+        24,
+        2,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 2,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        16,
+        0,
+        0,
+        0,
+        15,
+        21,
+        3,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 1,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        16,
+        0,
+        0,
+        0,
+        17,
+        18,
+        4,
+        1
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": 0,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        16,
+        0,
+        0,
+        0,
+        19,
+        15,
+        5,
+        1
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -1,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        16,
+        0,
+        0,
+        0,
+        21,
+        12,
+        6,
+        1
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -2,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        8,
+        1,
+        0,
+        0,
+        13,
+        25,
+        0,
+        2
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -28,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        9,
+        1,
+        0,
+        0,
+        12,
+        25,
+        2,
+        1
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -21,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        9,
+        1,
+        0,
+        0,
+        14,
+        22,
+        3,
+        1
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -22,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        9,
+        1,
+        0,
+        0,
+        16,
+        19,
+        4,
+        1
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -23,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        10,
+        1,
+        0,
+        0,
+        13,
+        22,
+        5,
+        0
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -15,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        10,
+        1,
+        0,
+        0,
+        15,
+        19,
+        6,
+        0
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -16,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        10,
+        1,
+        0,
+        0,
+        17,
+        16,
+        7,
+        0
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -17,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        10,
+        1,
+        0,
+        0,
+        19,
+        13,
+        8,
+        0
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -18,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        11,
+        1,
+        0,
+        0,
+        14,
+        24,
+        0,
+        2
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -13,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        11,
+        1,
+        0,
+        0,
+        16,
+        21,
+        1,
+        2
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -14,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        12,
+        1,
+        0,
+        0,
+        11,
+        27,
+        1,
+        1
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -5,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        12,
+        1,
+        0,
+        0,
+        13,
+        24,
+        2,
+        1
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -6,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        12,
+        1,
+        0,
+        0,
+        15,
+        21,
+        3,
+        1
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -7,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        12,
+        1,
+        0,
+        0,
+        17,
+        18,
+        4,
+        1
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -8,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        12,
+        1,
+        0,
+        0,
+        19,
+        15,
+        5,
+        1
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -9,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        13,
+        1,
+        0,
+        0,
+        10,
+        27,
+        3,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 2,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        13,
+        1,
+        0,
+        0,
+        12,
+        24,
+        4,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 1,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        13,
+        1,
+        0,
+        0,
+        14,
+        21,
+        5,
+        0
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": 0,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        13,
+        1,
+        0,
+        0,
+        16,
+        18,
+        6,
+        0
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -1,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        13,
+        1,
+        0,
+        0,
+        18,
+        15,
+        7,
+        0
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -2,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        13,
+        1,
+        0,
+        0,
+        20,
+        12,
+        8,
+        0
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -3,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        13,
+        1,
+        0,
+        0,
+        22,
+        9,
+        9,
+        0
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -4,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        14,
+        1,
+        0,
+        0,
+        15,
+        23,
+        0,
+        2
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 2,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        14,
+        1,
+        0,
+        0,
+        17,
+        20,
+        1,
+        2
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 1,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        14,
+        1,
+        0,
+        0,
+        19,
+        17,
+        2,
+        2
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": 0,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        7,
+        2,
+        0,
+        0,
+        14,
+        24,
+        0,
+        2
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -21,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        8,
+        2,
+        0,
+        0,
+        13,
+        24,
+        2,
+        1
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -14,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        8,
+        2,
+        0,
+        0,
+        15,
+        21,
+        3,
+        1
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -15,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        8,
+        2,
+        0,
+        0,
+        17,
+        18,
+        4,
+        1
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -16,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        9,
+        2,
+        0,
+        0,
+        14,
+        21,
+        5,
+        0
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -8,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        9,
+        2,
+        0,
+        0,
+        16,
+        18,
+        6,
+        0
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -9,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        9,
+        2,
+        0,
+        0,
+        18,
+        15,
+        7,
+        0
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -10,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        9,
+        2,
+        0,
+        0,
+        20,
+        12,
+        8,
+        0
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -11,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        10,
+        2,
+        0,
+        0,
+        15,
+        23,
+        0,
+        2
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -6,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        10,
+        2,
+        0,
+        0,
+        17,
+        20,
+        1,
+        2
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -7,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        11,
+        2,
+        0,
+        0,
+        12,
+        26,
+        1,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 2,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        11,
+        2,
+        0,
+        0,
+        14,
+        23,
+        2,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 1,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        11,
+        2,
+        0,
+        0,
+        16,
+        20,
+        3,
+        1
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": 0,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        11,
+        2,
+        0,
+        0,
+        18,
+        17,
+        4,
+        1
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -1,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        11,
+        2,
+        0,
+        0,
+        20,
+        14,
+        5,
+        1
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -2,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        12,
+        2,
+        0,
+        0,
+        11,
+        26,
+        3,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 9,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        12,
+        2,
+        0,
+        0,
+        13,
+        23,
+        4,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 8,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        12,
+        2,
+        0,
+        0,
+        15,
+        20,
+        5,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 7,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        12,
+        2,
+        0,
+        0,
+        17,
+        17,
+        6,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 6,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        12,
+        2,
+        0,
+        0,
+        19,
+        14,
+        7,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 5,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        12,
+        2,
+        0,
+        0,
+        21,
+        11,
+        8,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 4,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        12,
+        2,
+        0,
+        0,
+        23,
+        8,
+        9,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 3,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        6,
+        3,
+        0,
+        0,
+        15,
+        23,
+        0,
+        2
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -14,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        7,
+        3,
+        0,
+        0,
+        14,
+        23,
+        2,
+        1
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -7,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        7,
+        3,
+        0,
+        0,
+        16,
+        20,
+        3,
+        1
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -8,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        7,
+        3,
+        0,
+        0,
+        18,
+        17,
+        4,
+        1
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -9,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        8,
+        3,
+        0,
+        0,
+        15,
+        20,
+        5,
+        0
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -1,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        8,
+        3,
+        0,
+        0,
+        17,
+        17,
+        6,
+        0
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -2,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        8,
+        3,
+        0,
+        0,
+        19,
+        14,
+        7,
+        0
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -3,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        8,
+        3,
+        0,
+        0,
+        21,
+        11,
+        8,
+        0
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -4,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        9,
+        3,
+        0,
+        0,
+        16,
+        22,
+        0,
+        2
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 1,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        9,
+        3,
+        0,
+        0,
+        18,
+        19,
+        1,
+        2
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": 0,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        10,
+        3,
+        0,
+        0,
+        13,
+        25,
+        1,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 9,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        10,
+        3,
+        0,
+        0,
+        15,
+        22,
+        2,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 8,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        10,
+        3,
+        0,
+        0,
+        17,
+        19,
+        3,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 7,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        10,
+        3,
+        0,
+        0,
+        19,
+        16,
+        4,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 6,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        10,
+        3,
+        0,
+        0,
+        21,
+        13,
+        5,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 5,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        5,
+        4,
+        0,
+        0,
+        16,
+        22,
+        0,
+        2
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -7,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        6,
+        4,
+        0,
+        0,
+        15,
+        22,
+        2,
+        1
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": 0,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        6,
+        4,
+        0,
+        0,
+        17,
+        19,
+        3,
+        1
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -1,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        6,
+        4,
+        0,
+        0,
+        19,
+        16,
+        4,
+        1
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -2,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        7,
+        4,
+        0,
+        0,
+        16,
+        19,
+        5,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 6,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        7,
+        4,
+        0,
+        0,
+        18,
+        16,
+        6,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 5,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        7,
+        4,
+        0,
+        0,
+        20,
+        13,
+        7,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 4,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        7,
+        4,
+        0,
+        0,
+        22,
+        10,
+        8,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 3,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        8,
+        4,
+        0,
+        0,
+        17,
+        21,
+        0,
+        2
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 8,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        8,
+        4,
+        0,
+        0,
+        19,
+        18,
+        1,
+        2
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 7,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        4,
+        5,
+        0,
+        0,
+        17,
+        21,
+        0,
+        2
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": 0,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        5,
+        5,
+        0,
+        0,
+        16,
+        21,
+        2,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 7,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        5,
+        5,
+        0,
+        0,
+        18,
+        18,
+        3,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 6,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        5,
+        5,
+        0,
+        0,
+        20,
+        15,
+        4,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 5,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        9,
+        0,
+        1,
+        0,
+        12,
+        26,
+        1,
+        1
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -12,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        9,
+        0,
+        1,
+        0,
+        14,
+        23,
+        2,
+        1
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -13,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        9,
+        0,
+        1,
+        0,
+        16,
+        20,
+        3,
+        1
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -14,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        10,
+        0,
+        1,
+        0,
+        13,
+        23,
+        4,
+        0
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -6,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        10,
+        0,
+        1,
+        0,
+        15,
+        20,
+        5,
+        0
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -7,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        10,
+        0,
+        1,
+        0,
+        17,
+        17,
+        6,
+        0
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -8,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        10,
+        0,
+        1,
+        0,
+        19,
+        14,
+        7,
+        0
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -9,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        11,
+        0,
+        1,
+        0,
+        16,
+        22,
+        0,
+        2
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -5,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        12,
+        0,
+        1,
+        0,
+        11,
+        28,
+        0,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 4,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        12,
+        0,
+        1,
+        0,
+        13,
+        25,
+        1,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 3,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        12,
+        0,
+        1,
+        0,
+        15,
+        22,
+        2,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 2,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        12,
+        0,
+        1,
+        0,
+        17,
+        19,
+        3,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 1,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        12,
+        0,
+        1,
+        0,
+        19,
+        16,
+        4,
+        1
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": 0,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        13,
+        0,
+        1,
+        0,
+        10,
+        28,
+        2,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 11,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        13,
+        0,
+        1,
+        0,
+        12,
+        25,
+        3,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 10,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        13,
+        0,
+        1,
+        0,
+        14,
+        22,
+        4,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 9,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        13,
+        0,
+        1,
+        0,
+        16,
+        19,
+        5,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 8,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        13,
+        0,
+        1,
+        0,
+        18,
+        16,
+        6,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 7,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        13,
+        0,
+        1,
+        0,
+        20,
+        13,
+        7,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 6,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        13,
+        0,
+        1,
+        0,
+        22,
+        10,
+        8,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 5,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        8,
+        1,
+        1,
+        0,
+        13,
+        25,
+        1,
+        1
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -5,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        8,
+        1,
+        1,
+        0,
+        15,
+        22,
+        2,
+        1
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -6,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        8,
+        1,
+        1,
+        0,
+        17,
+        19,
+        3,
+        1
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -7,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        9,
+        1,
+        1,
+        0,
+        14,
+        22,
+        4,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 1,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        9,
+        1,
+        1,
+        0,
+        16,
+        19,
+        5,
+        0
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": 0,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        9,
+        1,
+        1,
+        0,
+        18,
+        16,
+        6,
+        0
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -1,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        9,
+        1,
+        1,
+        0,
+        20,
+        13,
+        7,
+        0
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -2,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        10,
+        1,
+        1,
+        0,
+        17,
+        21,
+        0,
+        2
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 2,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        11,
+        1,
+        1,
+        0,
+        12,
+        27,
+        0,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 11,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        11,
+        1,
+        1,
+        0,
+        14,
+        24,
+        1,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 10,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        11,
+        1,
+        1,
+        0,
+        16,
+        21,
+        2,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 9,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        11,
+        1,
+        1,
+        0,
+        18,
+        18,
+        3,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 8,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        11,
+        1,
+        1,
+        0,
+        20,
+        15,
+        4,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 7,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        7,
+        2,
+        1,
+        0,
+        14,
+        24,
+        1,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 2,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        7,
+        2,
+        1,
+        0,
+        16,
+        21,
+        2,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 1,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        7,
+        2,
+        1,
+        0,
+        18,
+        18,
+        3,
+        1
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": 0,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        8,
+        2,
+        1,
+        0,
+        15,
+        21,
+        4,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 8,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        8,
+        2,
+        1,
+        0,
+        17,
+        18,
+        5,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 7,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        8,
+        2,
+        1,
+        0,
+        19,
+        15,
+        6,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 6,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        8,
+        2,
+        1,
+        0,
+        21,
+        12,
+        7,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 5,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        6,
+        3,
+        1,
+        0,
+        15,
+        23,
+        1,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 9,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        6,
+        3,
+        1,
+        0,
+        17,
+        20,
+        2,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 8,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        6,
+        3,
+        1,
+        0,
+        19,
+        17,
+        3,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 7,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        8,
+        0,
+        2,
+        0,
+        13,
+        26,
+        0,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 4,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        8,
+        0,
+        2,
+        0,
+        15,
+        23,
+        1,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 3,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        8,
+        0,
+        2,
+        0,
+        17,
+        20,
+        2,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 2,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        9,
+        0,
+        2,
+        0,
+        14,
+        23,
+        3,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 10,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        9,
+        0,
+        2,
+        0,
+        16,
+        20,
+        4,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 9,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        9,
+        0,
+        2,
+        0,
+        18,
+        17,
+        5,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 8,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        9,
+        0,
+        2,
+        0,
+        20,
+        14,
+        6,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 7,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        8,
+        0,
+        0,
+        1,
+        13,
+        26,
+        0,
+        1
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -8,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        9,
+        0,
+        0,
+        1,
+        12,
+        26,
+        2,
+        0
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -1,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        9,
+        0,
+        0,
+        1,
+        14,
+        23,
+        3,
+        0
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -2,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        9,
+        0,
+        0,
+        1,
+        16,
+        20,
+        4,
+        0
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -3,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        11,
+        0,
+        0,
+        1,
+        14,
+        25,
+        0,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 7,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        11,
+        0,
+        0,
+        1,
+        16,
+        22,
+        1,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 6,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        7,
+        1,
+        0,
+        1,
+        14,
+        25,
+        0,
+        1
+      ],
+      "status": "SURVIVES_SUMMED_INEQUALITY",
+      "summed_gap": -1,
+      "row_count": null,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        8,
+        1,
+        0,
+        1,
+        13,
+        25,
+        2,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 6,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        8,
+        1,
+        0,
+        1,
+        15,
+        22,
+        3,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 5,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        8,
+        1,
+        0,
+        1,
+        17,
+        19,
+        4,
+        0
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 4,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    },
+    {
+      "signature": [
+        6,
+        2,
+        0,
+        1,
+        15,
+        24,
+        0,
+        1
+      ],
+      "status": "INFEASIBLE_SUMMED_INEQUALITY",
+      "summed_gap": 6,
+      "row_count": 0,
+      "wall_time_seconds": 0.0
+    }
+  ]
+}

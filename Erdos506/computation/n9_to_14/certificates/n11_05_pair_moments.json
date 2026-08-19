@@ -1,0 +1,1392 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "claim": "Necessary support-free point/pair moment and outside-triple filter.",
+  "n": 11,
+  "source_file": "n11_04_endpoint_balance.json",
+  "source_sha256": "e117800cc5c39e05d87930e1dd110f7525c1523d935e27eec358418cc9d5f88a",
+  "input_signature_count": 39,
+  "proof_scope": "conditioned point rows, exact pair profiles, coupled first two intersection moments, and the exact count of triples disjoint from a distinguished block; no labelled supports",
+  "ortools_version": "9.15.6755",
+  "layers": [
+    {
+      "circle_count": 38,
+      "input_signature_count": 3,
+      "status_counts": {
+        "INFEASIBLE": 1,
+        "OPTIMAL": 2
+      },
+      "survivor_count": 2,
+      "survivors": [
+        {
+          "signature": [
+            13,
+            0,
+            0,
+            0,
+            16,
+            14,
+            8,
+            0
+          ],
+          "point_row_count": 12,
+          "pair_profile_count": 59,
+          "status": "OPTIMAL",
+          "coupling_constraint_count": 72,
+          "outside_triple_constraint_count": 4,
+          "variables": 71,
+          "constraints": 94,
+          "wall_time_seconds": 0.0159952
+        },
+        {
+          "signature": [
+            12,
+            1,
+            0,
+            0,
+            17,
+            13,
+            8,
+            0
+          ],
+          "point_row_count": 18,
+          "pair_profile_count": 59,
+          "status": "OPTIMAL",
+          "coupling_constraint_count": 72,
+          "outside_triple_constraint_count": 5,
+          "variables": 77,
+          "constraints": 95,
+          "wall_time_seconds": 0.0128333
+        }
+      ],
+      "records": [
+        {
+          "signature": [
+            12,
+            0,
+            0,
+            0,
+            13,
+            20,
+            4,
+            1
+          ],
+          "point_row_count": 13,
+          "pair_profile_count": 59,
+          "status": "INFEASIBLE",
+          "coupling_constraint_count": 72,
+          "outside_triple_constraint_count": 5,
+          "variables": 72,
+          "constraints": 95,
+          "wall_time_seconds": 0.018160100000000002
+        },
+        {
+          "signature": [
+            13,
+            0,
+            0,
+            0,
+            16,
+            14,
+            8,
+            0
+          ],
+          "point_row_count": 12,
+          "pair_profile_count": 59,
+          "status": "OPTIMAL",
+          "coupling_constraint_count": 72,
+          "outside_triple_constraint_count": 4,
+          "variables": 71,
+          "constraints": 94,
+          "wall_time_seconds": 0.0159952
+        },
+        {
+          "signature": [
+            12,
+            1,
+            0,
+            0,
+            17,
+            13,
+            8,
+            0
+          ],
+          "point_row_count": 18,
+          "pair_profile_count": 59,
+          "status": "OPTIMAL",
+          "coupling_constraint_count": 72,
+          "outside_triple_constraint_count": 5,
+          "variables": 77,
+          "constraints": 95,
+          "wall_time_seconds": 0.0128333
+        }
+      ]
+    },
+    {
+      "circle_count": 39,
+      "input_signature_count": 9,
+      "status_counts": {
+        "INFEASIBLE": 2,
+        "OPTIMAL": 7
+      },
+      "survivor_count": 7,
+      "survivors": [
+        {
+          "signature": [
+            12,
+            0,
+            0,
+            0,
+            13,
+            20,
+            6,
+            0
+          ],
+          "point_row_count": 16,
+          "pair_profile_count": 59,
+          "status": "OPTIMAL",
+          "coupling_constraint_count": 72,
+          "outside_triple_constraint_count": 4,
+          "variables": 75,
+          "constraints": 94,
+          "wall_time_seconds": 0.012218900000000001
+        },
+        {
+          "signature": [
+            12,
+            0,
+            0,
+            0,
+            15,
+            17,
+            7,
+            0
+          ],
+          "point_row_count": 16,
+          "pair_profile_count": 59,
+          "status": "OPTIMAL",
+          "coupling_constraint_count": 72,
+          "outside_triple_constraint_count": 4,
+          "variables": 75,
+          "constraints": 94,
+          "wall_time_seconds": 0.015458900000000001
+        },
+        {
+          "signature": [
+            12,
+            0,
+            0,
+            0,
+            17,
+            14,
+            8,
+            0
+          ],
+          "point_row_count": 16,
+          "pair_profile_count": 59,
+          "status": "OPTIMAL",
+          "coupling_constraint_count": 72,
+          "outside_triple_constraint_count": 4,
+          "variables": 75,
+          "constraints": 94,
+          "wall_time_seconds": 0.008560400000000001
+        },
+        {
+          "signature": [
+            14,
+            0,
+            0,
+            0,
+            15,
+            19,
+            4,
+            1
+          ],
+          "point_row_count": 34,
+          "pair_profile_count": 59,
+          "status": "OPTIMAL",
+          "coupling_constraint_count": 72,
+          "outside_triple_constraint_count": 5,
+          "variables": 93,
+          "constraints": 95,
+          "wall_time_seconds": 0.017482400000000002
+        },
+        {
+          "signature": [
+            11,
+            1,
+            0,
+            0,
+            16,
+            16,
+            7,
+            0
+          ],
+          "point_row_count": 26,
+          "pair_profile_count": 59,
+          "status": "OPTIMAL",
+          "coupling_constraint_count": 72,
+          "outside_triple_constraint_count": 5,
+          "variables": 85,
+          "constraints": 95,
+          "wall_time_seconds": 0.011818400000000001
+        },
+        {
+          "signature": [
+            11,
+            1,
+            0,
+            0,
+            18,
+            13,
+            8,
+            0
+          ],
+          "point_row_count": 26,
+          "pair_profile_count": 59,
+          "status": "OPTIMAL",
+          "coupling_constraint_count": 72,
+          "outside_triple_constraint_count": 5,
+          "variables": 85,
+          "constraints": 95,
+          "wall_time_seconds": 0.0128182
+        },
+        {
+          "signature": [
+            10,
+            2,
+            0,
+            0,
+            17,
+            15,
+            7,
+            0
+          ],
+          "point_row_count": 30,
+          "pair_profile_count": 59,
+          "status": "OPTIMAL",
+          "coupling_constraint_count": 72,
+          "outside_triple_constraint_count": 5,
+          "variables": 89,
+          "constraints": 95,
+          "wall_time_seconds": 0.0212725
+        }
+      ],
+      "records": [
+        {
+          "signature": [
+            11,
+            0,
+            0,
+            0,
+            14,
+            20,
+            4,
+            1
+          ],
+          "point_row_count": 16,
+          "pair_profile_count": 59,
+          "status": "INFEASIBLE",
+          "coupling_constraint_count": 72,
+          "outside_triple_constraint_count": 5,
+          "variables": 75,
+          "constraints": 95,
+          "wall_time_seconds": 0.0121848
+        },
+        {
+          "signature": [
+            12,
+            0,
+            0,
+            0,
+            13,
+            20,
+            6,
+            0
+          ],
+          "point_row_count": 16,
+          "pair_profile_count": 59,
+          "status": "OPTIMAL",
+          "coupling_constraint_count": 72,
+          "outside_triple_constraint_count": 4,
+          "variables": 75,
+          "constraints": 94,
+          "wall_time_seconds": 0.012218900000000001
+        },
+        {
+          "signature": [
+            12,
+            0,
+            0,
+            0,
+            15,
+            17,
+            7,
+            0
+          ],
+          "point_row_count": 16,
+          "pair_profile_count": 59,
+          "status": "OPTIMAL",
+          "coupling_constraint_count": 72,
+          "outside_triple_constraint_count": 4,
+          "variables": 75,
+          "constraints": 94,
+          "wall_time_seconds": 0.015458900000000001
+        },
+        {
+          "signature": [
+            12,
+            0,
+            0,
+            0,
+            17,
+            14,
+            8,
+            0
+          ],
+          "point_row_count": 16,
+          "pair_profile_count": 59,
+          "status": "OPTIMAL",
+          "coupling_constraint_count": 72,
+          "outside_triple_constraint_count": 4,
+          "variables": 75,
+          "constraints": 94,
+          "wall_time_seconds": 0.008560400000000001
+        },
+        {
+          "signature": [
+            14,
+            0,
+            0,
+            0,
+            15,
+            19,
+            4,
+            1
+          ],
+          "point_row_count": 34,
+          "pair_profile_count": 59,
+          "status": "OPTIMAL",
+          "coupling_constraint_count": 72,
+          "outside_triple_constraint_count": 5,
+          "variables": 93,
+          "constraints": 95,
+          "wall_time_seconds": 0.017482400000000002
+        },
+        {
+          "signature": [
+            10,
+            1,
+            0,
+            0,
+            15,
+            19,
+            4,
+            1
+          ],
+          "point_row_count": 27,
+          "pair_profile_count": 59,
+          "status": "INFEASIBLE",
+          "coupling_constraint_count": 72,
+          "outside_triple_constraint_count": 6,
+          "variables": 86,
+          "constraints": 96,
+          "wall_time_seconds": 0.0133983
+        },
+        {
+          "signature": [
+            11,
+            1,
+            0,
+            0,
+            16,
+            16,
+            7,
+            0
+          ],
+          "point_row_count": 26,
+          "pair_profile_count": 59,
+          "status": "OPTIMAL",
+          "coupling_constraint_count": 72,
+          "outside_triple_constraint_count": 5,
+          "variables": 85,
+          "constraints": 95,
+          "wall_time_seconds": 0.011818400000000001
+        },
+        {
+          "signature": [
+            11,
+            1,
+            0,
+            0,
+            18,
+            13,
+            8,
+            0
+          ],
+          "point_row_count": 26,
+          "pair_profile_count": 59,
+          "status": "OPTIMAL",
+          "coupling_constraint_count": 72,
+          "outside_triple_constraint_count": 5,
+          "variables": 85,
+          "constraints": 95,
+          "wall_time_seconds": 0.0128182
+        },
+        {
+          "signature": [
+            10,
+            2,
+            0,
+            0,
+            17,
+            15,
+            7,
+            0
+          ],
+          "point_row_count": 30,
+          "pair_profile_count": 59,
+          "status": "OPTIMAL",
+          "coupling_constraint_count": 72,
+          "outside_triple_constraint_count": 5,
+          "variables": 89,
+          "constraints": 95,
+          "wall_time_seconds": 0.0212725
+        }
+      ]
+    },
+    {
+      "circle_count": 40,
+      "input_signature_count": 27,
+      "status_counts": {
+        "INFEASIBLE": 8,
+        "OPTIMAL": 19
+      },
+      "survivor_count": 19,
+      "survivors": [
+        {
+          "signature": [
+            11,
+            0,
+            0,
+            0,
+            14,
+            20,
+            6,
+            0
+          ],
+          "point_row_count": 19,
+          "pair_profile_count": 59,
+          "status": "OPTIMAL",
+          "coupling_constraint_count": 72,
+          "outside_triple_constraint_count": 4,
+          "variables": 78,
+          "constraints": 94,
+          "wall_time_seconds": 0.014882800000000002
+        },
+        {
+          "signature": [
+            11,
+            0,
+            0,
+            0,
+            16,
+            17,
+            7,
+            0
+          ],
+          "point_row_count": 19,
+          "pair_profile_count": 59,
+          "status": "OPTIMAL",
+          "coupling_constraint_count": 72,
+          "outside_triple_constraint_count": 4,
+          "variables": 78,
+          "constraints": 94,
+          "wall_time_seconds": 0.0085197
+        },
+        {
+          "signature": [
+            11,
+            0,
+            0,
+            0,
+            18,
+            14,
+            8,
+            0
+          ],
+          "point_row_count": 19,
+          "pair_profile_count": 59,
+          "status": "OPTIMAL",
+          "coupling_constraint_count": 72,
+          "outside_triple_constraint_count": 4,
+          "variables": 78,
+          "constraints": 94,
+          "wall_time_seconds": 0.0087542
+        },
+        {
+          "signature": [
+            13,
+            0,
+            0,
+            0,
+            14,
+            22,
+            3,
+            1
+          ],
+          "point_row_count": 43,
+          "pair_profile_count": 59,
+          "status": "OPTIMAL",
+          "coupling_constraint_count": 72,
+          "outside_triple_constraint_count": 5,
+          "variables": 102,
+          "constraints": 95,
+          "wall_time_seconds": 0.030361100000000002
+        },
+        {
+          "signature": [
+            13,
+            0,
+            0,
+            0,
+            16,
+            19,
+            4,
+            1
+          ],
+          "point_row_count": 48,
+          "pair_profile_count": 59,
+          "status": "OPTIMAL",
+          "coupling_constraint_count": 72,
+          "outside_triple_constraint_count": 5,
+          "variables": 107,
+          "constraints": 95,
+          "wall_time_seconds": 0.0175789
+        },
+        {
+          "signature": [
+            13,
+            0,
+            0,
+            0,
+            18,
+            16,
+            5,
+            1
+          ],
+          "point_row_count": 49,
+          "pair_profile_count": 59,
+          "status": "OPTIMAL",
+          "coupling_constraint_count": 72,
+          "outside_triple_constraint_count": 5,
+          "variables": 108,
+          "constraints": 95,
+          "wall_time_seconds": 0.0208051
+        },
+        {
+          "signature": [
+            14,
+            0,
+            0,
+            0,
+            17,
+            16,
+            7,
+            0
+          ],
+          "point_row_count": 32,
+          "pair_profile_count": 59,
+          "status": "OPTIMAL",
+          "coupling_constraint_count": 72,
+          "outside_triple_constraint_count": 4,
+          "variables": 91,
+          "constraints": 94,
+          "wall_time_seconds": 0.0139263
+        },
+        {
+          "signature": [
+            14,
+            0,
+            0,
+            0,
+            19,
+            13,
+            8,
+            0
+          ],
+          "point_row_count": 32,
+          "pair_profile_count": 59,
+          "status": "OPTIMAL",
+          "coupling_constraint_count": 72,
+          "outside_triple_constraint_count": 4,
+          "variables": 91,
+          "constraints": 94,
+          "wall_time_seconds": 0.0178764
+        },
+        {
+          "signature": [
+            10,
+            1,
+            0,
+            0,
+            15,
+            19,
+            6,
+            0
+          ],
+          "point_row_count": 31,
+          "pair_profile_count": 59,
+          "status": "OPTIMAL",
+          "coupling_constraint_count": 72,
+          "outside_triple_constraint_count": 5,
+          "variables": 90,
+          "constraints": 95,
+          "wall_time_seconds": 0.0154476
+        },
+        {
+          "signature": [
+            10,
+            1,
+            0,
+            0,
+            17,
+            16,
+            7,
+            0
+          ],
+          "point_row_count": 31,
+          "pair_profile_count": 59,
+          "status": "OPTIMAL",
+          "coupling_constraint_count": 72,
+          "outside_triple_constraint_count": 5,
+          "variables": 90,
+          "constraints": 95,
+          "wall_time_seconds": 0.0186419
+        },
+        {
+          "signature": [
+            10,
+            1,
+            0,
+            0,
+            19,
+            13,
+            8,
+            0
+          ],
+          "point_row_count": 31,
+          "pair_profile_count": 59,
+          "status": "OPTIMAL",
+          "coupling_constraint_count": 72,
+          "outside_triple_constraint_count": 5,
+          "variables": 90,
+          "constraints": 95,
+          "wall_time_seconds": 0.015637
+        },
+        {
+          "signature": [
+            12,
+            1,
+            0,
+            0,
+            15,
+            21,
+            3,
+            1
+          ],
+          "point_row_count": 64,
+          "pair_profile_count": 59,
+          "status": "OPTIMAL",
+          "coupling_constraint_count": 72,
+          "outside_triple_constraint_count": 6,
+          "variables": 123,
+          "constraints": 96,
+          "wall_time_seconds": 0.032612100000000005
+        },
+        {
+          "signature": [
+            12,
+            1,
+            0,
+            0,
+            17,
+            18,
+            4,
+            1
+          ],
+          "point_row_count": 71,
+          "pair_profile_count": 59,
+          "status": "OPTIMAL",
+          "coupling_constraint_count": 72,
+          "outside_triple_constraint_count": 6,
+          "variables": 130,
+          "constraints": 96,
+          "wall_time_seconds": 0.035843400000000004
+        },
+        {
+          "signature": [
+            13,
+            1,
+            0,
+            0,
+            20,
+            12,
+            8,
+            0
+          ],
+          "point_row_count": 46,
+          "pair_profile_count": 59,
+          "status": "OPTIMAL",
+          "coupling_constraint_count": 72,
+          "outside_triple_constraint_count": 5,
+          "variables": 105,
+          "constraints": 95,
+          "wall_time_seconds": 0.015380300000000001
+        },
+        {
+          "signature": [
+            9,
+            2,
+            0,
+            0,
+            16,
+            18,
+            6,
+            0
+          ],
+          "point_row_count": 39,
+          "pair_profile_count": 59,
+          "status": "OPTIMAL",
+          "coupling_constraint_count": 72,
+          "outside_triple_constraint_count": 5,
+          "variables": 98,
+          "constraints": 95,
+          "wall_time_seconds": 0.0232307
+        },
+        {
+          "signature": [
+            9,
+            2,
+            0,
+            0,
+            18,
+            15,
+            7,
+            0
+          ],
+          "point_row_count": 39,
+          "pair_profile_count": 59,
+          "status": "OPTIMAL",
+          "coupling_constraint_count": 72,
+          "outside_triple_constraint_count": 5,
+          "variables": 98,
+          "constraints": 95,
+          "wall_time_seconds": 0.017080500000000002
+        },
+        {
+          "signature": [
+            9,
+            2,
+            0,
+            0,
+            20,
+            12,
+            8,
+            0
+          ],
+          "point_row_count": 39,
+          "pair_profile_count": 59,
+          "status": "OPTIMAL",
+          "coupling_constraint_count": 72,
+          "outside_triple_constraint_count": 5,
+          "variables": 98,
+          "constraints": 95,
+          "wall_time_seconds": 0.016459
+        },
+        {
+          "signature": [
+            8,
+            3,
+            0,
+            0,
+            17,
+            17,
+            6,
+            0
+          ],
+          "point_row_count": 39,
+          "pair_profile_count": 59,
+          "status": "OPTIMAL",
+          "coupling_constraint_count": 72,
+          "outside_triple_constraint_count": 5,
+          "variables": 98,
+          "constraints": 95,
+          "wall_time_seconds": 0.0146295
+        },
+        {
+          "signature": [
+            10,
+            0,
+            1,
+            0,
+            19,
+            14,
+            7,
+            0
+          ],
+          "point_row_count": 31,
+          "pair_profile_count": 59,
+          "status": "OPTIMAL",
+          "coupling_constraint_count": 72,
+          "outside_triple_constraint_count": 5,
+          "variables": 90,
+          "constraints": 95,
+          "wall_time_seconds": 0.0231552
+        }
+      ],
+      "records": [
+        {
+          "signature": [
+            10,
+            0,
+            0,
+            0,
+            15,
+            20,
+            4,
+            1
+          ],
+          "point_row_count": 18,
+          "pair_profile_count": 59,
+          "status": "INFEASIBLE",
+          "coupling_constraint_count": 72,
+          "outside_triple_constraint_count": 5,
+          "variables": 77,
+          "constraints": 95,
+          "wall_time_seconds": 0.0101519
+        },
+        {
+          "signature": [
+            11,
+            0,
+            0,
+            0,
+            12,
+            23,
+            5,
+            0
+          ],
+          "point_row_count": 19,
+          "pair_profile_count": 59,
+          "status": "INFEASIBLE",
+          "coupling_constraint_count": 72,
+          "outside_triple_constraint_count": 4,
+          "variables": 78,
+          "constraints": 94,
+          "wall_time_seconds": 0.00824
+        },
+        {
+          "signature": [
+            11,
+            0,
+            0,
+            0,
+            14,
+            20,
+            6,
+            0
+          ],
+          "point_row_count": 19,
+          "pair_profile_count": 59,
+          "status": "OPTIMAL",
+          "coupling_constraint_count": 72,
+          "outside_triple_constraint_count": 4,
+          "variables": 78,
+          "constraints": 94,
+          "wall_time_seconds": 0.014882800000000002
+        },
+        {
+          "signature": [
+            11,
+            0,
+            0,
+            0,
+            16,
+            17,
+            7,
+            0
+          ],
+          "point_row_count": 19,
+          "pair_profile_count": 59,
+          "status": "OPTIMAL",
+          "coupling_constraint_count": 72,
+          "outside_triple_constraint_count": 4,
+          "variables": 78,
+          "constraints": 94,
+          "wall_time_seconds": 0.0085197
+        },
+        {
+          "signature": [
+            11,
+            0,
+            0,
+            0,
+            18,
+            14,
+            8,
+            0
+          ],
+          "point_row_count": 19,
+          "pair_profile_count": 59,
+          "status": "OPTIMAL",
+          "coupling_constraint_count": 72,
+          "outside_triple_constraint_count": 4,
+          "variables": 78,
+          "constraints": 94,
+          "wall_time_seconds": 0.0087542
+        },
+        {
+          "signature": [
+            13,
+            0,
+            0,
+            0,
+            14,
+            22,
+            3,
+            1
+          ],
+          "point_row_count": 43,
+          "pair_profile_count": 59,
+          "status": "OPTIMAL",
+          "coupling_constraint_count": 72,
+          "outside_triple_constraint_count": 5,
+          "variables": 102,
+          "constraints": 95,
+          "wall_time_seconds": 0.030361100000000002
+        },
+        {
+          "signature": [
+            13,
+            0,
+            0,
+            0,
+            16,
+            19,
+            4,
+            1
+          ],
+          "point_row_count": 48,
+          "pair_profile_count": 59,
+          "status": "OPTIMAL",
+          "coupling_constraint_count": 72,
+          "outside_triple_constraint_count": 5,
+          "variables": 107,
+          "constraints": 95,
+          "wall_time_seconds": 0.0175789
+        },
+        {
+          "signature": [
+            13,
+            0,
+            0,
+            0,
+            18,
+            16,
+            5,
+            1
+          ],
+          "point_row_count": 49,
+          "pair_profile_count": 59,
+          "status": "OPTIMAL",
+          "coupling_constraint_count": 72,
+          "outside_triple_constraint_count": 5,
+          "variables": 108,
+          "constraints": 95,
+          "wall_time_seconds": 0.0208051
+        },
+        {
+          "signature": [
+            14,
+            0,
+            0,
+            0,
+            17,
+            16,
+            7,
+            0
+          ],
+          "point_row_count": 32,
+          "pair_profile_count": 59,
+          "status": "OPTIMAL",
+          "coupling_constraint_count": 72,
+          "outside_triple_constraint_count": 4,
+          "variables": 91,
+          "constraints": 94,
+          "wall_time_seconds": 0.0139263
+        },
+        {
+          "signature": [
+            14,
+            0,
+            0,
+            0,
+            19,
+            13,
+            8,
+            0
+          ],
+          "point_row_count": 32,
+          "pair_profile_count": 59,
+          "status": "OPTIMAL",
+          "coupling_constraint_count": 72,
+          "outside_triple_constraint_count": 4,
+          "variables": 91,
+          "constraints": 94,
+          "wall_time_seconds": 0.0178764
+        },
+        {
+          "signature": [
+            9,
+            1,
+            0,
+            0,
+            16,
+            19,
+            4,
+            1
+          ],
+          "point_row_count": 31,
+          "pair_profile_count": 59,
+          "status": "INFEASIBLE",
+          "coupling_constraint_count": 72,
+          "outside_triple_constraint_count": 6,
+          "variables": 90,
+          "constraints": 96,
+          "wall_time_seconds": 0.0142146
+        },
+        {
+          "signature": [
+            10,
+            1,
+            0,
+            0,
+            13,
+            22,
+            5,
+            0
+          ],
+          "point_row_count": 31,
+          "pair_profile_count": 59,
+          "status": "INFEASIBLE",
+          "coupling_constraint_count": 72,
+          "outside_triple_constraint_count": 5,
+          "variables": 90,
+          "constraints": 95,
+          "wall_time_seconds": 0.015344000000000002
+        },
+        {
+          "signature": [
+            10,
+            1,
+            0,
+            0,
+            15,
+            19,
+            6,
+            0
+          ],
+          "point_row_count": 31,
+          "pair_profile_count": 59,
+          "status": "OPTIMAL",
+          "coupling_constraint_count": 72,
+          "outside_triple_constraint_count": 5,
+          "variables": 90,
+          "constraints": 95,
+          "wall_time_seconds": 0.0154476
+        },
+        {
+          "signature": [
+            10,
+            1,
+            0,
+            0,
+            17,
+            16,
+            7,
+            0
+          ],
+          "point_row_count": 31,
+          "pair_profile_count": 59,
+          "status": "OPTIMAL",
+          "coupling_constraint_count": 72,
+          "outside_triple_constraint_count": 5,
+          "variables": 90,
+          "constraints": 95,
+          "wall_time_seconds": 0.0186419
+        },
+        {
+          "signature": [
+            10,
+            1,
+            0,
+            0,
+            19,
+            13,
+            8,
+            0
+          ],
+          "point_row_count": 31,
+          "pair_profile_count": 59,
+          "status": "OPTIMAL",
+          "coupling_constraint_count": 72,
+          "outside_triple_constraint_count": 5,
+          "variables": 90,
+          "constraints": 95,
+          "wall_time_seconds": 0.015637
+        },
+        {
+          "signature": [
+            12,
+            1,
+            0,
+            0,
+            15,
+            21,
+            3,
+            1
+          ],
+          "point_row_count": 64,
+          "pair_profile_count": 59,
+          "status": "OPTIMAL",
+          "coupling_constraint_count": 72,
+          "outside_triple_constraint_count": 6,
+          "variables": 123,
+          "constraints": 96,
+          "wall_time_seconds": 0.032612100000000005
+        },
+        {
+          "signature": [
+            12,
+            1,
+            0,
+            0,
+            17,
+            18,
+            4,
+            1
+          ],
+          "point_row_count": 71,
+          "pair_profile_count": 59,
+          "status": "OPTIMAL",
+          "coupling_constraint_count": 72,
+          "outside_triple_constraint_count": 6,
+          "variables": 130,
+          "constraints": 96,
+          "wall_time_seconds": 0.035843400000000004
+        },
+        {
+          "signature": [
+            13,
+            1,
+            0,
+            0,
+            20,
+            12,
+            8,
+            0
+          ],
+          "point_row_count": 46,
+          "pair_profile_count": 59,
+          "status": "OPTIMAL",
+          "coupling_constraint_count": 72,
+          "outside_triple_constraint_count": 5,
+          "variables": 105,
+          "constraints": 95,
+          "wall_time_seconds": 0.015380300000000001
+        },
+        {
+          "signature": [
+            8,
+            2,
+            0,
+            0,
+            17,
+            18,
+            4,
+            1
+          ],
+          "point_row_count": 40,
+          "pair_profile_count": 59,
+          "status": "INFEASIBLE",
+          "coupling_constraint_count": 72,
+          "outside_triple_constraint_count": 6,
+          "variables": 99,
+          "constraints": 96,
+          "wall_time_seconds": 0.0189915
+        },
+        {
+          "signature": [
+            9,
+            2,
+            0,
+            0,
+            16,
+            18,
+            6,
+            0
+          ],
+          "point_row_count": 39,
+          "pair_profile_count": 59,
+          "status": "OPTIMAL",
+          "coupling_constraint_count": 72,
+          "outside_triple_constraint_count": 5,
+          "variables": 98,
+          "constraints": 95,
+          "wall_time_seconds": 0.0232307
+        },
+        {
+          "signature": [
+            9,
+            2,
+            0,
+            0,
+            18,
+            15,
+            7,
+            0
+          ],
+          "point_row_count": 39,
+          "pair_profile_count": 59,
+          "status": "OPTIMAL",
+          "coupling_constraint_count": 72,
+          "outside_triple_constraint_count": 5,
+          "variables": 98,
+          "constraints": 95,
+          "wall_time_seconds": 0.017080500000000002
+        },
+        {
+          "signature": [
+            9,
+            2,
+            0,
+            0,
+            20,
+            12,
+            8,
+            0
+          ],
+          "point_row_count": 39,
+          "pair_profile_count": 59,
+          "status": "OPTIMAL",
+          "coupling_constraint_count": 72,
+          "outside_triple_constraint_count": 5,
+          "variables": 98,
+          "constraints": 95,
+          "wall_time_seconds": 0.016459
+        },
+        {
+          "signature": [
+            7,
+            3,
+            0,
+            0,
+            18,
+            17,
+            4,
+            1
+          ],
+          "point_row_count": 42,
+          "pair_profile_count": 59,
+          "status": "INFEASIBLE",
+          "coupling_constraint_count": 72,
+          "outside_triple_constraint_count": 6,
+          "variables": 101,
+          "constraints": 96,
+          "wall_time_seconds": 0.0178385
+        },
+        {
+          "signature": [
+            8,
+            3,
+            0,
+            0,
+            17,
+            17,
+            6,
+            0
+          ],
+          "point_row_count": 39,
+          "pair_profile_count": 59,
+          "status": "OPTIMAL",
+          "coupling_constraint_count": 72,
+          "outside_triple_constraint_count": 5,
+          "variables": 98,
+          "constraints": 95,
+          "wall_time_seconds": 0.0146295
+        },
+        {
+          "signature": [
+            9,
+            0,
+            1,
+            0,
+            16,
+            20,
+            3,
+            1
+          ],
+          "point_row_count": 23,
+          "pair_profile_count": 59,
+          "status": "INFEASIBLE",
+          "coupling_constraint_count": 72,
+          "outside_triple_constraint_count": 6,
+          "variables": 82,
+          "constraints": 96,
+          "wall_time_seconds": 0.011431400000000001
+        },
+        {
+          "signature": [
+            10,
+            0,
+            1,
+            0,
+            19,
+            14,
+            7,
+            0
+          ],
+          "point_row_count": 31,
+          "pair_profile_count": 59,
+          "status": "OPTIMAL",
+          "coupling_constraint_count": 72,
+          "outside_triple_constraint_count": 5,
+          "variables": 90,
+          "constraints": 95,
+          "wall_time_seconds": 0.0231552
+        },
+        {
+          "signature": [
+            8,
+            1,
+            1,
+            0,
+            17,
+            19,
+            3,
+            1
+          ],
+          "point_row_count": 35,
+          "pair_profile_count": 59,
+          "status": "INFEASIBLE",
+          "coupling_constraint_count": 72,
+          "outside_triple_constraint_count": 7,
+          "variables": 94,
+          "constraints": 97,
+          "wall_time_seconds": 0.0162764
+        }
+      ]
+    }
+  ]
+}
