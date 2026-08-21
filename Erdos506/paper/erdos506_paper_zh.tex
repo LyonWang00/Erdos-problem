@@ -59,6 +59,13 @@ F(n)=1+\binom{n-1}{2}-\left\lfloor\frac{n-1}{2}\right\rfloor.
 
 \noindent\textbf{关键词：}平面点集；共圆点；反演；线排列；精确计算验证
 
+\begingroup
+\setcounter{tocdepth}{1}
+\small
+\tableofcontents
+\endgroup
+\clearpage
+
 \section{引言}
 
 \begin{definition}
@@ -168,7 +175,9 @@ JiuChong 团队开发的 AI 辅助数学研究系统 Eureka，得到所有 $n\ge
 检查。形式化文件和精确计算文件收录于配套的 GitHub 仓库
 \url{https://github.com/LyonWang00/Erdos-problem/tree/main/Erdos506}。
 
-\section{记号与基本工具}
+\section{预备知识}
+
+\subsection{记号}
 
 以下固定一个满足定义条件的 $n$ 点集 $P$。令 $K$ 为一条直线或一个圆所能
 包含的 $P$ 中点数的最大值，并置 $r=n-K$。达到该最大值的直线或圆分别称为
@@ -180,40 +189,7 @@ JiuChong 团队开发的 AI 辅助数学研究系统 Eureka，得到所有 $n\ge
 $\{p_0,p_2,p_5,p_6\}$。在关联表中，周围文字会说明该子集是共线还是共圆。
 这一约定只用于缩短有限列表；若所列点中没有三个非共线点，则下标串本身并不表示一个圆。
 
-为严格表述例外构造的分类，还需区分两种关联类型。称欧氏直线或欧氏圆为
-\emph{广义圆}；等价地，它们是黎曼球面
-$\widehat{\mathbb C}=\mathbb C\cup\{\infty\}$ 上的圆。记
-$\mathcal B_L(P),\mathcal B_C(P)$ 分别为 $P$ 的直线块族与圆块族。
-
-\begin{definition}[关联同构与反演等价]
-设 $P,P'$ 是点数相同的有限标号点集。
-\begin{enumerate}[label=\textup{(\roman*)}]
-\item 若双射 $\sigma:P\to P'$ 满足
-\[
- \sigma\bigl(\mathcal B_L(P)\bigr)=\mathcal B_L(P'),\qquad
- \sigma\bigl(\mathcal B_C(P)\bigr)=\mathcal B_C(P'),
-\]
-则称其为\emph{直线--圆关联同构}。换言之，这种同构不仅保持点与块之间的从属
-关系、块的极大性及块的大小，还分别保持直线块族和圆块族。相应的同构类称为
-$P$ 的\emph{直线--圆关联类型}。
-\item 在集合系 $\mathcal B_L(P)\cup\mathcal B_C(P)$ 中忘记每个块原来是直线还是
-圆，所得集合系称为 $P$ 的\emph{广义圆关联结构}；两个这样的集合系之间的同构称为
-\emph{广义圆关联同构}，相应的同构类称为\emph{广义圆关联类型}。
-\item 把平面等同于复平面。若经过点重标号后，存在
-\[
- z\longmapsto\frac{\alpha z+\beta}{\gamma z+\delta},\qquad
- \alpha\delta-\beta\gamma\ne0,
-\]
-把 $P$ 映到 $P'$，且 $P$ 中没有点被映到 $\infty$，则称二者 \emph{Möbius
-等价}。若还允许在上式中以 $\overline z$ 代替 $z$，则称为\emph{扩展 Möbius
-等价}；新增的映射即 anti-Möbius 变换。
-\end{enumerate}
-\end{definition}
-
-Möbius 与 anti-Möbius 变换保持广义圆，故上述几何等价必然诱导广义圆关联同构；
-反之一般不成立。还应注意，$c(P)$ 本身并非 Möbius 不变量：经过变换极点的广义圆
-会变成欧氏直线，而直线在 $c(P)$ 中不计数。这正是下文既要保留直线--圆类别，
-又要考察忘记该类别后的广义圆关联结构的原因。
+对两个不同的点 $A,B$，记 $AB$ 为它们所确定的直线。
 
 \subsection{最大共线或共圆子集的直接计数}
 
@@ -1056,6 +1032,40 @@ p_7&=\left(-\frac{25}{313},\frac{312}{313}\right).
 \subsection{例外构造的关联类型与 Möbius 模空间}
 \label{sec:exceptional-moduli}
 
+先引入本小节所需的术语。称欧氏直线或欧氏圆为\emph{广义圆}；等价地，它们是
+黎曼球面 $\widehat{\mathbb C}=\mathbb C\cup\{\infty\}$ 上的圆。记
+$\mathcal B_L(P),\mathcal B_C(P)$ 分别为 $P$ 的直线块族与圆块族。
+
+\begin{definition}[关联同构与反演等价]
+设 $P,P'$ 是点数相同的有限标号点集。
+\begin{enumerate}[label=\textup{(\roman*)}]
+\item 若双射 $\sigma:P\to P'$ 满足
+\[
+ \sigma\bigl(\mathcal B_L(P)\bigr)=\mathcal B_L(P'),\qquad
+ \sigma\bigl(\mathcal B_C(P)\bigr)=\mathcal B_C(P'),
+\]
+则称其为\emph{直线--圆关联同构}。换言之，这种同构不仅保持点与块之间的从属
+关系、块的极大性及块的大小，还分别保持直线块族和圆块族。相应的同构类称为
+$P$ 的\emph{直线--圆关联类型}。
+\item 在集合系 $\mathcal B_L(P)\cup\mathcal B_C(P)$ 中忘记每个块原来是直线还是
+圆，所得集合系称为 $P$ 的\emph{广义圆关联结构}；两个这样的集合系之间的同构称为
+\emph{广义圆关联同构}，相应的同构类称为\emph{广义圆关联类型}。
+\item 把平面等同于复平面。若经过点重标号后，存在
+\[
+ z\longmapsto\frac{\alpha z+\beta}{\gamma z+\delta},\qquad
+ \alpha\delta-\beta\gamma\ne0,
+\]
+把 $P$ 映到 $P'$，且 $P$ 中没有点被映到 $\infty$，则称二者 \emph{Möbius
+等价}。若还允许在上式中以 $\overline z$ 代替 $z$，则称为\emph{扩展 Möbius
+等价}；新增的映射即 anti-Möbius 变换。
+\end{enumerate}
+\end{definition}
+
+Möbius 与 anti-Möbius 变换保持广义圆，故上述几何等价必然诱导广义圆关联同构；
+反之一般不成立。还应注意，$c(P)$ 本身并非 Möbius 不变量：经过变换极点的广义圆
+会变成欧氏直线，而直线在 $c(P)$ 中不计数。这正是本节既要保留直线--圆类别，
+又要考察忘记该类别后的广义圆关联结构的原因。
+
 例外构造的关联类型与 Möbius 轨道是两个不同层次的概念：前者是有限组合数据，
 后者还保留连续的交比参数。本文得到的完整关联分类如下。
 
@@ -1087,31 +1097,110 @@ $-(t^2-t+1)$，判别式为 $-3$，同样不可能。余下的广义圆关联类
 给出最后一个断言。
 \end{proof}
 
-为完整列明十八圆层的三个可实现直线--圆关联类型，下面各取一个代表；每项列出全部极大
-直线与全部圆块，下标串采用第 2 节的约定，并以 $C_k$ 表示 $k$ 点圆块的列表。
-\begin{itemize}
-\item $(4,4)$ 型的直线为 $0145,2367$，且
+下面分别给出十八圆层三个可实现直线--圆关联类型的精确坐标代表。每一项均列出
+\emph{全部}圆；下标串采用第 2 节的约定。
+
+\paragraph{$(4,4)$ 型。}
+取
+\[
+\begin{aligned}
+p_0&=(1,1),&p_1&=(1,-1),&p_2&=(-1,1),&p_3&=(-1,-1),\\
+p_4&=(2,2),&p_5&=(2,-2),&p_6&=(-2,2),&p_7&=(-2,-2).
+\end{aligned}
+\]
+极大直线为 $0347,1256$，全部圆为
 \[
 \begin{gathered}
 C_3: 035,036,056,124,127,147,247,356,\\
-C_4: 0123,0167,0246,0257,0347,1256,1346,1357,2345,4567.
+C_4: 0123,0145,0167,0246,0257,1346,1357,2345,2367,4567.
 \end{gathered}
 \]
-\item $(4,3)$ 型的直线为 $0145,036$，且
+
+\paragraph{$(4,3)$ 型。}
+取
+\[
+\begin{aligned}
+p_0&=(-39/10,-39/10),&p_1&=(-131/34,-133/34),\\
+p_2&=(-133/34,-131/34),&p_3&=(-23/6,-23/6),\\
+p_4&=(-47/12,-47/12),&p_5&=(-77/20,-79/20),\\
+p_6&=(-79/20,-77/20),&p_7&=(-15/4,-15/4).
+\end{aligned}
+\]
+极大直线为 $0347,056$，全部圆为
 \[
 \begin{gathered}
-C_3: 035,056,124,127,147,247,356,\\
-C_4: 0123,0167,0246,0257,0347,1256,1346,1357,2345,2367,4567.
+C_3: 035,036,124,127,147,247,356,\\
+C_4: 0123,0145,0167,0246,0257,1256,1346,1357,2345,2367,4567.
 \end{gathered}
 \]
-\item $(3,3)$ 型的直线为 $035,124$，且
+
+\paragraph{$(3,3)$ 型。}
+取
+\[
+\begin{aligned}
+p_0&=(13/120,13/40),&p_1&=(71/104,-43/104),\\
+p_2&=(199/104,85/104),&p_3&=(47/40,167/120),\\
+p_4&=(47/40,141/40),&p_5&=(35/8,59/24),\\
+p_6&=(-23/24,-23/8),&p_7&=(-81/40,13/40).
+\end{aligned}
+\]
+极大直线为 $046,357$，全部圆为
 \[
 \begin{gathered}
-C_3: 036,056,127,147,247,356,\\
-C_4: 0123,0145,0167,0246,0257,0347,1256,1346,1357,2345,2367,4567.
+C_3: 024,026,135,137,157,246,\\
+C_4: 0123,0145,0167,0257,0347,0356,1247,1256,1346,2345,2367,4567.
 \end{gathered}
 \]
-\end{itemize}
+
+\begin{figure}[ht]
+\centering
+\begin{minipage}[t]{0.29\textwidth}
+\centering
+\textbf{$(4,4)$ 型}\par\smallskip
+\begin{tikzpicture}[x=0.65cm,y=0.65cm,every node/.style={font=\scriptsize}]
+  \coordinate (p0) at (1,1);   \coordinate (p1) at (1,-1);
+  \coordinate (p2) at (-1,1);  \coordinate (p3) at (-1,-1);
+  \coordinate (p4) at (2,2);   \coordinate (p5) at (2,-2);
+  \coordinate (p6) at (-2,2);  \coordinate (p7) at (-2,-2);
+  \draw[gray] (p7)--(p4); \draw[gray] (p6)--(p5);
+  \foreach \i in {0,...,7}{\fill (p\i) circle (1.8pt) node[above right] {$p_\i$};}
+\end{tikzpicture}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.29\textwidth}
+\centering
+\textbf{$(4,3)$ 型}\par\smallskip
+\begin{tikzpicture}[x=1.25cm,y=1.25cm,every node/.style={font=\scriptsize}]
+  \coordinate (p0) at (1,1);       \coordinate (p1) at (1.4706,0.8824);
+  \coordinate (p2) at (0.8824,1.4706); \coordinate (p3) at (1.6667,1.6667);
+  \coordinate (p4) at (0.8333,0.8333); \coordinate (p5) at (1.5,0.5);
+  \coordinate (p6) at (0.5,1.5);   \coordinate (p7) at (2.5,2.5);
+  \draw[gray] (p4)--(p7); \draw[gray] (p5)--(p6);
+  \fill (p0) circle (1.8pt) node[right] {$p_0$};
+  \fill (p1) circle (1.8pt) node[below right] {$p_1$};
+  \fill (p2) circle (1.8pt) node[above right] {$p_2$};
+  \fill (p3) circle (1.8pt) node[below right] {$p_3$};
+  \fill (p4) circle (1.8pt) node[below left] {$p_4$};
+  \fill (p5) circle (1.8pt) node[below] {$p_5$};
+  \fill (p6) circle (1.8pt) node[left] {$p_6$};
+  \fill (p7) circle (1.8pt) node[above] {$p_7$};
+\end{tikzpicture}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.36\textwidth}
+\centering
+\textbf{$(3,3)$ 型}\par\smallskip
+\begin{tikzpicture}[x=0.58cm,y=0.58cm,every node/.style={font=\scriptsize}]
+  \coordinate (p0) at (0.1083,0.325); \coordinate (p1) at (0.6827,-0.4135);
+  \coordinate (p2) at (1.9135,0.8173); \coordinate (p3) at (1.175,1.3917);
+  \coordinate (p4) at (1.175,3.525); \coordinate (p5) at (4.375,2.4583);
+  \coordinate (p6) at (-0.9583,-2.875); \coordinate (p7) at (-2.025,0.325);
+  \draw[gray] (p6)--(p4); \draw[gray] (p7)--(p5);
+  \foreach \i in {0,...,7}{\fill (p\i) circle (1.8pt) node[above right] {$p_\i$};}
+\end{tikzpicture}
+\end{minipage}
+\caption{$n=8$、$c(P)=18$ 时三个可实现直线--圆关联类型的精确代表。
+坐标见正文；灰色线段表示全部极大直线，为保持点图清晰未画出圆。}
+\label{fig:c18-three-types}
+\end{figure}
 
 以下显式写出 Möbius 商。把 $\mathbb R^2$ 等同于 $\mathbb C$，并采用有序交比
 \[
@@ -1202,8 +1291,13 @@ B(u,v)=\left(\frac{v^2}{u^2-u+v^2},
 \]
 而一般参数处的扩展群阶为 $48$。
 
-\paragraph{八点。}
-十七圆类型的极大直线为 $0123,046,357$。它包含如下有理一参数族：令
+\paragraph{八点十七圆。}
+十七圆类型的极大直线为 $0123,046,357$。在重标号
+\[
+(q_0,q_1,q_2,q_3,q_4,q_5,q_6,q_7)
+\longmapsto(p_0,p_7,p_1,p_6,p_5,p_2,p_4,p_3)
+\]
+下，它的广义圆关联结构与十八圆三种类型所共有的结构相同。令
 \[
 m=\frac3{3-b^2},\qquad r=\frac{3(1+b^2)}{3-b^2},\qquad
 t=\frac{b^2-3}{b^2+9},\qquad
@@ -1218,19 +1312,143 @@ P_4&=P_0P_3\cap P_1P_2,&P_5&=(m,mb).
 \end{aligned}
 \]
 以 $O$ 为中心作半径平方为一的反演 $I_O$，并置
-$p_i=I_O(P_i)$（$0\le i\le6$）、$p_7=O$。除去有限个代数退化参数后，所得构型
-恰有上文十七圆构造的完整关联表。$b=13/12$ 给出上文坐标；$b=1$ 给出同一
-直线--圆关联类型中另一个与它既不 Möbius 等价、也不 anti-Möbius 等价的构型。
-
-十八圆层则含有一般的二参数位似矩形族
+$p_i=I_O(P_i)$（$0\le i\le6$）、$p_7=O$。所得构型恰有上文的十七圆关联表，
+当且仅当
 \[
- (\pm A,\pm1),\qquad(\pm rA,\pm r).
+b\in\mathbb R,\qquad b\ne0,\qquad b^2\ne3.
 \]
-该族实现含两条四点直线块的类型；在适当的广义圆交点处反演，可得到命题
-~\ref{prop:exceptional-types} 中另外两种直线块与圆块的类别分配。参数恒等式与
-非等价性检验分别见
-\file{computation/n4_to_8/orbit_classification/verify_parametric_families.py} 和
-\file{computation/n4_to_8/orbit_classification/verify_mobius_moduli.py}。
+$b=13/12$ 即给出上文所列坐标。
+
+下面完整描述八点情形的模空间。令
+\[
+\mathcal D=(0,1)^2.
+\]
+对 $(x,y)\in\mathcal D$，置
+\[
+A=\sqrt{\frac{y}{1-y}},\qquad
+r=\frac{1+\sqrt{x}}{1-\sqrt{x}}>1,
+\]
+并令 $Q(x,y)$ 为下列带标号八点集：
+\begin{equation}\label{eq:rectangle-normal-form}
+\begin{aligned}
+q_0&=(A,1),&q_1&=(A,-1),&q_2&=(-A,1),&q_3&=(-A,-1),\\
+q_4&=(rA,r),&q_5&=(rA,-r),&q_6&=(-rA,r),&q_7&=(-rA,-r).
+\end{aligned}
+\end{equation}
+换言之，$Q(x,y)$ 由两组同心、同向的位似矩形顶点组成。在有理函数域
+$\mathbb R(x,y)$ 上定义
+\begin{equation}\label{eq:n8-moduli-generators}
+\begin{aligned}
+T_1(x,y)&=(1/x,y),&
+T_2(x,y)&=(x,1-y),\\
+T_3(x,y)&=((y-1)/y,x/(x-1)),&
+T_4(x,y)&=(y(1-x),x/(1-y+xy)).
+\end{aligned}
+\end{equation}
+它们生成一个 $24$ 阶群 $G$。对 $\mathcal D$ 中两点，若存在 $g\in G$ 使
+$(x',y')=g(x,y)\in\mathcal D$，则记 $(x,y)\sim_G(x',y')$。
+
+\begin{proposition}[八点情形的完整 Möbius 模空间]
+\label{prop:n8-complete-moduli}
+在 $n=8,c(P)=18$ 的构型中出现的广义圆关联 Möbius 轨道组成商空间
+\[
+\mathcal M_{8,18}=\mathcal D/{\sim_G}.
+\]
+每个轨道都含有式~\eqref{eq:rectangle-normal-form} 的代表，且两个这种代表
+Möbius 等价，当且仅当其参数满足 $\sim_G$。
+
+对 $c(P)=17$，在上述有理族中令 $u=b^2$，并置
+\[
+\mathcal U_{17}=(0,\infty)\setminus\{3\},\qquad
+\mathcal S=\{3/13,27/13,13/3,39\}.
+\]
+则完整轨道空间为
+\[
+\mathcal M_{8,17}=\mathcal U_{17}/{\approx},
+\]
+其中
+\begin{equation}\label{eq:c17-equivalence}
+u\approx u'
+\quad\Longleftrightarrow\quad
+u'=u,\quad u'=9/u,
+\quad\text{或}\quad \{u,u'\}\subseteq\mathcal S.
+\end{equation}
+在十七圆层和十八圆层，Möbius 轨道划分与允许 anti-Möbius 变换后的扩展
+Möbius 轨道划分相同。
+\end{proposition}
+
+\begin{proof}
+以下归一化说明上述参数族确实穷尽全部实现。暂时把 $p_0$ 送到无穷远点，再作相似
+变换；用复坐标可设
+\[
+z_1=0,\qquad z_2=1,\qquad z_4=a+i\beta,\qquad
+z_5=t z_4,\qquad z_6=1+k(z_4-1),\qquad \beta\ne0.
+\]
+这只是黎曼球面上的中间归一化；上述模空间中的每个代表仍是由有限欧氏点组成的点集。
+通过 $p_0$ 的六个四点广义圆变成直线
+$123,145,167,246,257,347$，从而确定
+\[
+z_3=\frac{t(k-1)}D,\qquad
+z_7=-\frac{t(ak-k+1)+i\beta kt}{kt-k-t},\qquad
+D=2kt-k-t.
+\]
+在约去由点互异性保证非零的因子后，其余六个四点圆行列式等价于
+\begin{equation}\label{eq:n8-normalized-equations}
+a=\frac{t(k-1)}D,\qquad a^2+\beta^2=\frac{k-1}D.
+\end{equation}
+因此不存在额外的实分支。令
+\[
+x=-\frac{kt}{kt-k-t},\qquad y=a,
+\]
+则反过来
+\[
+k=\frac{x}{x+y-xy},\qquad
+t=\frac{x}{1-y+xy},\qquad
+\beta^2=\frac{y(1-y)}x.
+\]
+实可实现条件恰为 $y(1-y)/x>0$。若 $x>0$，必要时应用 $T_1$，可使
+$0<x<1,0<y<1$；若 $x<0,y<0$，则 $T_1T_3$ 把参数送入 $\mathcal D$；
+若 $x<0,y>1$，先应用 $T_2$ 即归入前一种情形。因此每个实实现的轨道均与
+$\mathcal D$ 相交。
+
+在矩形标准形中，十二个四点广义圆的有序交比两两相等，其六个值为
+\[
+x,\quad y,\quad \frac{x}{1-y+xy},\quad x+y-xy,\quad
+\frac{x}{x+y-xy},\quad1-y+xy.
+\]
+广义圆关联结构的 $192$ 个自同构在 $(x,y)$ 上恰诱导 $24$ 个不同的有理变换；
+直接代入可知式~\eqref{eq:n8-moduli-generators} 中四个变换生成全部作用，
+故得到十八圆层的商空间。
+
+对十七圆着色，最终反演的极点是三个广义圆的额外共点。可选块
+$0257,036,147$；消去其公共点得到
+\[
+A^2(r^2+14r+1)+(r+1)^2=0,
+\]
+在交比参数中即
+\begin{equation}\label{eq:c17-concurrence}
+3xy-3y-1=0.
+\end{equation}
+对上面的有理参数 $b$，
+\[
+x=\frac4{3-b^2},\qquad
+y=\frac{3-b^2}{3(1+b^2)}.
+\]
+故共点曲线的每个实点都由 $u=b^2>0,u\ne3$ 得到。把同一组 $24$ 个重标号
+变换限制在式~\eqref{eq:c17-concurrence} 上，一般只得到对合
+$u\mapsto9/u$；不同重标号实分支的唯一额外交会正是
+式~\eqref{eq:c17-equivalence} 中的集合 $\mathcal S$。最后，$b$ 与 $-b$
+直接 Möbius 等价，而每个矩形标准形都有一个反射诱导的 anti-Möbius 自同构，
+故允许 anti-Möbius 变换不会进一步合并轨道。
+\end{proof}
+
+文件
+\file{computation/n4_to_8/orbit_classification/verify_n8_mobius_moduli.py}
+在有理数域上精确核验全部行列式约化、$192$ 个关联自同构、$24$ 个有理参数作用，
+以及十七圆曲线上所有特殊交会。图~\ref{fig:c18-three-types} 的三个坐标代表还由
+同一文件和
+\file{computation/n4_to_8/orbit_classification/construct_c18_representatives.py}
+独立复核。
 
 最后，若 $\lambda$ 是四个点的一种有序交比，则
 \[
@@ -1239,9 +1457,9 @@ $p_i=I_O(P_i)$（$0\le i\le6$）、$p_7=O$。除去有限个代数退化参数�
 \]
 与四点的次序无关，且在 Möbius 与 anti-Möbius 变换下不变。因此所有极大四点
 广义圆的 $J$ 值多重集是未标号不变量。上述程序先比较该多重集，再对剩余的每个
-关联重标号用精确的归一化交比判定。六点、七点公式给出完整 Möbius 模空间；八点
-公式足以证明存在连续统多个轨道，但本文不声称所列一参数、二参数族已经穷尽相应
-关联类型的全部实实现空间。
+关联重标号用精确的归一化交比判定。结合命题~\ref{prop:n8-complete-moduli}，
+上述公式给出了四个例外层
+$(6,8),(7,11),(8,17),(8,18)$ 的完整 Möbius 与扩展 Möbius 模空间。
 
 \section{无三点共线的加强版本}\label{sec:no-three}
 
@@ -1426,131 +1644,6 @@ h=-\frac{b}{a-b+1},\qquad k=\frac{1-b}{a-b+1}.
 
 
 \appendix
-\section{早期的 \texorpdfstring{$n\ge92$}{n>=92} 证明}
-\label{app:early92}
-
-本节记录最初从 Eureka 数值结果中提炼出的中间论证。正文中 $n\ge17$ 的证明已经
-在逻辑上取代了它；这里保留这一证明，是为了说明数值阈值如何先被转化为简短的
-数学论证，随后再继续加强。
-
-\begin{proposition}
-若 $n\ge92$，则每个合格 $n$ 点集都至少确定 $F(n)$ 个圆。
-\end{proposition}
-
-\begin{proof}
-令 $K$ 为最大直线块或最大圆块的大小，并置 $r=n-K$。按照 $K$ 是否至少为
-$3n/8$ 分成两种情形。
-
-先设 $K\ge3n/8$。引理~\ref{lem:largest} 中的两个量满足
-\[
- D_L(n,r)-D_C(n,r)=r\left\lfloor\frac K2\right\rfloor-1\ge0.
-\]
-再在圆块下界中使用 $\lfloor K/2\rfloor\le K/2$，则无论最大块是直线还是圆，均有
-\begin{equation}\label{eq:early-B}
- c(P)\ge B(n,K):=1+\frac{(n-K)K(3K-n-3)}4.
-\end{equation}
-当 $K=n-1$ 时，精确下界 $D_C(n,1)$ 就是 $F(n)$。以下可设
-$3n/8\le K\le n-2$。在该区间上
-\[
- \frac{\partial^2 B}{\partial K^2}
- =\frac{-18K+6n+6}{4}<0,
-\]
-故 $\partial B/\partial K$ 严格递减，$B$ 不会在区间内部取得最小值，只需考察两个
-端点。注意
-\begin{equation}\label{eq:early-F-upper}
- F(n)\le1+\frac{(n-2)^2}{2}.
-\end{equation}
-两个端点相对于该上界的余量分别为
-\[
- B\left(n,\frac{3n}{8}\right)-1-\frac{(n-2)^2}{2}
- =\frac{15n^3-1384n^2+4096n-4096}{2048}
-\]
-和
-\[
- B(n,n-2)-1-\frac{(n-2)^2}{2}
- =\frac{(n-2)(n-7)}2.
-\]
-在第一式中令 $n=92+u$，其分子化为
-\[
-15u^3+2756u^2+130320u+338880,
-\]
-第二个余量也显然为正，因此第一种情形成立。
-
-以下设 $K<3n/8$。固定反演中心 $x\in P$，并置 $N=n-1$、$M=K-1$。反演像中的
-每条连接线至多含 $M$ 个像点。若 $t_i$ 表示其中恰含 $i$ 个像点的连接线数，定义
-\[
- a_M=
- \begin{cases}
- 6,&2\le M\le9,\\[2pt]
- \displaystyle\frac{\binom M2}{M-3},&M\ge10,
- \end{cases}
- \qquad
- y_M=\frac1{a_M+1},\qquad z_M=1-y_M.
-\]
-由 $a_M$ 的定义，
-\[
- y_M\binom i2\le z_M(i-3)\qquad(4\le i\le M).
-\]
-把点对恒等式与 Melchior 不等式按第 2 节的方法线性组合，得到
-\begin{equation}\label{eq:early-dual}
- t_2+t_3\ge y_M\binom N2+3z_M
- =3+y_M\left(\binom N2-3\right).
-\end{equation}
-其中至多 $\lfloor N/2\rfloor$ 条二点线或三点线经过反演中心。其余每条线反演为
-一个经过中心、总共含三个或四个原点的圆；对全部中心求和后，每个这样的圆至多
-被计数四次。因此
-\begin{equation}\label{eq:early-inversion}
- c(P)\ge\frac n4\left[
- 3+y_M\left(\binom{n-1}{2}-3\right)
- -\left\lfloor\frac{n-1}{2}\right\rfloor\right].
-\end{equation}
-
-由于 $K<3n/8$ 且 $K$ 为整数，
-\[
- M=K-1\le\frac{3n-9}{8}=:M_0.
-\]
-函数
-\[
- g(s)=\frac{2(s-3)}{(s+3)(s-2)}
-\]
-在 $s\ge6$ 时递减。对 $M\ge10$ 有 $y_M=g(M)$，对 $M\le9$ 则有
-$y_M=1/7=g(9)$，故
-\[
- y_M\ge g(M_0)=\frac{16(n-11)}{(n+5)(3n-25)}.
-\]
-在式~\eqref{eq:early-inversion} 中以 $(n-1)/2$ 代替取整项，再使用
-式~\eqref{eq:early-F-upper}，所得下界减去 $F(n)$ 至少为
-\[
- \frac{n^4-105n^3+787n^2-1931n+3000}
- {8(n+5)(3n-25)}.
-\]
-令 $n=98+u$，分子变为
-\[
- u^4+287u^3+27541u^2+891829u+783766,
-\]
-故对所有 $n\ge98$ 均为正。
-
-只剩 $92\le n\le97$。下表中，$K_0$ 是严格小于 $3n/8$ 的最大整数，
-$M_0=K_0-1$，而 $\Delta_n$ 是在 $M_0$ 处计算的式~\eqref{eq:early-inversion}
-右端减去 $F(n)$。式~\eqref{eq:early-dual} 的下界随 $M$ 增大而减小，故表中列出的
-正是第二种情形的最小余量。
-\[
-\begin{array}{c|rrrrrr}
-n&92&93&94&95&96&97\\ \hline
-K_0&34&34&35&35&35&36\\
-M_0&33&33&34&34&34&35\\
-\Delta_n&43&88&\frac{20371}{1184}&\frac{9225}{148}&
-\frac{4908}{37}&\frac{29823}{836}
-\end{array}
-\]
-六个余量均为正，证明完成。
-\end{proof}
-
-\begin{remark}
-上述论证没有枚举任何关联结构；表格只核验六条精确有理数端点不等式。正文证明把
-这一早期阈值推进到 $n\ge17$，后续两节再分别处理 $n=16$ 与 $n=15$。
-\end{remark}
-
 \section{精确验证与独立复现}\label{app:verification}
 
 经审计的材料由两个相互独立的入口复现。先在 \file{Erdos506} 目录运行
@@ -1686,11 +1779,13 @@ $A=kB$ 与 $kA=B$。于是 $A=B=0$，从而 $x_0+x_2=0$；代回 $R=0$
 \file{python}\ \file{verify_incidence_types.py}\\
 \file{python}\ \file{verify_parametric_families.py}\\
 \file{python}\ \file{verify_mobius_moduli.py}\\
+\file{python}\ \file{verify_n8_mobius_moduli.py}\\
 \file{python}\ \file{family_examples.py}
 \end{tabular}
 \end{center}
 分别核验十八圆层的关联分类、正文各参数族的直线与圆恒等式、六点和七点的完整
-有限商作用，以及所选参数族成员间的严格不等价性。子目录
+有限商作用、十七圆与十八圆八点构型的完整模空间，以及所选参数族成员间的严格
+不等价性。子目录
 \file{c17_exclusions/} 包含十七圆层的七个关联记录、唯一可实现类型的有理坐标
 核验，以及对其余六类的符号消元或 Gröbner 基排除。\file{README.md} 给出完整
 重现顺序，并区分“从头生成分类记录”与“核验已发布记录”这两项操作。
@@ -1777,5 +1872,130 @@ R.~Zhang,
 \emph{On the number of ordinary circles determined by $n$ points},
 Discrete Comput. Geom. \textbf{46} (2011), 205--211.
 \end{thebibliography}
+
+\section{早期的 \texorpdfstring{$n\ge92$}{n>=92} 证明}
+\label{app:early92}
+
+本节记录最初从 Eureka 数值结果中提炼出的中间论证。正文中 $n\ge17$ 的证明已经
+在逻辑上取代了它；这里保留这一证明，是为了说明数值阈值如何先被转化为简短的
+数学论证，随后再继续加强。
+
+\begin{proposition}
+若 $n\ge92$，则每个合格 $n$ 点集都至少确定 $F(n)$ 个圆。
+\end{proposition}
+
+\begin{proof}
+令 $K$ 为最大直线块或最大圆块的大小，并置 $r=n-K$。按照 $K$ 是否至少为
+$3n/8$ 分成两种情形。
+
+先设 $K\ge3n/8$。引理~\ref{lem:largest} 中的两个量满足
+\[
+ D_L(n,r)-D_C(n,r)=r\left\lfloor\frac K2\right\rfloor-1\ge0.
+\]
+再在圆块下界中使用 $\lfloor K/2\rfloor\le K/2$，则无论最大块是直线还是圆，均有
+\begin{equation}\label{eq:early-B}
+ c(P)\ge B(n,K):=1+\frac{(n-K)K(3K-n-3)}4.
+\end{equation}
+当 $K=n-1$ 时，精确下界 $D_C(n,1)$ 就是 $F(n)$。以下可设
+$3n/8\le K\le n-2$。在该区间上
+\[
+ \frac{\partial^2 B}{\partial K^2}
+ =\frac{-18K+6n+6}{4}<0,
+\]
+故 $\partial B/\partial K$ 严格递减，$B$ 不会在区间内部取得最小值，只需考察两个
+端点。注意
+\begin{equation}\label{eq:early-F-upper}
+ F(n)\le1+\frac{(n-2)^2}{2}.
+\end{equation}
+两个端点相对于该上界的余量分别为
+\[
+ B\left(n,\frac{3n}{8}\right)-1-\frac{(n-2)^2}{2}
+ =\frac{15n^3-1384n^2+4096n-4096}{2048}
+\]
+和
+\[
+ B(n,n-2)-1-\frac{(n-2)^2}{2}
+ =\frac{(n-2)(n-7)}2.
+\]
+在第一式中令 $n=92+u$，其分子化为
+\[
+15u^3+2756u^2+130320u+338880,
+\]
+第二个余量也显然为正，因此第一种情形成立。
+
+以下设 $K<3n/8$。固定反演中心 $x\in P$，并置 $N=n-1$、$M=K-1$。反演像中的
+每条连接线至多含 $M$ 个像点。若 $t_i$ 表示其中恰含 $i$ 个像点的连接线数，定义
+\[
+ a_M=
+ \begin{cases}
+ 6,&2\le M\le9,\\[2pt]
+ \displaystyle\frac{\binom M2}{M-3},&M\ge10,
+ \end{cases}
+ \qquad
+ y_M=\frac1{a_M+1},\qquad z_M=1-y_M.
+\]
+由 $a_M$ 的定义，
+\[
+ y_M\binom i2\le z_M(i-3)\qquad(4\le i\le M).
+\]
+把点对恒等式与 Melchior 不等式按第 2 节的方法线性组合，得到
+\begin{equation}\label{eq:early-dual}
+ t_2+t_3\ge y_M\binom N2+3z_M
+ =3+y_M\left(\binom N2-3\right).
+\end{equation}
+其中至多 $\lfloor N/2\rfloor$ 条二点线或三点线经过反演中心。其余每条线反演为
+一个经过中心、总共含三个或四个原点的圆；对全部中心求和后，每个这样的圆至多
+被计数四次。因此
+\begin{equation}\label{eq:early-inversion}
+ c(P)\ge\frac n4\left[
+ 3+y_M\left(\binom{n-1}{2}-3\right)
+ -\left\lfloor\frac{n-1}{2}\right\rfloor\right].
+\end{equation}
+
+由于 $K<3n/8$ 且 $K$ 为整数，
+\[
+ M=K-1\le\frac{3n-9}{8}=:M_0.
+\]
+函数
+\[
+ g(s)=\frac{2(s-3)}{(s+3)(s-2)}
+\]
+在 $s\ge6$ 时递减。对 $M\ge10$ 有 $y_M=g(M)$，对 $M\le9$ 则有
+$y_M=1/7=g(9)$，故
+\[
+ y_M\ge g(M_0)=\frac{16(n-11)}{(n+5)(3n-25)}.
+\]
+在式~\eqref{eq:early-inversion} 中以 $(n-1)/2$ 代替取整项，再使用
+式~\eqref{eq:early-F-upper}，所得下界减去 $F(n)$ 至少为
+\[
+ \frac{n^4-105n^3+787n^2-1931n+3000}
+ {8(n+5)(3n-25)}.
+\]
+令 $n=98+u$，分子变为
+\[
+ u^4+287u^3+27541u^2+891829u+783766,
+\]
+故对所有 $n\ge98$ 均为正。
+
+只剩 $92\le n\le97$。下表中，$K_0$ 是严格小于 $3n/8$ 的最大整数，
+$M_0=K_0-1$，而 $\Delta_n$ 是在 $M_0$ 处计算的式~\eqref{eq:early-inversion}
+右端减去 $F(n)$。式~\eqref{eq:early-dual} 的下界随 $M$ 增大而减小，故表中列出的
+正是第二种情形的最小余量。
+\[
+\begin{array}{c|rrrrrr}
+n&92&93&94&95&96&97\\ \hline
+K_0&34&34&35&35&35&36\\
+M_0&33&33&34&34&34&35\\
+\Delta_n&43&88&\frac{20371}{1184}&\frac{9225}{148}&
+\frac{4908}{37}&\frac{29823}{836}
+\end{array}
+\]
+六个余量均为正，证明完成。
+\end{proof}
+
+\begin{remark}
+上述论证没有枚举任何关联结构；表格只核验六条精确有理数端点不等式。正文证明把
+这一早期阈值推进到 $n\ge17$，后续两节再分别处理 $n=16$ 与 $n=15$。
+\end{remark}
 
 \end{document}

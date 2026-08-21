@@ -60,6 +60,13 @@ researchers and artificial-intelligence systems.
 \noindent\textbf{Keywords:} planar point sets; concyclic points; inversion; line
 arrangements; exact computer verification
 
+\begingroup
+\setcounter{tocdepth}{1}
+\small
+\tableofcontents
+\endgroup
+\clearpage
+
 \section{Introduction}
 
 \begin{definition}
@@ -195,7 +202,9 @@ against Mathlib.  The formalization and exact-verification files are available
 in the accompanying GitHub repository
 \url{https://github.com/LyonWang00/Erdos-problem/tree/main/Erdos506}.
 
-\section{Notation and basic tools}
+\section{Preliminaries}
+
+\subsection{Notation}
 
 Fix an admissible $n$-point set $P$.  Let $K$ be the largest number of points of
 $P$ on a line or a circle, and put $r=n-K$.  A line or circle attaining $K$ will be
@@ -211,47 +220,8 @@ whether the subset is collinear or concyclic.  This convention is used only to
 shorten finite lists; it does not identify a circle with an index string unless
 at least three of the indicated points are noncollinear.
 
-For the classification of the exceptional configurations we need two precise
-notions of incidence type.  A \emph{generalized circle} is a Euclidean line or
-a Euclidean circle, equivalently a circle on the Riemann sphere
-$\widehat{\mathbb C}=\mathbb C\cup\{\infty\}$.  Let
-$\mathcal B_L(P)$ and $\mathcal B_C(P)$ be the families of line blocks and
-circle blocks of $P$.
-
-\begin{definition}[Incidence isomorphisms and inversive equivalence]
-Let $P$ and $P'$ be finite labelled point sets of the same size.
-\begin{enumerate}[label=\textup{(\roman*)}]
-\item A \emph{line--circle incidence isomorphism} is a bijection
-$\sigma:P\to P'$ such that
-\[
- \sigma\bigl(\mathcal B_L(P)\bigr)=\mathcal B_L(P'),\qquad
- \sigma\bigl(\mathcal B_C(P)\bigr)=\mathcal B_C(P').
-\]
-Thus membership, maximality, block size, and the distinction between lines and
-circles are all preserved.  The corresponding isomorphism class is called the
-\emph{line--circle incidence type} of $P$.
-\item The \emph{generalized-circle incidence structure} of $P$ is the set
-system $\mathcal B_L(P)\cup\mathcal B_C(P)$ after the information specifying
-whether each block is a line or a circle has been forgotten.  An isomorphism of
-these set systems is a \emph{generalized-circle incidence isomorphism}, and the
-corresponding isomorphism class is the \emph{generalized-circle incidence type}.
-\item The sets are \emph{Möbius equivalent} if, after a relabelling, a map
-\[
- z\longmapsto\frac{\alpha z+\beta}{\gamma z+\delta},\qquad
- \alpha\delta-\beta\gamma\ne0,
-\]
-sends $P$ to $P'$ and no point of $P$ to $\infty$.  They are
-\emph{extended-Möbius equivalent} if one also allows an anti-Möbius map,
-obtained by replacing $z$ with $\overline z$ in the displayed formula.
-\end{enumerate}
-\end{definition}
-
-Möbius and anti-Möbius maps preserve generalized circles, so either geometric
-equivalence induces a generalized-circle incidence isomorphism.  The converse need not
-hold.  Moreover, $c(P)$ itself is not Möbius invariant: a generalized circle
-through the pole of a transformation becomes a Euclidean line and is then not
-counted by $c(P)$.  This is why both the line--circle incidence structure and
-the structure obtained after forgetting the line/circle type are needed below.
+For two distinct points $A$ and $B$, the notation $AB$ denotes the line that
+they determine.
 
 \subsection{Counting from a largest collinear or concyclic subset}
 
@@ -1511,6 +1481,48 @@ realizable in the Euclidean plane.  Therefore $c(8)\ge17$, and hence $c(8)=17$.
 \subsection{Incidence types and Möbius moduli of the exceptional configurations}
 \label{sec:exceptional-moduli-en}
 
+We first introduce the terminology needed in this subsection.  A
+\emph{generalized circle} is a Euclidean line or a Euclidean circle,
+equivalently a circle on the Riemann sphere
+$\widehat{\mathbb C}=\mathbb C\cup\{\infty\}$.  Let $\mathcal B_L(P)$ and
+$\mathcal B_C(P)$ be the families of line blocks and circle blocks of $P$.
+
+\begin{definition}[Incidence isomorphisms and inversive equivalence]
+Let $P$ and $P'$ be finite labelled point sets of the same size.
+\begin{enumerate}[label=\textup{(\roman*)}]
+\item A \emph{line--circle incidence isomorphism} is a bijection
+$\sigma:P\to P'$ such that
+\[
+ \sigma\bigl(\mathcal B_L(P)\bigr)=\mathcal B_L(P'),\qquad
+ \sigma\bigl(\mathcal B_C(P)\bigr)=\mathcal B_C(P').
+\]
+Thus membership, maximality, block size, and the distinction between lines and
+circles are all preserved.  The corresponding isomorphism class is called the
+\emph{line--circle incidence type} of $P$.
+\item The \emph{generalized-circle incidence structure} of $P$ is the set
+system $\mathcal B_L(P)\cup\mathcal B_C(P)$ after the information specifying
+whether each block is a line or a circle has been forgotten.  An isomorphism of
+these set systems is a \emph{generalized-circle incidence isomorphism}, and the
+corresponding isomorphism class is the \emph{generalized-circle incidence type}.
+\item The sets are \emph{Möbius equivalent} if, after a relabelling, a map
+\[
+ z\longmapsto\frac{\alpha z+\beta}{\gamma z+\delta},\qquad
+ \alpha\delta-\beta\gamma\ne0,
+\]
+sends $P$ to $P'$ and no point of $P$ to $\infty$.  They are
+\emph{extended-Möbius equivalent} if one also allows an anti-Möbius map,
+obtained by replacing $z$ with $\overline z$ in the displayed formula.
+\end{enumerate}
+\end{definition}
+
+Möbius and anti-Möbius maps preserve generalized circles, so either geometric
+equivalence induces a generalized-circle incidence isomorphism.  The converse
+need not hold.  Moreover, $c(P)$ itself is not Möbius invariant: a generalized
+circle through the pole of a transformation becomes a Euclidean line and is
+then not counted by $c(P)$.  This is why both the line--circle incidence
+structure and the structure obtained after forgetting the line/circle type are
+needed here.
+
 The incidence type of an exceptional configuration should not be confused with
 its Möbius orbit.  The former is finite combinatorial data; the latter retains
 continuous cross-ratio parameters.  The following statement records the complete
@@ -1554,33 +1566,112 @@ The positive-dimensional families below, together with the finiteness of the
 relabeling group, prove the last assertion.
 \end{proof}
 
-For completeness, representatives of the three realizable line--circle incidence types at
-$c(P)=18$ are as follows.  Each list contains all maximal lines and all circle
-blocks; the index-string convention is that of \S2, and $C_k$ denotes the list
-of $k$-point circle blocks.
-\begin{itemize}
-\item Type $(4,4)$ has lines $0145,2367$ and
+We now give exact coordinate representatives of all three realizable
+line--circle incidence types at $c(P)=18$.  Each displayed list contains
+\emph{all} circles; the index-string convention is that of \S2.
+
+\paragraph{Type $(4,4)$.}
+Take
+\[
+\begin{aligned}
+p_0&=(1,1),&p_1&=(1,-1),&p_2&=(-1,1),&p_3&=(-1,-1),\\
+p_4&=(2,2),&p_5&=(2,-2),&p_6&=(-2,2),&p_7&=(-2,-2).
+\end{aligned}
+\]
+The maximal lines are $0347,1256$, and the circles are
 \[
 \begin{gathered}
 C_3: 035,036,056,124,127,147,247,356,\\
-C_4: 0123,0167,0246,0257,0347,1256,1346,1357,2345,4567.
+C_4: 0123,0145,0167,0246,0257,1346,1357,2345,2367,4567.
 \end{gathered}
 \]
-\item Type $(4,3)$ has lines $0145,036$ and
+
+\paragraph{Type $(4,3)$.}
+Take
+\[
+\begin{aligned}
+p_0&=(-39/10,-39/10),&p_1&=(-131/34,-133/34),\\
+p_2&=(-133/34,-131/34),&p_3&=(-23/6,-23/6),\\
+p_4&=(-47/12,-47/12),&p_5&=(-77/20,-79/20),\\
+p_6&=(-79/20,-77/20),&p_7&=(-15/4,-15/4).
+\end{aligned}
+\]
+The maximal lines are $0347,056$, and the circles are
 \[
 \begin{gathered}
-C_3: 035,056,124,127,147,247,356,\\
-C_4: 0123,0167,0246,0257,0347,1256,1346,1357,2345,2367,4567.
+C_3: 035,036,124,127,147,247,356,\\
+C_4: 0123,0145,0167,0246,0257,1256,1346,1357,2345,2367,4567.
 \end{gathered}
 \]
-\item Type $(3,3)$ has lines $035,124$ and
+
+\paragraph{Type $(3,3)$.}
+Take
+\[
+\begin{aligned}
+p_0&=(13/120,13/40),&p_1&=(71/104,-43/104),\\
+p_2&=(199/104,85/104),&p_3&=(47/40,167/120),\\
+p_4&=(47/40,141/40),&p_5&=(35/8,59/24),\\
+p_6&=(-23/24,-23/8),&p_7&=(-81/40,13/40).
+\end{aligned}
+\]
+The maximal lines are $046,357$, and the circles are
 \[
 \begin{gathered}
-C_3: 036,056,127,147,247,356,\\
-C_4: 0123,0145,0167,0246,0257,0347,1256,1346,1357,2345,2367,4567.
+C_3: 024,026,135,137,157,246,\\
+C_4: 0123,0145,0167,0257,0347,0356,1247,1256,1346,2345,2367,4567.
 \end{gathered}
 \]
-\end{itemize}
+
+\begin{figure}[ht]
+\centering
+\begin{minipage}[t]{0.29\textwidth}
+\centering
+\textbf{Type $(4,4)$}\par\smallskip
+\begin{tikzpicture}[x=0.65cm,y=0.65cm,every node/.style={font=\scriptsize}]
+  \coordinate (p0) at (1,1);   \coordinate (p1) at (1,-1);
+  \coordinate (p2) at (-1,1);  \coordinate (p3) at (-1,-1);
+  \coordinate (p4) at (2,2);   \coordinate (p5) at (2,-2);
+  \coordinate (p6) at (-2,2);  \coordinate (p7) at (-2,-2);
+  \draw[gray] (p7)--(p4); \draw[gray] (p6)--(p5);
+  \foreach \i in {0,...,7}{\fill (p\i) circle (1.8pt) node[above right] {$p_\i$};}
+\end{tikzpicture}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.29\textwidth}
+\centering
+\textbf{Type $(4,3)$}\par\smallskip
+\begin{tikzpicture}[x=1.25cm,y=1.25cm,every node/.style={font=\scriptsize}]
+  \coordinate (p0) at (1,1);       \coordinate (p1) at (1.4706,0.8824);
+  \coordinate (p2) at (0.8824,1.4706); \coordinate (p3) at (1.6667,1.6667);
+  \coordinate (p4) at (0.8333,0.8333); \coordinate (p5) at (1.5,0.5);
+  \coordinate (p6) at (0.5,1.5);   \coordinate (p7) at (2.5,2.5);
+  \draw[gray] (p4)--(p7); \draw[gray] (p5)--(p6);
+  \fill (p0) circle (1.8pt) node[right] {$p_0$};
+  \fill (p1) circle (1.8pt) node[below right] {$p_1$};
+  \fill (p2) circle (1.8pt) node[above right] {$p_2$};
+  \fill (p3) circle (1.8pt) node[below right] {$p_3$};
+  \fill (p4) circle (1.8pt) node[below left] {$p_4$};
+  \fill (p5) circle (1.8pt) node[below] {$p_5$};
+  \fill (p6) circle (1.8pt) node[left] {$p_6$};
+  \fill (p7) circle (1.8pt) node[above] {$p_7$};
+\end{tikzpicture}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.36\textwidth}
+\centering
+\textbf{Type $(3,3)$}\par\smallskip
+\begin{tikzpicture}[x=0.58cm,y=0.58cm,every node/.style={font=\scriptsize}]
+  \coordinate (p0) at (0.1083,0.325); \coordinate (p1) at (0.6827,-0.4135);
+  \coordinate (p2) at (1.9135,0.8173); \coordinate (p3) at (1.175,1.3917);
+  \coordinate (p4) at (1.175,3.525); \coordinate (p5) at (4.375,2.4583);
+  \coordinate (p6) at (-0.9583,-2.875); \coordinate (p7) at (-2.025,0.325);
+  \draw[gray] (p6)--(p4); \draw[gray] (p7)--(p5);
+  \foreach \i in {0,...,7}{\fill (p\i) circle (1.8pt) node[above right] {$p_\i$};}
+\end{tikzpicture}
+\end{minipage}
+\caption{Exact representatives of the three realizable line--circle incidence
+types at $n=8$ and $c(P)=18$.  Coordinates are listed in the text; gray
+segments show all maximal lines, and circles are omitted for legibility.}
+\label{fig:c18-three-types-en}
+\end{figure}
 
 We next make the Möbius quotients explicit.  Identify $\mathbb R^2$ with
 $\mathbb C$ and use the ordered cross ratio
@@ -1678,9 +1769,15 @@ The resulting group has order $24$.  Thus
 \]
 where the extended group has order $48$ at a generic parameter.
 
-\paragraph{Eight points.}
-The seventeen-circle type has maximal lines $0123,046,357$.  It contains the
-following explicit rational one-parameter family.  Put
+\paragraph{Eight points and seventeen circles.}\leavevmode\par
+The seventeen-circle type has maximal lines $0123,046,357$.  Under the
+relabeling
+\[
+(q_0,q_1,q_2,q_3,q_4,q_5,q_6,q_7)
+\longmapsto(p_0,p_7,p_1,p_6,p_5,p_2,p_4,p_3),
+\]
+its generalized-circle incidence structure is the same as the one underlying
+the eighteen-circle types.  Put
 \[
 m=\frac3{3-b^2},\qquad r=\frac{3(1+b^2)}{3-b^2},\qquad
 t=\frac{b^2-3}{b^2+9},\qquad
@@ -1695,24 +1792,154 @@ P_4&=P_0P_3\cap P_1P_2,&P_5&=(m,mb).
 \end{aligned}
 \]
 If $I_O$ is inversion of squared radius one about $O$, set
-$p_i=I_O(P_i)$ for $0\le i\le6$ and $p_7=O$.  Outside a finite algebraic set of
-degenerate parameters this has exactly the incidence list displayed for the
-seventeen-circle construction.  The value $b=13/12$ gives the coordinates used
-above; $b=1$ gives a configuration of the same line--circle incidence type that is
-neither Möbius nor anti-Möbius equivalent to it.
-
-For the eighteen-circle layer, a two-parameter family is given generically by
-two concentric, similarly oriented, homothetic rectangles
+$p_i=I_O(P_i)$ for $0\le i\le6$ and $p_7=O$.  This configuration has exactly
+the displayed seventeen-circle incidence table precisely when
 \[
- (\pm A,\pm1),\qquad(\pm rA,\pm r).
+ b\in\mathbb R,\qquad b\ne0,\qquad b^2\ne3.
 \]
-It realizes the type with two four-point line blocks.  Inversions at suitable
-intersections of its generalized circles realize the other two assignments of
-the blocks as lines or circles in
-Proposition~\ref{prop:exceptional-types-en}.  The exact parameter identities and
-inequivalence tests are in
-\file{computation/n4_to_8/orbit_classification/verify_parametric_families.py} and
-\file{computation/n4_to_8/orbit_classification/verify_mobius_moduli.py}.
+The value $b=13/12$ gives the coordinates used above.
+
+We next describe the complete eight-point moduli.  Define
+\[
+ \mathcal D=(0,1)^2
+\]
+and, for $(x,y)\in\mathcal D$, put
+\[
+ A=\sqrt{\frac{y}{1-y}},\qquad
+ r=\frac{1+\sqrt{x}}{1-\sqrt{x}}>1.
+\]
+Let $Q(x,y)$ be the eight-point set, with the displayed labels,
+\begin{equation}\label{eq:rectangle-normal-form-en}
+\begin{aligned}
+q_0&=(A,1),&q_1&=(A,-1),&q_2&=(-A,1),&q_3&=(-A,-1),\\
+q_4&=(rA,r),&q_5&=(rA,-r),&q_6&=(-rA,r),&q_7&=(-rA,-r).
+\end{aligned}
+\end{equation}
+Thus $Q(x,y)$ consists of two concentric, similarly oriented, homothetic
+rectangles.  On the rational function field $\mathbb R(x,y)$ consider
+\begin{equation}\label{eq:n8-moduli-generators-en}
+\begin{aligned}
+T_1(x,y)&=(1/x,y),&
+T_2(x,y)&=(x,1-y),\\
+T_3(x,y)&=((y-1)/y,x/(x-1)),&
+T_4(x,y)&=(y(1-x),x/(1-y+xy)).
+\end{aligned}
+\end{equation}
+These transformations generate a group $G$ of order $24$.  For two points of
+$\mathcal D$, write $(x,y)\sim_G(x',y')$ if
+$(x',y')=g(x,y)\in\mathcal D$ for some $g\in G$.
+
+\begin{proposition}[Complete eight-point Möbius moduli]
+\label{prop:n8-complete-moduli-en}
+The generalized-circle Möbius orbits represented by configurations with
+$n=8$ and $c(P)=18$ form the quotient
+\[
+ \mathcal M_{8,18}=\mathcal D/{\sim_G}.
+\]
+Every such orbit contains a representative of the form
+\eqref{eq:rectangle-normal-form-en}, and two such representatives are Möbius
+equivalent exactly under the relation $\sim_G$.
+
+For $c(P)=17$, put $u=b^2$ in the rational family above and set
+\[
+ \mathcal U_{17}=(0,\infty)\setminus\{3\},\qquad
+ \mathcal S=\{3/13,27/13,13/3,39\}.
+\]
+Then the complete orbit space is
+\[
+ \mathcal M_{8,17}=\mathcal U_{17}/{\approx},
+\]
+where
+\begin{equation}\label{eq:c17-equivalence-en}
+u\approx u'
+\quad\Longleftrightarrow\quad
+u'=u,\quad u'=9/u,
+\quad\text{or}\quad \{u,u'\}\subseteq\mathcal S.
+\end{equation}
+In both layers the Möbius and extended-Möbius orbit partitions coincide.
+\end{proposition}
+
+\begin{proof}
+We give the normalization argument because it is what proves that the displayed
+families are exhaustive.  Temporarily send $p_0$ to infinity and apply a
+similarity so that, in complex notation,
+\[
+z_1=0,\qquad z_2=1,\qquad z_4=a+i\beta,\qquad
+z_5=t z_4,\qquad z_6=1+k(z_4-1),\qquad \beta\ne0.
+\]
+This is only an intermediate normalization on the Riemann sphere; every
+representative in the stated moduli spaces is a finite Euclidean point set.
+The six four-point generalized circles through $p_0$ become the lines
+$123,145,167,246,257,347$.  They determine
+\[
+ z_3=\frac{t(k-1)}{D},\qquad
+ z_7=-\frac{t(ak-k+1)+i\beta kt}{kt-k-t},\qquad
+ D=2kt-k-t.
+\]
+After the nonzero factors forced by distinctness are removed, the six remaining
+four-point circle determinants are equivalent to
+\begin{equation}\label{eq:n8-normalized-equations-en}
+ a=\frac{t(k-1)}D,\qquad a^2+\beta^2=\frac{k-1}D.
+\end{equation}
+Thus there is no additional real component.  If
+\[
+ x=-\frac{kt}{kt-k-t},\qquad y=a,
+\]
+then conversely
+\[
+k=\frac{x}{x+y-xy},\qquad
+t=\frac{x}{1-y+xy},\qquad
+\beta^2=\frac{y(1-y)}x.
+\]
+The reality condition is therefore $y(1-y)/x>0$.  If $x>0$ it can be moved to
+$0<x<1$, $0<y<1$ using $T_1$ when necessary.  If $x<0,y<0$, then
+$T_1T_3$ moves the pair into $\mathcal D$; if $x<0,y>1$, first apply $T_2$.
+Hence every real realization has a representative in $\mathcal D$.
+
+For the rectangle normal form, the ordered cross ratios of the twelve
+four-point generalized circles occur in equal pairs and are
+\[
+x,\quad y,\quad \frac{x}{1-y+xy},\quad x+y-xy,
+\quad\frac{x}{x+y-xy},\quad1-y+xy.
+\]
+The $192$ automorphisms of the generalized-circle incidence structure induce
+exactly $24$ distinct rational transformations of $(x,y)$; direct substitution
+shows that the four transformations in
+\eqref{eq:n8-moduli-generators-en} generate all of them.  This proves the first
+quotient statement.
+
+For the seventeen-circle coloring, three generalized circles become concurrent
+at the pole of the final inversion.  In the rectangle coordinates one may use
+the blocks $0257,036,147$; eliminating their common point gives
+\[
+A^2(r^2+14r+1)+(r+1)^2=0,
+\]
+or, in cross-ratio coordinates,
+\begin{equation}\label{eq:c17-concurrence-en}
+3xy-3y-1=0.
+\end{equation}
+For the rational family parameter $b$ above,
+\[
+x=\frac4{3-b^2},\qquad
+y=\frac{3-b^2}{3(1+b^2)},
+\]
+so every real point of the concurrence locus is obtained with
+$u=b^2>0$, $u\ne3$.  Restricting the same $24$ relabelling transformations to
+\eqref{eq:c17-concurrence-en} gives the generic involution $u\mapsto9/u$.
+The only further meeting of two relabelled real branches is the single orbit
+$\mathcal S$ in \eqref{eq:c17-equivalence-en}.  Finally, $b$ and $-b$ are
+directly Möbius equivalent, while reflection supplies an anti-Möbius
+automorphism of every rectangle normal form.  Hence allowing anti-Möbius maps
+does not merge any further orbits.
+\end{proof}
+
+All determinant reductions, the $192$ incidence automorphisms, the $24$
+rational actions, and every exceptional intersection on the seventeen-circle
+locus are checked exactly by
+\file{computation/n4_to_8/orbit_classification/verify_n8_mobius_moduli.py}.
+The three coordinate representatives in Figure~\ref{fig:c18-three-types-en}
+are independently checked by the same file and by
+\file{computation/n4_to_8/orbit_classification/construct_c18_representatives.py}.
 
 For reference, an unordered four-point generalized circle has the Möbius and
 anti-Möbius invariant
@@ -1723,10 +1950,10 @@ anti-Möbius invariant
 where $\lambda$ is any ordered cross ratio; hence the multiset of $J$-values over
 all maximal four-point generalized circles is an unlabelled invariant.  The cited
 verification first compares this multiset and then checks every remaining
-incidence relabelling by exact normalized cross ratios.  The formulae above give
-complete Möbius moduli for $n=6,7$.  For $n=8$ they prove the existence of
-continuum many orbits, but we do not claim that the displayed one- and
-two-parameter families exhaust the full real realization spaces.
+incidence relabelling by exact normalized cross ratios.  Together with
+Proposition~\ref{prop:n8-complete-moduli-en}, the formulae above give complete
+Möbius and extended-Möbius moduli for all four exceptional layers
+$(6,8),(7,11),(8,17),(8,18)$.
 
 \section{The variant with no three collinear points}
 \label{sec:no-three-en}
@@ -1937,143 +2164,6 @@ exact integer and symbolic arithmetic; no numerical root decision is used.
 
 
 \appendix
-\section{The earlier argument for \texorpdfstring{$n\ge92$}{n>=92}}
-\label{app:early92-en}
-
-This section records the intermediate argument that first emerged from the
-Eureka computations.  It is logically superseded by the proof for $n\ge17$ in
-the main text, but it explains how a numerical threshold was converted into a
-short mathematical proof before the estimates were strengthened further.
-
-\begin{proposition}
-Every admissible $n$-point set with $n\ge92$ determines at least $F(n)$
-circles.
-\end{proposition}
-
-\begin{proof}
-Let $K$ be the size of a largest line or circle block and put $r=n-K$.
-We divide according to whether $K$ is at least $3n/8$.
-
-Suppose first that $K\ge3n/8$.  The two quantities in
-Lemma~\ref{lem:largest-en} satisfy
-\[
- D_L(n,r)-D_C(n,r)=r\left\lfloor\frac K2\right\rfloor-1\ge0.
-\]
-Using $\lfloor K/2\rfloor\le K/2$ in the circle-block expression therefore
-gives, in either largest-block case,
-\begin{equation}\label{eq:early-B-en}
- c(P)\ge B(n,K):=1+\frac{(n-K)K(3K-n-3)}4.
-\end{equation}
-For $K=n-1$, the exact value of $D_C(n,1)$ is $F(n)$.  We may consequently
-assume $3n/8\le K\le n-2$.  On this interval
-\[
- \frac{\partial^2 B}{\partial K^2}
- =\frac{-18K+6n+6}{4}<0,
-\]
-so $\partial B/\partial K$ is strictly decreasing.  Hence $B$ has no interior
-minimum, and it is enough to consider the endpoints.  Since
-\begin{equation}\label{eq:early-F-upper-en}
- F(n)\le 1+\frac{(n-2)^2}{2},
-\end{equation}
-the two endpoint margins are
-\[
- B\left(n,\frac{3n}{8}\right)-1-\frac{(n-2)^2}{2}
- =\frac{15n^3-1384n^2+4096n-4096}{2048}
-\]
-and
-\[
- B(n,n-2)-1-\frac{(n-2)^2}{2}
- =\frac{(n-2)(n-7)}2.
-\]
-The first numerator, after writing $n=92+u$, becomes
-\[
- 15u^3+2756u^2+130320u+338880,
-\]
-and the second margin is plainly positive.  This proves the required bound in
-the first case.
-
-Now suppose that $K<3n/8$.  Fix an inversion centre $x\in P$, and put
-$N=n-1$ and $M=K-1$.  Every connecting line of the inverted set contains at
-most $M$ image points.  If $t_i$ denotes the number of its $i$-point connecting
-lines, set
-\[
- a_M=
- \begin{cases}
- 6,&2\le M\le9,\\[2pt]
- \displaystyle\frac{\binom M2}{M-3},&M\ge10,
- \end{cases}
- \qquad
- y_M=\frac1{a_M+1},\qquad z_M=1-y_M.
-\]
-The definition of $a_M$ gives
-\[
- y_M\binom i2\le z_M(i-3)\qquad(4\le i\le M).
-\]
-Combining the point-pair identity with Melchior's inequality exactly as in
-Section~2 yields
-\begin{equation}\label{eq:early-dual-en}
- t_2+t_3\ge y_M\binom N2+3z_M
- =3+y_M\left(\binom N2-3\right).
-\end{equation}
-At most $\lfloor N/2\rfloor$ of these two- or three-point lines pass through
-the inversion centre.  Every remaining line corresponds to a circle containing
-the centre and altogether three or four points of $P$; after summing over all
-centres, each such circle has been counted at most four times.  Thus
-\begin{equation}\label{eq:early-inversion-en}
- c(P)\ge\frac n4\left[
- 3+y_M\left(\binom{n-1}{2}-3\right)
- -\left\lfloor\frac{n-1}{2}\right\rfloor\right].
-\end{equation}
-
-Because $K<3n/8$ and $K$ is integral,
-\[
- M=K-1\le\frac{3n-9}{8}=:M_0.
-\]
-The function
-\[
- g(s)=\frac{2(s-3)}{(s+3)(s-2)}
-\]
-is decreasing for $s\ge6$.  For $M\ge10$ one has $y_M=g(M)$, while for
-$M\le9$ one has $y_M=1/7=g(9)$.  Consequently
-\[
- y_M\ge g(M_0)=\frac{16(n-11)}{(n+5)(3n-25)}.
-\]
-Replacing the floor in \eqref{eq:early-inversion-en} by $(n-1)/2$ and using
-\eqref{eq:early-F-upper-en}, the resulting lower bound minus $F(n)$ is at least
-\[
- \frac{n^4-105n^3+787n^2-1931n+3000}
- {8(n+5)(3n-25)}.
-\]
-For $n=98+u$ the numerator is
-\[
- u^4+287u^3+27541u^2+891829u+783766,
-\]
-so the expression is positive for every $n\ge98$.
-
-It remains only to check $92\le n\le97$.  For each row below, $K_0$ is the
-largest integer strictly below $3n/8$, $M_0=K_0-1$, and $\Delta_n$ is the
-right-hand side of \eqref{eq:early-inversion-en}, evaluated at $M_0$, minus
-$F(n)$.  Since the bound in \eqref{eq:early-dual-en} decreases with $M$, this
-is the least margin in the second case.
-\[
-\begin{array}{c|rrrrrr}
-n&92&93&94&95&96&97\\ \hline
-K_0&34&34&35&35&35&36\\
-M_0&33&33&34&34&34&35\\
-\Delta_n&43&88&\frac{20371}{1184}&\frac{9225}{148}&
-\frac{4908}{37}&\frac{29823}{836}
-\end{array}
-\]
-All six margins are positive, completing the proof.
-\end{proof}
-
-\begin{remark}
-No incidence structure is enumerated in this argument.  The displayed table is
-only a check of six exact rational endpoint inequalities.  The proof in the
-main text replaces this early threshold by $n\ge17$, and the subsequent
-sections treat $n=16$ and $n=15$.
-\end{remark}
-
 \section{Exact verification and reproduction}\label{app:verification-en}
 
 The audited material is reproduced by two independent entry points.  From the
@@ -2347,13 +2437,15 @@ All paths in this paragraph are under
 \file{python}\ \file{verify_incidence_types.py}\\
 \file{python}\ \file{verify_parametric_families.py}\\
 \file{python}\ \file{verify_mobius_moduli.py}\\
+\file{python}\ \file{verify_n8_mobius_moduli.py}\\
 \file{python}\ \file{family_examples.py}
 \end{tabular}
 \end{center}
 checks, respectively, the $c(8)=18$ incidence classification, the symbolic
 line and circle identities in every displayed family, the complete finite
-quotient actions for $n=6,7$, and exact inequivalence of selected family
-members.  The directory \file{c17_exclusions/} contains the seven
+quotient actions for $n=6,7$, the complete $c(P)=17,18$ eight-point moduli,
+and exact inequivalence of selected family members.  The directory
+\file{c17_exclusions/} contains the seven
 $c(8)=17$ incidence records, the rational verifier for the realized type, and
 the symbolic or Gröbner-basis exclusion of each of the other six types.  The
 file \file{README.md} gives the reproduction order and distinguishes record
@@ -2449,5 +2541,142 @@ R.~Zhang,
 \emph{On the number of ordinary circles determined by $n$ points},
 Discrete Comput. Geom. \textbf{46} (2011), 205--211.
 \end{thebibliography}
+
+\section{The earlier argument for \texorpdfstring{$n\ge92$}{n>=92}}
+\label{app:early92-en}
+
+This section records the intermediate argument that first emerged from the
+Eureka computations.  It is logically superseded by the proof for $n\ge17$ in
+the main text, but it explains how a numerical threshold was converted into a
+short mathematical proof before the estimates were strengthened further.
+
+\begin{proposition}
+Every admissible $n$-point set with $n\ge92$ determines at least $F(n)$
+circles.
+\end{proposition}
+
+\begin{proof}
+Let $K$ be the size of a largest line or circle block and put $r=n-K$.
+We divide according to whether $K$ is at least $3n/8$.
+
+Suppose first that $K\ge3n/8$.  The two quantities in
+Lemma~\ref{lem:largest-en} satisfy
+\[
+ D_L(n,r)-D_C(n,r)=r\left\lfloor\frac K2\right\rfloor-1\ge0.
+\]
+Using $\lfloor K/2\rfloor\le K/2$ in the circle-block expression therefore
+gives, in either largest-block case,
+\begin{equation}\label{eq:early-B-en}
+ c(P)\ge B(n,K):=1+\frac{(n-K)K(3K-n-3)}4.
+\end{equation}
+For $K=n-1$, the exact value of $D_C(n,1)$ is $F(n)$.  We may consequently
+assume $3n/8\le K\le n-2$.  On this interval
+\[
+ \frac{\partial^2 B}{\partial K^2}
+ =\frac{-18K+6n+6}{4}<0,
+\]
+so $\partial B/\partial K$ is strictly decreasing.  Hence $B$ has no interior
+minimum, and it is enough to consider the endpoints.  Since
+\begin{equation}\label{eq:early-F-upper-en}
+ F(n)\le 1+\frac{(n-2)^2}{2},
+\end{equation}
+the two endpoint margins are
+\[
+ B\left(n,\frac{3n}{8}\right)-1-\frac{(n-2)^2}{2}
+ =\frac{15n^3-1384n^2+4096n-4096}{2048}
+\]
+and
+\[
+ B(n,n-2)-1-\frac{(n-2)^2}{2}
+ =\frac{(n-2)(n-7)}2.
+\]
+The first numerator, after writing $n=92+u$, becomes
+\[
+ 15u^3+2756u^2+130320u+338880,
+\]
+and the second margin is plainly positive.  This proves the required bound in
+the first case.
+
+Now suppose that $K<3n/8$.  Fix an inversion centre $x\in P$, and put
+$N=n-1$ and $M=K-1$.  Every connecting line of the inverted set contains at
+most $M$ image points.  If $t_i$ denotes the number of its $i$-point connecting
+lines, set
+\[
+ a_M=
+ \begin{cases}
+ 6,&2\le M\le9,\\[2pt]
+ \displaystyle\frac{\binom M2}{M-3},&M\ge10,
+ \end{cases}
+ \qquad
+ y_M=\frac1{a_M+1},\qquad z_M=1-y_M.
+\]
+The definition of $a_M$ gives
+\[
+ y_M\binom i2\le z_M(i-3)\qquad(4\le i\le M).
+\]
+Combining the point-pair identity with Melchior's inequality exactly as in
+Section~2 yields
+\begin{equation}\label{eq:early-dual-en}
+ t_2+t_3\ge y_M\binom N2+3z_M
+ =3+y_M\left(\binom N2-3\right).
+\end{equation}
+At most $\lfloor N/2\rfloor$ of these two- or three-point lines pass through
+the inversion centre.  Every remaining line corresponds to a circle containing
+the centre and altogether three or four points of $P$; after summing over all
+centres, each such circle has been counted at most four times.  Thus
+\begin{equation}\label{eq:early-inversion-en}
+ c(P)\ge\frac n4\left[
+ 3+y_M\left(\binom{n-1}{2}-3\right)
+ -\left\lfloor\frac{n-1}{2}\right\rfloor\right].
+\end{equation}
+
+Because $K<3n/8$ and $K$ is integral,
+\[
+ M=K-1\le\frac{3n-9}{8}=:M_0.
+\]
+The function
+\[
+ g(s)=\frac{2(s-3)}{(s+3)(s-2)}
+\]
+is decreasing for $s\ge6$.  For $M\ge10$ one has $y_M=g(M)$, while for
+$M\le9$ one has $y_M=1/7=g(9)$.  Consequently
+\[
+ y_M\ge g(M_0)=\frac{16(n-11)}{(n+5)(3n-25)}.
+\]
+Replacing the floor in \eqref{eq:early-inversion-en} by $(n-1)/2$ and using
+\eqref{eq:early-F-upper-en}, the resulting lower bound minus $F(n)$ is at least
+\[
+ \frac{n^4-105n^3+787n^2-1931n+3000}
+ {8(n+5)(3n-25)}.
+\]
+For $n=98+u$ the numerator is
+\[
+ u^4+287u^3+27541u^2+891829u+783766,
+\]
+so the expression is positive for every $n\ge98$.
+
+It remains only to check $92\le n\le97$.  For each row below, $K_0$ is the
+largest integer strictly below $3n/8$, $M_0=K_0-1$, and $\Delta_n$ is the
+right-hand side of \eqref{eq:early-inversion-en}, evaluated at $M_0$, minus
+$F(n)$.  Since the bound in \eqref{eq:early-dual-en} decreases with $M$, this
+is the least margin in the second case.
+\[
+\begin{array}{c|rrrrrr}
+n&92&93&94&95&96&97\\ \hline
+K_0&34&34&35&35&35&36\\
+M_0&33&33&34&34&34&35\\
+\Delta_n&43&88&\frac{20371}{1184}&\frac{9225}{148}&
+\frac{4908}{37}&\frac{29823}{836}
+\end{array}
+\]
+All six margins are positive, completing the proof.
+\end{proof}
+
+\begin{remark}
+No incidence structure is enumerated in this argument.  The displayed table is
+only a check of six exact rational endpoint inequalities.  The proof in the
+main text replaces this early threshold by $n\ge17$, and the subsequent
+sections treat $n=16$ and $n=15$.
+\end{remark}
 
 \end{document}

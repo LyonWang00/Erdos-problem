@@ -16,6 +16,11 @@ Run commands from this directory with the versions in
   determinant identities for the displayed parametric families.
 - `verify_mobius_moduli.py` verifies the complete parameter domains and the
   finite quotient actions stated for `n = 6, 7`.
+- `verify_n8_mobius_moduli.py` verifies the complete generalized-circle
+  Möbius moduli at `n = 8, c(P) = 17, 18`, including the rectangular normal
+  form, all 24 rational relabelling actions, the exact representatives and
+  incidence lists, and the exceptional identifications on the
+  seventeen-circle locus.
 - `family_examples.py` enumerates all incidences of exact rational sample
   members and proves that the selected pairs are neither Möbius nor
   anti-Möbius equivalent.
@@ -26,6 +31,7 @@ The usual run order is
 python verify_incidence_types.py
 python verify_parametric_families.py
 python verify_mobius_moduli.py
+python verify_n8_mobius_moduli.py
 python family_examples.py
 ```
 
