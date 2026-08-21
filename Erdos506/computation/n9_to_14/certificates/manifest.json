@@ -56,8 +56,8 @@
       "sha256": "ee4c977771e6ba4cb5fd21d34b339c4b14a6caeb6ed541e004700f3eefaf5181"
     },
     "verify_local_type_filter.py": {
-      "bytes": 6719,
-      "sha256": "b0dd21bbe2faa0353cdfda051328800b2e7ed539fe87a719000a9bda45aaa6bd"
+      "bytes": 6830,
+      "sha256": "405368458db3681b52d898f15815db36d8e909c213e1583a744f691f0f8f37cb"
     },
     "verify_n10_final_radical_axis.py": {
       "bytes": 18175,
@@ -68,8 +68,8 @@
       "sha256": "b44f9403aeada0db47d8fc7ea13ee3f39786fd07c50cc507e144574ba94f057f"
     },
     "verify_pair_moment_filter.py": {
-      "bytes": 15024,
-      "sha256": "d348410cb7a9ac1eef1096361480c8df5e6499830390e3a30a03fe953af7d51d"
+      "bytes": 15462,
+      "sha256": "0d6b8f8019d869c8e555c4a6ba333987f07b3e71003537bd3f4938baaef27040"
     },
     "verify_recursive_inversion_rows.py": {
       "bytes": 13041,

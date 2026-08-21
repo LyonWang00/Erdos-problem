@@ -106,7 +106,8 @@ circles through $p$.}
 \label{fig:benchmark-en}
 \end{figure}
 
-Elliott initiated a systematic study of this problem in 1967.  His Theorem~1 proves
+Elliott initiated a systematic study of this problem in 1967
+\cite{elliott-en}.  His Theorem~1 proves
 that every admissible set of $n>3$ points determines at least
 \[
 \frac{2n(n-1)}{63}
@@ -178,15 +179,20 @@ the no-three-collinear variant.  For the original problem with $n\le14$, exact
 computer verification is applied only after mathematical constraints have reduced
 the possible incidence data.
 
-The project was developed through collaboration between human researchers and
-artificial-intelligence systems.  Eureka, an AI-assisted mathematical research
-system developed by the JiuChong team at the University of Science and Technology
-of China, supplied the initial numerical verification for $n\ge16$.  After a
-human proof for $n\ge92$ had been found, OpenAI Codex helped sharpen it to the
-uniform range $n\ge15$ and carried out the exact small-order verifications and
-searches for exceptional configurations.  The mathematical part of the argument
-has also been translated into Lean~4 and checked against Mathlib.  The formalization
-and exact-verification files are available in the accompanying GitHub repository
+The project was developed in several stages through collaboration between the
+author and artificial-intelligence systems.  The author first used Eureka, an
+AI-assisted mathematical research system developed by the JiuChong team at the
+University of Science and Technology of China, to obtain numerical results for
+every $n\ge16$.  Examination of those computations showed that the range
+$n\ge92$ was already controlled by inequalities that could be distilled almost
+entirely into a mathematical argument; that earlier argument is included in
+Appendix~\ref{app:early92-en}.  Starting from it, the author worked with OpenAI
+Codex to strengthen the estimates until they yielded the proof for every
+$n\ge15$.  Codex was also used to complete the exact verification of all
+remaining small orders and to search for exceptional configurations.  The
+mathematical part of the argument has been translated into Lean~4 and checked
+against Mathlib.  The formalization and exact-verification files are available
+in the accompanying GitHub repository
 \url{https://github.com/LyonWang00/Erdos-problem/tree/main/Erdos506}.
 
 \section{Notation and basic tools}
@@ -204,6 +210,48 @@ $\{p_0,p_2,p_5,p_6\}$.  In an incidence list the surrounding text specifies
 whether the subset is collinear or concyclic.  This convention is used only to
 shorten finite lists; it does not identify a circle with an index string unless
 at least three of the indicated points are noncollinear.
+
+For the classification of the exceptional configurations we need two precise
+notions of incidence type.  A \emph{generalized circle} is a Euclidean line or
+a Euclidean circle, equivalently a circle on the Riemann sphere
+$\widehat{\mathbb C}=\mathbb C\cup\{\infty\}$.  Let
+$\mathcal B_L(P)$ and $\mathcal B_C(P)$ be the families of line blocks and
+circle blocks of $P$.
+
+\begin{definition}[Incidence isomorphisms and inversive equivalence]
+Let $P$ and $P'$ be finite labelled point sets of the same size.
+\begin{enumerate}[label=\textup{(\roman*)}]
+\item A \emph{line--circle incidence isomorphism} is a bijection
+$\sigma:P\to P'$ such that
+\[
+ \sigma\bigl(\mathcal B_L(P)\bigr)=\mathcal B_L(P'),\qquad
+ \sigma\bigl(\mathcal B_C(P)\bigr)=\mathcal B_C(P').
+\]
+Thus membership, maximality, block size, and the distinction between lines and
+circles are all preserved.  The corresponding isomorphism class is called the
+\emph{line--circle incidence type} of $P$.
+\item The \emph{generalized-circle incidence structure} of $P$ is the set
+system $\mathcal B_L(P)\cup\mathcal B_C(P)$ after the information specifying
+whether each block is a line or a circle has been forgotten.  An isomorphism of
+these set systems is a \emph{generalized-circle incidence isomorphism}, and the
+corresponding isomorphism class is the \emph{generalized-circle incidence type}.
+\item The sets are \emph{Möbius equivalent} if, after a relabelling, a map
+\[
+ z\longmapsto\frac{\alpha z+\beta}{\gamma z+\delta},\qquad
+ \alpha\delta-\beta\gamma\ne0,
+\]
+sends $P$ to $P'$ and no point of $P$ to $\infty$.  They are
+\emph{extended-Möbius equivalent} if one also allows an anti-Möbius map,
+obtained by replacing $z$ with $\overline z$ in the displayed formula.
+\end{enumerate}
+\end{definition}
+
+Möbius and anti-Möbius maps preserve generalized circles, so either geometric
+equivalence induces a generalized-circle incidence isomorphism.  The converse need not
+hold.  Moreover, $c(P)$ itself is not Möbius invariant: a generalized circle
+through the pole of a transformation becomes a Euclidean line and is then not
+counted by $c(P)$.  This is why both the line--circle incidence structure and
+the structure obtained after forgetting the line/circle type are needed below.
 
 \subsection{Counting from a largest collinear or concyclic subset}
 
@@ -723,7 +771,7 @@ this gives $R_x\ge28$.
 It remains to consider $\delta_x=0$, when the arrangement is simplicial.
 Cuntz's complete classification through twenty-seven lines
 \cite[Theorem~1.1 and the fourteen-line entries of the invariant table,
-p.~15]{cuntz-en} shows that, after excluding the type with a sevenfold vertex
+p.~696]{cuntz-en} shows that, after excluding the type with a sevenfold vertex
 and the near-pencil, the possible vectors $(t_2,t_3,t_4,t_5,t_6)$ are
 \[
  (11,12,4,2,0),\qquad(9,16,4,1,0),\qquad(10,14,4,0,1).
@@ -775,7 +823,315 @@ complete fourteen-line table; all remaining steps are integer identities and
 inequalities.
 \end{remark}
 
-\input{sections/small_cases_en.tex}
+\section{The cases \texorpdfstring{$9\le n\le14$}{9<=n<=14}}
+\label{sec:small-uniform-en}
+
+This section separates the two larger cases, which are decided at the level of
+global integer data, from the four smaller cases that require an exact finite
+verification.  No historical search tree or saved orbit list is used.
+
+For $k\ge3$, let $\ell_k$ and $c_k$ denote the numbers of maximal $k$-point
+lines and circles, and put $m_k=\ell_k+c_k$.
+Every pair belongs to one maximal
+line, while every triple belongs either to its maximal line or to its unique
+circumcircle.  Therefore
+\begin{align}
+ \ell_2+\sum_{k\ge3}\binom{k}{2}\ell_k&=\binom n2,
+ \label{eq:small-line-pairs-en}\\
+ \sum_{k\ge3}\binom{k}{3}m_k&=\binom n3,
+ \qquad \sum_{k\ge3}c_k=c(P).
+ \label{eq:small-triple-partition-en}
+\end{align}
+We call $(\ell_3,\ldots,\ell_K;c_3,\ldots,c_K)$ the \emph{global count
+vector}; it records only the number of maximal lines and circles of each size,
+not the subsets of points on them.  Lemma~\ref{lem:largest-en} excludes maximum blocks of size at
+least $6,7,7,7,7,8$ for $n=9,10,11,12,13,14$, respectively.  Thus $K$ is at
+most $5,6,6,6,6,7$ in the branches considered below.
+
+The enumeration of these count vectors uses only necessary conditions.  Since $K<n-1$,
+every one-point deletion is admissible, and summing its circle count gives
+\begin{equation}\label{eq:small-one-delete-en}
+ n c(P)-3c_3\ge n c(n-1).
+\end{equation}
+Inversion followed by Zhang's prescribed-point ordinary-line theorem
+\cite[Theorem~4.1]{zhang-en} gives
+\begin{equation}\label{eq:small-z-circle-en}
+ 3c_3\ge n\left\lceil\frac{n-1}{6}\right\rceil.
+\end{equation}
+We also use the ordinary-line, Melchior, Hirzebruch--Bojanowski, and
+Shnurnikov inequalities for the line part of the count vector, and their sums
+over subsets that are forced to be noncollinear
+\cite[Eq.~(9)]{hirzebruch-en}
+\cite[Theorem~2.1]{pokora-en}\cite[Theorem~3]{shnurnikov-en}.
+For a subset contained in a maximal line no circle lower bound is imposed; for
+a subset contained in a maximal circle only that defining circle is imposed.
+This is the correction needed when deletion averages are used at small order.
+
+We shall also use the following elementary consequence of block intersections.
+For $N\ge1$ and $S=aN+b$, $0\le b<N$, set
+\[
+ \Phi_N(S)=N\binom a2+ab.
+\]
+This is the minimum of $\sum_i\binom{x_i}{2}$ over nonnegative integral
+$x_i$ with $\sum_i x_i=S$.  If a selected family consists of $L$ maximal
+lines and $G$ maximal circles and $I_1,I_2$ are its total point and point-pair
+incidences, then
+\begin{align}
+ \Phi_n(I_1)&\le \binom L2+2LG+2\binom G2,
+ \label{eq:small-block-point-en}\\
+ \Phi_{\binom n2}(I_2)&\le LG+\binom G2.
+ \label{eq:small-block-pair-en}
+\end{align}
+Indeed, two lines meet in at most one point and any other two distinct blocks
+meet in at most two points.  Applying these inequalities to the largest
+members of each subfamily covers every possible choice.  It does not decide
+which labelled points lie on the selected lines and circles.
+
+\subsection{The augmented-line inequality}
+
+Fix $x\in P$, invert about $x$, and dualize the remaining $n-1$ points.  Let
+$t_j(x)$ be the number of multiplicity-$j$ vertices of the resulting
+arrangement and put
+\[
+ \delta_x=t_2(x)-3-\sum_{j\ge4}(j-3)t_j(x).
+\]
+Write $d_k^L(x)$ for the number of maximal $k$-point lines of $P$ through
+$x$.
+
+\begin{lemma}\label{lem:augmented-line-en}
+For every $x\in P$,
+\begin{equation}\label{eq:augmented-line-point-en}
+ \sum_{k\ge3}k d_k^L(x)\le n-1+\delta_x.
+\end{equation}
+Consequently,
+\begin{equation}\label{eq:augmented-line-summed-en}
+ \sum_{k\ge3}k^2\ell_k\le n(n-1)+D,
+ \qquad
+ D=3m_3-3n-\sum_{k\ge5}k(k-4)m_k.
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+Let $\mathcal A_x$ be the arrangement of $n-1$ dual lines, and adjoin the
+projective line dual to the inversion centre.  A $k$-point original line
+through $x$ corresponds to an old vertex of multiplicity $k-1$ on the added
+line.  Suppose the selected old vertices have multiplicities $i_1,\ldots,i_s$.
+The added line has
+$(n-1)-\sum_j i_j$ new ordinary vertices.  Raising the multiplicity of each
+selected old vertex by one decreases the Melchior defect by one, including
+the cases of multiplicity two and three.  Hence the defect of the enlarged
+arrangement is
+\[
+ \delta_x+(n-1)-\sum_{j=1}^s(i_j+1)
+ =\delta_x+(n-1)-\sum_{k\ge3}k d_k^L(x).
+\]
+The enlarged arrangement is essential, so Melchior's inequality proves
+\eqref{eq:augmented-line-point-en}.  Summing over $x$, and using
+$\sum_xd_k^L(x)=k\ell_k$ and the local incidence identities, gives
+\eqref{eq:augmented-line-summed-en}.
+\end{proof}
+
+\subsection{Global exclusion for thirteen and fourteen points}
+
+For $n=14$, the exact integer solutions of the preceding necessary
+conditions with $c(P)<F(14)$ give 8981 count vectors.  Inequality
+\eqref{eq:augmented-line-summed-en} excludes 8980.  The remaining vector is
+\[
+ (\ell_3,\ldots,\ell_7;c_3,\ldots,c_7)
+ =(20,0,0,0,0;23,44,0,2,3).
+\]
+Its three seven-point circles have pairwise intersections of size at most two,
+so their union has at least $3\cdot7-3\cdot2=15$ points, a contradiction.
+Thus $c(14)=F(14)$.
+
+For $n=13$, the same exact enumeration gives 3962 count vectors below $F(13)$.
+The augmented-line inequality leaves 137, and
+\eqref{eq:small-block-point-en}--\eqref{eq:small-block-pair-en} leave 73.  We
+now derive two inequalities that exclude these remaining vectors.
+
+At any point $x$, the local arrangement has twelve lines and, in the present
+branch, no vertex of multiplicity greater than five.  Write its multiplicity
+vector as $(t_2,t_3,t_4,t_5)$ and its defect as $\delta$.  Then
+\begin{equation}\label{eq:n13-local-two-ineq-en}
+ -2\delta+t_4+3t_5\le6,
+ \qquad -\delta+t_5\le1.
+\end{equation}
+For the first inequality, the pair identity and Bojanowski's inequality give
+\begin{align*}
+ t_2+3t_3+6t_4+10t_5&=66,\\
+ 4t_2+3t_3&\ge48+5t_5,
+\end{align*}
+and hence
+\[
+ H:=3t_2-6t_4-15t_5+18\ge0.
+\]
+Put $E=2t_2-3t_4-7t_5$.  Since
+$H+3\delta=3(E+3)$, one has $E\ge-3$.  Moreover, the pair identity gives
+$E\equiv0\pmod3$.  Equality $E=-3$ would force $H=\delta=0$.
+Cuntz's complete list of simplicial twelve-line arrangements, after excluding
+a six-fold vertex, leaves the types $(8,10,3,1)$ and $(9,7,6,0)$; both have
+$E=0$ \cite[Theorem~1.1 and the invariant tables]{cuntz-en}.  Therefore
+$E\ge0$, which is the first inequality in \eqref{eq:n13-local-two-ineq-en}.
+
+For the second inequality, four five-fold vertices would dualize to four
+five-point lines whose union has at least $20-\binom42=14$ points; hence
+$t_5\le3$.  If $\delta\ge2$ the claim follows.  If $\delta=0$, Cuntz's two
+types above have $t_5\le1$.  The only remaining possible violation is
+$(\delta,t_5)=(1,3)$.  The pair and defect identities then force
+$(t_2,t_3,t_4,t_5)=(12,4,2,3)$.  But three five-point lines and one
+four-point line have a union of at least $5+5+5+4-\binom42=13$ points, again
+impossible on twelve points.  This proves the second inequality.
+
+Summing \eqref{eq:n13-local-two-ineq-en} over the thirteen centres yields
+\begin{equation}\label{eq:n13-global-two-ineq-en}
+ -2D+5m_5+18m_6\le78,
+ \qquad -D+6m_6\le13.
+\end{equation}
+Of the 73 count vectors, 71 violate the first inequality and the other two
+violate the second.  This is an exact substitution into
+\eqref{eq:n13-global-two-ineq-en}; no subsets of labelled points are selected.  Hence
+$c(13)=F(13)$.
+
+\subsection{Exact verification for nine through twelve points}
+
+For $9\le n\le12$, the same global constraints and
+\eqref{eq:augmented-line-summed-en} leave a small but nonempty boundary.  We
+describe the common verification so that every transition can be reproduced.
+For a marked point $x$, let $a_k(x)$ and $u_k(x)$ count maximal $k$-point
+lines and circles through $x$.  Then
+\[
+ t_{k-1}(x)=a_k(x)+u_k(x),
+ \qquad
+ \sum_{j\ge2}\binom j2t_j(x)=\binom{n-1}{2}.
+\]
+These local multiplicity vectors obey the published arrangement inequalities used above, the
+block-union inequalities, and \eqref{eq:augmented-line-point-en}.  A first
+integer model records only how many points have each vector and imposes
+\[
+ \sum_xa_k(x)=k\ell_k,\qquad
+ \sum_xu_k(x)=kc_k,\qquad
+ \sum_x\delta_x=D.
+\]
+
+The next two stages still do not assign labelled point subsets.  For a block category
+$\alpha$, let $d_\alpha(x)$ be its point degree and let
+$\lambda_\alpha(e)$ be its degree at a point pair $e$.  If $k_\alpha$ is the
+block size and $N_\alpha$ its multiplicity, then
+\begin{align}
+ \sum_xd_\alpha(x)&=k_\alpha N_\alpha,&
+ \sum_e\lambda_\alpha(e)&=\binom{k_\alpha}{2}N_\alpha,
+ \label{eq:small-category-totals-en}\\
+ \sum_\alpha(k_\alpha-2)\lambda_\alpha(e)&=n-2.
+ \label{eq:small-pair-profile2-en}
+\end{align}
+The last identity says that the portions outside $e$ of all maximal blocks
+through $e$ partition $P\setminus e$.  The point and point-pair data are linked by
+\[
+ \sum_{y\ne x}\lambda_\alpha(\{x,y\})=(k_\alpha-1)d_\alpha(x).
+\]
+The subsequent intersection count uses,
+for two block categories, the exact identities
+\[
+ N_2=M_2,\qquad N_1=M_1-2M_2,\qquad N_0=Q-M_1+M_2,
+\]
+where $M_1$ is the sum of intersection sizes, $M_2$ is the sum of their second
+binomial coefficients, and $N_s$ counts pairs of
+distinct blocks meeting in $s$ points.  It also counts triples disjoint from
+a distinguished block.  All coefficients are binomial counts, and no
+floating-point relaxation is used.
+
+Finally, inversion at $x$ determines the complete count vector on $n-1$ image
+points: blocks through $x$ become image lines with one fewer point, whereas
+blocks avoiding $x$ become image circles.  A local vector is retained only if this
+child vector survives the next level, after which the local multiplicity data
+at the $n$ points are balanced again.  The recursion stops at $n=9$.  There the model
+selects maximal line and circle subsets of the nine labelled points, requires
+every triple to lie in exactly one selected block, requires a point pair to
+lie in at most one selected line, and imposes the already proved lower bounds
+on every admissible proper subset.  Infeasibility of this more permissive
+abstract model implies geometric infeasibility.
+
+The exact counts in the final replay are:
+\begin{center}
+\small
+\begin{tabular}{c|rrrrrrr}
+\toprule
+$n$ & initial & augmented sum & local vectors & point--pair & intersections & block pairs & terminal\\
+\midrule
+9  &45   &36  &23  &-- &-- &-- &0\\
+10 &180  &150 &55  &26 &21 &12 &1\\
+11 &416  &160 &70  &39 &28 &-- &0\\
+12 &1354 &211 &169 &55 &44 &-- &0\\
+\bottomrule
+\end{tabular}
+\end{center}
+Here ``initial'' is the number left from 129, 551, 1215, and 4322 raw
+count vectors, respectively.  The terminal zeroes for $n=11,12$ come from the
+same recursion.  It visits, respectively,
+\[
+ (28,72,222)\quad\text{and}\quad(44,322,661,622)
+\]
+count vectors at orders $(11,10,9)$ and $(12,11,10,9)$.  Every excluded status
+is an exact \texttt{INFEASIBLE} status; there is no \texttt{UNKNOWN}.
+
+For $n=10$ the recursion leaves the single count vector
+\[
+ (\ell_3,\ell_4,\ell_5,\ell_6;
+   c_3,c_4,c_5,c_6;\ell_2)
+ =(10,0,0,0;10,20,2,0;15).
+\]
+The four local multiplicity vectors retained by the recursive certificate all have
+$u_5(x)=1$ and $a_3(x)\le3$.  Since the two five-point circles have ten point
+incidences, they therefore partition the ten points into sets $A$ and $B$.
+Moreover, the ten three-point lines have thirty point incidences, so
+$a_3(x)=3$ at every point; the corresponding retained vector also has
+$u_4(x)=8$.  Every four-point circle meets each of $A$ and $B$ in two points.
+
+Associate such a circle with its chord in $A$ and its chord in $B$.  The two
+chords meet on the fixed radical axis of the two five-point circles.  No three
+chords determined by five points on a circle can pass through the same point
+off that circle: three pairwise disjoint chords would require six endpoints.
+Thus each set of chords meeting at one radical-axis point has size at most two
+on either side.  The twenty four-point circles attain the resulting maximum,
+so the chord graph is five disjoint copies of $K_{2,2}$.  Up to the action of
+$S_5\times S_5$, the six perfect matchings of the Petersen graph give two
+double orbits.  One admits no compatible ten-line design; the other has two
+complementary designs forming one orbit.
+
+For a representative of that orbit, the ten line incidences give a complete
+projective parametrization with nonzero parameters $a,b,d$.  Five selected
+circle-intersection minors are
+\begin{gather*}
+ ad+b^2,\quad -ab+ad-b,\quad ab-ad-a-1,\\
+ -ad+bd-b-d,\quad b(ab+1).
+\end{gather*}
+They must all vanish.  Adding the second and third relations gives
+$a+b+1=0$, while the last relation and $b\ne0$ give $ab+1=0$.  Hence
+$b^2+b-1=0$.  The first relation gives
+$d=b^2/(b+1)$; here $b+1=-a\ne0$.  Substitution in the fourth relation then
+gives, after removal of nonzero factors,
+\[
+ (b-1)(2b+1)=0,
+\]
+which is relatively prime to $b^2+b-1$.  The discarded parameter branch makes
+two labelled points coincide, and every factor divided out in forming the
+five primitive minors is one of $a,d,b$ or $ad$, all nonzero.  Thus the last
+$n=10$ count vector is impossible.
+
+Combining these verifications with the construction in \eqref{eq:F-en} gives
+\[
+ c(n)=F(n)\qquad(9\le n\le14).
+\]
+
+\begin{remark}[Scope of the finite verification]
+The only labelled search in this section occurs in the nine-point terminal
+model.  Orders ten through twelve use count vectors and recursive consistency
+of local multiplicities, while orders thirteen and fourteen use only global inequalities.
+No condition $\sum_jt_j\ge2r-4$ is assumed for an arbitrary arrangement.
+For an arrangement of $q$ lines, Elliott's Theorem~3 is used only when its
+hypotheses $q\ge10$ and no $(q-1)$-fold vertex are explicitly satisfied.
+\end{remark}
+
 
 \section{The finite cases \texorpdfstring{$4\le n\le8$}{4<=n<=8}}
 
@@ -972,8 +1328,11 @@ The integer models classify abstract maximal line and circle blocks subject to
 unique triple ownership and the intersection bounds for two lines, a line and a
 circle, or two circles.  Feasibility of such a model is not treated as geometric
 realizability.  Every surviving class is therefore followed by a separate exact
-geometric exclusion.  Conversely, an infeasibility conclusion is used only when the
-solver reports an exhaustive status; a time limit or an unknown status is rejected.
+geometric exclusion.  Conversely, an infeasibility conclusion is used only when
+the solver reports the terminal status \texttt{INFEASIBLE}.  The statuses
+\texttt{UNKNOWN}, \texttt{MODEL\_INVALID}, a time limit, or any other nonterminal
+outcome retain the candidate and make the certificate incomplete; they never
+exclude a case.
 \end{remark}
 
 \subsection{\texorpdfstring{$c(6)=8<9=F(6)$}{c(6)=8<9=F(6)}}
@@ -1148,6 +1507,226 @@ these circles and checks that all $\binom83=56$ triples belong to exactly one ma
 collinear subset or one listed circle.  The isomorphism classification of all
 eight-point incidence structures with at most 16 circles finds none that is
 realizable in the Euclidean plane.  Therefore $c(8)\ge17$, and hence $c(8)=17$.
+
+\subsection{Incidence types and Möbius moduli of the exceptional configurations}
+\label{sec:exceptional-moduli-en}
+
+The incidence type of an exceptional configuration should not be confused with
+its Möbius orbit.  The former is finite combinatorial data; the latter retains
+continuous cross-ratio parameters.  The following statement records the complete
+incidence classification obtained here.
+
+\begin{proposition}\label{prop:exceptional-types-en}
+Up to relabelling, there is exactly one realizable line--circle incidence type for
+each of $(n,c(P))=(6,8),(7,11),(8,17)$.  At $(n,c(P))=(8,18)$ there are sixteen
+abstract line--circle incidence types, exactly three of which are realizable over
+$\mathbb R$.  The three realizable types have, respectively, two four-point
+lines, one four-point and one three-point line, and two three-point lines.  After
+the line/circle distinction is forgotten, they form one generalized-circle
+incidence type.  Each of the four realizable layers just
+listed contains continuum many extended-Möbius orbits.
+\end{proposition}
+
+\begin{proof}
+The six- and seven-point classifications are the terminal isomorphism reductions
+used in their lower bounds.  At seventeen circles, the eight-point enumeration
+has seven abstract line--circle incidence types; the exact real-realizability reductions leave
+only the type whose maximal lines are $0123,046,357$.  At eighteen circles,
+triple ownership gives
+\[
+ \sum_L\binom{|L|}{3}
+ +\sum_{C:\,|C|\ge4}\left(\binom{|C|}{3}-1\right)=38.
+\]
+Exhaustive backtracking under this identity gives sixteen line--circle incidence
+types.  Twelve of them have one common generalized-circle incidence type that,
+after a point is sent to infinity, would realize the Fano plane over $\mathbb R$.
+A second generalized-circle incidence type forces the
+Möbius--Kantor incidence equations; their last determinant is
+$-(t^2-t+1)$ and has discriminant $-3$.  The remaining generalized-circle
+incidence type admits exactly the three assignments of its blocks as lines or
+circles stated above.  The seven seventeen-circle records
+are checked by
+\file{computation/n4_to_8/orbit_classification/c17_exclusions/verify_target_records.py};
+their exact realizability certificates are in the same directory.  The
+eighteen-circle enumeration and exclusions are reproduced by
+\file{computation/n4_to_8/orbit_classification/verify_incidence_types.py}.
+The positive-dimensional families below, together with the finiteness of the
+relabeling group, prove the last assertion.
+\end{proof}
+
+For completeness, representatives of the three realizable line--circle incidence types at
+$c(P)=18$ are as follows.  Each list contains all maximal lines and all circle
+blocks; the index-string convention is that of \S2, and $C_k$ denotes the list
+of $k$-point circle blocks.
+\begin{itemize}
+\item Type $(4,4)$ has lines $0145,2367$ and
+\[
+\begin{gathered}
+C_3: 035,036,056,124,127,147,247,356,\\
+C_4: 0123,0167,0246,0257,0347,1256,1346,1357,2345,4567.
+\end{gathered}
+\]
+\item Type $(4,3)$ has lines $0145,036$ and
+\[
+\begin{gathered}
+C_3: 035,056,124,127,147,247,356,\\
+C_4: 0123,0167,0246,0257,0347,1256,1346,1357,2345,2367,4567.
+\end{gathered}
+\]
+\item Type $(3,3)$ has lines $035,124$ and
+\[
+\begin{gathered}
+C_3: 036,056,127,147,247,356,\\
+C_4: 0123,0145,0167,0246,0257,0347,1256,1346,1357,2345,2367,4567.
+\end{gathered}
+\]
+\end{itemize}
+
+We next make the Möbius quotients explicit.  Identify $\mathbb R^2$ with
+$\mathbb C$ and use the ordered cross ratio
+\[
+ [z_0,z_1;z_2,z_3]
+ =\frac{(z_0-z_2)(z_1-z_3)}{(z_0-z_3)(z_1-z_2)}.
+\]
+
+\paragraph{Six points and eight circles.}
+After choosing the displayed incidence labels and applying a similarity, every
+realization has a unique representative with some $(a,v)$ in
+\[
+ \mathcal U_6=\{(a,v)\in\mathbb R^2:
+ a\ne0,1,\ v\ne0,\ a\ne1+v^2\}
+\]
+through
+\[
+\begin{aligned}
+p_0&=(0,0),&p_2&=(1,0),&p_4&=(a,0),&p_3&=(1,v),\\
+s&=\frac{a}{1+v^2},&
+t&=\frac{a(a-1)}{(a-1)^2+v^2},&
+p_5&=(s,sv),&p_1&=(a+t(1-a),tv).
+\end{aligned}
+\]
+The maximal lines are $024,035,134$, and the four-point circles are
+$0123,0145,2345$.  Put
+\[
+x=[p_0,p_1;p_2,p_3]
+=\frac{a-1-v^2}{(a-1)(1+v^2)},\qquad
+y=[p_0,p_1;p_4,p_5]
+=\frac{a-1-v^2}{a-1}.
+\]
+Then
+\[
+v^2=\frac{y-x}{x},\qquad
+a=\frac{y(1-x)}{x(1-y)},
+\]
+and the unlabelled Möbius orbit space is
+\[
+ \mathcal M_6=
+ \mathcal D_6/\langle R,S\rangle,
+ \qquad
+ \mathcal D_6=\left\{(x,y):x,y\notin\{0,1\},\ \frac{y-x}{x}>0\right\},
+\]
+where the group has order six and is generated by
+\[
+ R(x,y)=\left(\frac1y,\frac1x\right),\qquad
+ S(x,y)=\left(x,\frac{xy-2x+1}{y-x}\right).
+\]
+Every member also has an anti-Möbius symmetry inducing
+$(p_0p_1)(p_2p_3)(p_4p_5)$; consequently allowing anti-Möbius maps does not
+further merge the unlabelled six-point orbits.
+
+\paragraph{Seven points and eleven circles.}
+After choosing the displayed incidence labels, every realization likewise has a
+unique similarity-normalized representative with some
+\[
+ (u,v)\in\mathcal U_7=
+ \{(u,v)\in\mathbb R^2:u\ne0,1,\ v\ne0,\ u^2-u+v^2\ne0\}.
+\]
+Set
+\[
+ p_3=(0,0),\quad p_4=(1,0),\quad p_5=(u,v),\quad
+ p_6=\left(u,\frac{u(1-u)}v\right),
+\]
+and let
+\[
+p_0=p_3p_6\cap p_4p_5,\qquad
+p_1=p_3p_5\cap p_4p_6,\qquad
+p_2=p_3p_4\cap p_5p_6.
+\]
+Explicitly,
+\[
+\begin{aligned}
+p_0&=\left(\frac{v^2}{(u-1)^2+v^2},
+           \frac{-v(u-1)}{(u-1)^2+v^2}\right),\\
+p_1&=\left(\frac{u^2}{u^2+v^2},\frac{uv}{u^2+v^2}\right),
+&p_2&=(u,0).
+\end{aligned}
+\]
+The maximal lines are $036,045,135,146,234,256$ and the six four-point
+circles are those listed above in the construction.  All unlabelled holomorphic
+Möbius identifications are generated on $\mathcal U_7$ by
+\[
+A(u,v)=\left(\frac{u}{u^2+v^2},\frac{-v}{u^2+v^2}\right),\qquad
+B(u,v)=\left(\frac{v^2}{u^2-u+v^2},
+             \frac{-v(u-1)}{u^2-u+v^2}\right).
+\]
+The resulting group has order $24$.  Thus
+\[
+ \mathcal M_7^+=\mathcal U_7/\langle A,B\rangle,
+ \qquad
+ \mathcal M_7^{\pm}=\mathcal U_7/\langle A,B,C\rangle,
+ \quad C(u,v)=(u,-v),
+\]
+where the extended group has order $48$ at a generic parameter.
+
+\paragraph{Eight points.}
+The seventeen-circle type has maximal lines $0123,046,357$.  It contains the
+following explicit rational one-parameter family.  Put
+\[
+m=\frac3{3-b^2},\qquad r=\frac{3(1+b^2)}{3-b^2},\qquad
+t=\frac{b^2-3}{b^2+9},\qquad
+O=\left(\frac{1-b^2}{1+b^2},\frac{2b}{1+b^2}\right).
+\]
+Before inversion take
+\[
+\begin{aligned}
+P_0&=(0,0),&P_1&=(1,0),&P_2&=(1,b),&P_6&=(r,0),\\
+P_3&=(1+t(r-1),b(1-t)),&
+P_4&=P_0P_3\cap P_1P_2,&P_5&=(m,mb).
+\end{aligned}
+\]
+If $I_O$ is inversion of squared radius one about $O$, set
+$p_i=I_O(P_i)$ for $0\le i\le6$ and $p_7=O$.  Outside a finite algebraic set of
+degenerate parameters this has exactly the incidence list displayed for the
+seventeen-circle construction.  The value $b=13/12$ gives the coordinates used
+above; $b=1$ gives a configuration of the same line--circle incidence type that is
+neither Möbius nor anti-Möbius equivalent to it.
+
+For the eighteen-circle layer, a two-parameter family is given generically by
+two concentric, similarly oriented, homothetic rectangles
+\[
+ (\pm A,\pm1),\qquad(\pm rA,\pm r).
+\]
+It realizes the type with two four-point line blocks.  Inversions at suitable
+intersections of its generalized circles realize the other two assignments of
+the blocks as lines or circles in
+Proposition~\ref{prop:exceptional-types-en}.  The exact parameter identities and
+inequivalence tests are in
+\file{computation/n4_to_8/orbit_classification/verify_parametric_families.py} and
+\file{computation/n4_to_8/orbit_classification/verify_mobius_moduli.py}.
+
+For reference, an unordered four-point generalized circle has the Möbius and
+anti-Möbius invariant
+\[
+ J(\lambda)=\frac{(1-\lambda+\lambda^2)^3}
+ {\lambda^2(1-\lambda)^2},
+\]
+where $\lambda$ is any ordered cross ratio; hence the multiset of $J$-values over
+all maximal four-point generalized circles is an unlabelled invariant.  The cited
+verification first compares this multiset and then checks every remaining
+incidence relabelling by exact normalized cross ratios.  The formulae above give
+complete Möbius moduli for $n=6,7$.  For $n=8$ they prove the existence of
+continuum many orbits, but we do not claim that the displayed one- and
+two-parameter families exhaust the full real realization spaces.
 
 \section{The variant with no three collinear points}
 \label{sec:no-three-en}
@@ -1358,6 +1937,143 @@ exact integer and symbolic arithmetic; no numerical root decision is used.
 
 
 \appendix
+\section{The earlier argument for \texorpdfstring{$n\ge92$}{n>=92}}
+\label{app:early92-en}
+
+This section records the intermediate argument that first emerged from the
+Eureka computations.  It is logically superseded by the proof for $n\ge17$ in
+the main text, but it explains how a numerical threshold was converted into a
+short mathematical proof before the estimates were strengthened further.
+
+\begin{proposition}
+Every admissible $n$-point set with $n\ge92$ determines at least $F(n)$
+circles.
+\end{proposition}
+
+\begin{proof}
+Let $K$ be the size of a largest line or circle block and put $r=n-K$.
+We divide according to whether $K$ is at least $3n/8$.
+
+Suppose first that $K\ge3n/8$.  The two quantities in
+Lemma~\ref{lem:largest-en} satisfy
+\[
+ D_L(n,r)-D_C(n,r)=r\left\lfloor\frac K2\right\rfloor-1\ge0.
+\]
+Using $\lfloor K/2\rfloor\le K/2$ in the circle-block expression therefore
+gives, in either largest-block case,
+\begin{equation}\label{eq:early-B-en}
+ c(P)\ge B(n,K):=1+\frac{(n-K)K(3K-n-3)}4.
+\end{equation}
+For $K=n-1$, the exact value of $D_C(n,1)$ is $F(n)$.  We may consequently
+assume $3n/8\le K\le n-2$.  On this interval
+\[
+ \frac{\partial^2 B}{\partial K^2}
+ =\frac{-18K+6n+6}{4}<0,
+\]
+so $\partial B/\partial K$ is strictly decreasing.  Hence $B$ has no interior
+minimum, and it is enough to consider the endpoints.  Since
+\begin{equation}\label{eq:early-F-upper-en}
+ F(n)\le 1+\frac{(n-2)^2}{2},
+\end{equation}
+the two endpoint margins are
+\[
+ B\left(n,\frac{3n}{8}\right)-1-\frac{(n-2)^2}{2}
+ =\frac{15n^3-1384n^2+4096n-4096}{2048}
+\]
+and
+\[
+ B(n,n-2)-1-\frac{(n-2)^2}{2}
+ =\frac{(n-2)(n-7)}2.
+\]
+The first numerator, after writing $n=92+u$, becomes
+\[
+ 15u^3+2756u^2+130320u+338880,
+\]
+and the second margin is plainly positive.  This proves the required bound in
+the first case.
+
+Now suppose that $K<3n/8$.  Fix an inversion centre $x\in P$, and put
+$N=n-1$ and $M=K-1$.  Every connecting line of the inverted set contains at
+most $M$ image points.  If $t_i$ denotes the number of its $i$-point connecting
+lines, set
+\[
+ a_M=
+ \begin{cases}
+ 6,&2\le M\le9,\\[2pt]
+ \displaystyle\frac{\binom M2}{M-3},&M\ge10,
+ \end{cases}
+ \qquad
+ y_M=\frac1{a_M+1},\qquad z_M=1-y_M.
+\]
+The definition of $a_M$ gives
+\[
+ y_M\binom i2\le z_M(i-3)\qquad(4\le i\le M).
+\]
+Combining the point-pair identity with Melchior's inequality exactly as in
+Section~2 yields
+\begin{equation}\label{eq:early-dual-en}
+ t_2+t_3\ge y_M\binom N2+3z_M
+ =3+y_M\left(\binom N2-3\right).
+\end{equation}
+At most $\lfloor N/2\rfloor$ of these two- or three-point lines pass through
+the inversion centre.  Every remaining line corresponds to a circle containing
+the centre and altogether three or four points of $P$; after summing over all
+centres, each such circle has been counted at most four times.  Thus
+\begin{equation}\label{eq:early-inversion-en}
+ c(P)\ge\frac n4\left[
+ 3+y_M\left(\binom{n-1}{2}-3\right)
+ -\left\lfloor\frac{n-1}{2}\right\rfloor\right].
+\end{equation}
+
+Because $K<3n/8$ and $K$ is integral,
+\[
+ M=K-1\le\frac{3n-9}{8}=:M_0.
+\]
+The function
+\[
+ g(s)=\frac{2(s-3)}{(s+3)(s-2)}
+\]
+is decreasing for $s\ge6$.  For $M\ge10$ one has $y_M=g(M)$, while for
+$M\le9$ one has $y_M=1/7=g(9)$.  Consequently
+\[
+ y_M\ge g(M_0)=\frac{16(n-11)}{(n+5)(3n-25)}.
+\]
+Replacing the floor in \eqref{eq:early-inversion-en} by $(n-1)/2$ and using
+\eqref{eq:early-F-upper-en}, the resulting lower bound minus $F(n)$ is at least
+\[
+ \frac{n^4-105n^3+787n^2-1931n+3000}
+ {8(n+5)(3n-25)}.
+\]
+For $n=98+u$ the numerator is
+\[
+ u^4+287u^3+27541u^2+891829u+783766,
+\]
+so the expression is positive for every $n\ge98$.
+
+It remains only to check $92\le n\le97$.  For each row below, $K_0$ is the
+largest integer strictly below $3n/8$, $M_0=K_0-1$, and $\Delta_n$ is the
+right-hand side of \eqref{eq:early-inversion-en}, evaluated at $M_0$, minus
+$F(n)$.  Since the bound in \eqref{eq:early-dual-en} decreases with $M$, this
+is the least margin in the second case.
+\[
+\begin{array}{c|rrrrrr}
+n&92&93&94&95&96&97\\ \hline
+K_0&34&34&35&35&35&36\\
+M_0&33&33&34&34&34&35\\
+\Delta_n&43&88&\frac{20371}{1184}&\frac{9225}{148}&
+\frac{4908}{37}&\frac{29823}{836}
+\end{array}
+\]
+All six margins are positive, completing the proof.
+\end{proof}
+
+\begin{remark}
+No incidence structure is enumerated in this argument.  The displayed table is
+only a check of six exact rational endpoint inequalities.  The proof in the
+main text replaces this early threshold by $n\ge17$, and the subsequent
+sections treat $n=16$ and $n=15$.
+\end{remark}
+
 \section{Exact verification and reproduction}\label{app:verification-en}
 
 The audited material is reproduced by two independent entry points.  From the
@@ -1438,7 +2154,110 @@ placeholder or added axiom.  As above, Euclidean incidence lemmas and exhaustive
 finite-classification outputs remain explicit hypotheses rather than silently
 postulated definitions.
 
-\input{sections/appendix_small_en.tex}
+\subsection{Nine through fourteen points}
+
+The source files for these six layers are in
+\begin{center}
+\file{computation/n9_to_14/}.
+\end{center}
+From that directory run
+\begin{verbatim}
+python run_verification.py --jobs 8 --seconds 240
+\end{verbatim}
+The number of workers may be changed without changing the models.  Every
+individual solver uses a fixed random seed; a timeout has status
+\texttt{UNKNOWN} and is retained.  A successful replay ends with
+\file{certificates/manifest.json}, whose seven terminal checks are
+\texttt{true} and whose status is \texttt{PASS}.  If a replay is interrupted
+after all terminal certificates have been written, the same terminal and
+SHA-256 audit can be rerun with \file{audit_manifest.py}.
+The active lower-bound table contains $c(7)=11$.  All certificates in the
+present package were regenerated after that correction; in particular, the
+twelve-point recursion now has 622, rather than 617, nine-point child
+count vectors.
+
+The files are grouped by mathematical role as follows.
+Some filenames retain implementation terminology: in those names,
+\texttt{signature} means the global count vector defined in
+Section~\ref{sec:small-uniform-en}, \texttt{profile} means the degrees attached
+to point pairs, and \texttt{support} means an actual subset of labelled points.
+These words are not additional mathematical notions.
+\begin{longtable}{P{6.2cm}P{8.3cm}}
+\toprule File & Role in the verification\\ \midrule
+\file{signature_filters.py} & enumerates all global count vectors from
+\eqref{eq:small-line-pairs-en}--\eqref{eq:small-triple-partition-en}, the
+largest-block bounds, deletion averages, and the cited line-arrangement
+inequalities\\
+\file{projected_arrangement_model.py} & generates all numerical local
+multiplicity types and their line/circle splits; the final source contains no
+historical line-deletion obstruction table\\
+\file{verify_local_type_filter.py} & checks exact unlabelled sums of the local
+multiplicity vectors and writes \file{nN_01_signature_filter.json}\\
+\file{verify_augmented_line_melchior.py} & checks first
+\eqref{eq:augmented-line-summed-en}, then the sums over all points required by
+\eqref{eq:augmented-line-point-en}; it writes certificates 02 and 03\\
+\file{filter_by_classified_split_endpoints.py} & checks the consistency
+identities linking point degrees and point-pair degrees in
+\eqref{eq:small-category-totals-en}--\eqref{eq:small-pair-profile2-en};
+the runner explicitly disables both optional finite catalogues\\
+\file{pair_profile_generator.py},
+\file{verify_pair_moment_filter.py} & generate all point-pair degree data and
+impose the exact sums of intersection sizes and of their second binomial
+coefficients, together with the disjoint-triple counts; they write
+certificate 05\\
+\file{block_intersection_rows.py},
+\file{block_row_existence_filter.py} & at $n=10$, impose the three exact
+triple strata around each represented block and the bound on matchings between
+two blocks, reducing 21 count vectors to 12\\
+\file{verify_recursive_inversion_rows.py} & maps each local multiplicity vector
+to the full count vector one order lower, balances all point totals at each
+level, and at the nine-point base selects the maximal lines and circles as
+subsets of the labelled points\\
+\file{verify_n10_final_radical_axis.py} & reconstructs the two matching
+orbits, the unique surviving line-design orbit, and the five exact minors that
+exclude the final ten-point count vector; it first reads certificate 07, records
+its SHA-256 digest, and checks that the retained rows force the two five-point
+circles to partition the point set\\
+\file{verify_n13_n14_global_inequalities.py} & independently regenerates the
+3962 and 8981 raw count vectors and checks the global exclusions and
+\eqref{eq:n13-global-two-ineq-en}; it does not select labelled point subsets\\
+\file{run_verification.py}, \file{audit_manifest.py} & execute the stages in
+order and check all terminal statuses, the unique intermediate $n=10$ count
+vector, file sizes, and SHA-256 digests\\
+\bottomrule
+\end{longtable}
+
+The terminal certificate paths are
+{\raggedright
+\begin{description}[style=nextline,leftmargin=2.8em]
+\item[$n=9$] \file{certificates/n9_04_exact_support.json}.
+\item[$n=10$] \file{certificates/n10_07_recursive.json} and
+  \file{certificates/n10_08_final_geometry.json}.
+\item[$n=11$] \file{certificates/n11_06_recursive.json}.
+\item[$n=12$] \file{certificates/n12_06_recursive.json}.
+\item[$n=13,14$] \file{certificates/n13_n14_global_inequalities.json}.
+\end{description}
+\par}
+The intermediate filenames have the numerical prefixes displayed in the
+table and are consumed in that order.  Each stage after 01 records the path
+and SHA-256 digest of its immediate input whenever it reads one.  The final
+manifest records forty-two source and certificate files.  Thus a reader may
+delete the \file{certificates} directory and regenerate the complete chain
+from the listed source files.
+
+In the audited four-worker replay, the full chain took 348.52 seconds of wall
+time.  The largest labelled base model had 840 Boolean variables and 546
+constraints, and the slowest individual recursive solve took 6.62 seconds.
+No solve approached the 240-second limit.  These figures are reported only to
+indicate scale; they are not assumptions in any certificate.
+
+The reproduction uses CPython~3.13 because the audited binary modules are its
+CPython~3.13 builds.  The pinned integer solver is OR-Tools 9.15.6755, loaded through
+\file{computation/runtime_dependencies.py}.  SymPy is used only for the exact
+ten-point polynomial calculations.  Floating-point feasibility, random
+search, and a solver status other than explicit infeasibility are never used
+to exclude a case.
+
 
 \subsection{Six and seven points}
 
@@ -1457,7 +2276,7 @@ each with six and seven circles.
 seven-circle families can have $c(P)\le10$.  It checks that the unique
 six-circle candidate has no ordinary line and that every seven-circle candidate
 contains the common two-line core used in the proof.
-\item \file{computation/n4_to_8/n7/verify_q7_exclusion.py}
+\item \file{verify_q7_exclusion.py}
 checks the positive-definite quadratic-form reduction in the text, while
 \file{verify_extremal_configuration.py} verifies the eleven-circle construction
 using exact Euclidean circle equations.
@@ -1514,10 +2333,31 @@ $A=x_0x_2+y_4^2$ and $B=y_4(x_0+x_2)$, to $A=kB$ and $kA=B$.
 Thus $A=B=0$, whence $x_0+x_2=0$; substituting in $R=0$ gives
 $2x_0^2=0$, contrary to distinctness.  This is the complete geometric
 consequence of the symbolic output used for that class.
-\item Finally, \file{computation/n4_to_8/n8/verify_construction.py} verifies the rational
+\item Finally, \file{verify_construction.py} verifies the rational
 seventeen-circle construction by exact determinants and checks ownership of all
 $56$ triples.
 \end{enumerate}
+
+\subsection{Exceptional incidence types and Möbius parameters}
+
+All paths in this paragraph are under
+\file{computation/n4_to_8/orbit_classification/}.  The command sequence
+\begin{center}
+\begin{tabular}{l}
+\file{python}\ \file{verify_incidence_types.py}\\
+\file{python}\ \file{verify_parametric_families.py}\\
+\file{python}\ \file{verify_mobius_moduli.py}\\
+\file{python}\ \file{family_examples.py}
+\end{tabular}
+\end{center}
+checks, respectively, the $c(8)=18$ incidence classification, the symbolic
+line and circle identities in every displayed family, the complete finite
+quotient actions for $n=6,7$, and exact inequivalence of selected family
+members.  The directory \file{c17_exclusions/} contains the seven
+$c(8)=17$ incidence records, the rational verifier for the realized type, and
+the symbolic or Gröbner-basis exclusion of each of the other six types.  The
+file \file{README.md} gives the reproduction order and distinguishes record
+regeneration from verification of the released records.
 
 \subsection{The no-three-collinear variant}
 
@@ -1538,8 +2378,9 @@ triples, four-subsets, and five-subsets; the stored JSON files are outputs, not
 axioms.  Orbit blocking is checked by applying all point permutations.  Therefore a
 reader can delete the generated JSON files and reproduce them from the scripts.
 The dependency loader checks the pinned solver version.  The classifiers use one
-search worker where isomorphism completeness matters and treat only an exhaustive
-terminal status as a certificate.
+search worker where isomorphism completeness matters.  Only the explicit status
+\texttt{INFEASIBLE} excludes a candidate; every other solver status retains it,
+and any nonterminal status makes the corresponding certificate incomplete.
 \end{remark}
 
 \begin{thebibliography}{99}
@@ -1589,7 +2430,8 @@ Discrete Comput. Geom. \textbf{59} (2018), 59--87.
 \bibitem{purdy-smith-en}
 G.~B.~Purdy and J.~W.~Smith,
 \emph{Lines, circles, planes and spheres},
-Discrete Comput. Geom. \textbf{44} (2010), 907--916.
+Discrete Comput. Geom. \textbf{44} (2010), 860--882,
+doi:10.1007/s00454-010-9270-3.
 
 \bibitem{pokora-en}
 P.~Pokora,

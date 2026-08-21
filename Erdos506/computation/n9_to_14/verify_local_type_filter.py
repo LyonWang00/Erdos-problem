@@ -87,8 +87,11 @@ def reachable_targets(
         solver.parameters.num_search_workers = 1
         status = solver.Solve(model)
         status_name = solver.StatusName(status)
-        if status_name == "UNKNOWN":
-            raise RuntimeError(f"local target timed out: {target_value}")
+        if status_name not in ("INFEASIBLE", "FEASIBLE", "OPTIMAL"):
+            raise RuntimeError(
+                f"unresolved local-target solver status {status_name}: "
+                f"{target_value}"
+            )
         if status_name in ("FEASIBLE", "OPTIMAL"):
             reachable.add(target_value)
         audits.append({

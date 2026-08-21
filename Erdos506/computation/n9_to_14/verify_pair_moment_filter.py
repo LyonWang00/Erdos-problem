@@ -359,26 +359,32 @@ def main() -> None:
             "input_signature_count": len(records),
             "status_counts": dict(status_counts),
             "survivor_count": sum(
-                status in ("FEASIBLE", "OPTIMAL", "UNKNOWN")
+                status != "INFEASIBLE"
                 for status in (record["status"] for record in records)
             ),
             "survivors": [
                 record for record in records
-                if record["status"] in ("FEASIBLE", "OPTIMAL", "UNKNOWN")
+                if record["status"] != "INFEASIBLE"
             ],
             "records": records,
         })
     if offset != len(flat_records):
         raise AssertionError((offset, len(flat_records)))
-    unknown = sum(
-        layer["status_counts"].get("UNKNOWN", 0) for layer in layers
-    )
+    terminal_statuses = frozenset({"INFEASIBLE", "FEASIBLE", "OPTIMAL"})
+    unresolved_status_counts = Counter()
+    for layer in layers:
+        for status_name, count in layer["status_counts"].items():
+            if status_name not in terminal_statuses:
+                unresolved_status_counts[status_name] += count
     result = {
         "schema_version": 1,
-        "status": "PASS" if unknown == 0 else "INCOMPLETE",
+        "status": "PASS" if not unresolved_status_counts else "INCOMPLETE",
+        "unresolved_status_counts": dict(unresolved_status_counts),
         "claim": (
             "Necessary support-free point/pair moment and outside-triple "
-            "filter."
+            "filter.  Only INFEASIBLE excludes a signature; every other "
+            "solver status is retained, and every nonterminal status makes "
+            "the certificate INCOMPLETE."
         ),
         "n": args.n,
         "source_file": args.input.name,
